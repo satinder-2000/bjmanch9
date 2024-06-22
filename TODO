@@ -1,0 +1,89 @@
+AccessConfirmMBean - Passwords are not being compared
+
+LoginMbean - performLogin - Increment failed attempts when password is incorrect.
+
+ActivityList needs a sophistication collection or algorithm to implement a Stack where the last element drops and a new one is added on the 
+top pushing all other elements to the bottom.
+
+JavaScript implementation to count chars in textareas description and userComment
+
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+                
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="7"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="8"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="9"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="10"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="11"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="12"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="13"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="14"></button>
+                </div>
+               <!-- The slideshow/carousel -->
+               <div class="carousel-inner">
+                   <div class="carousel-item active">
+                       <h:graphicImage library="images" name="BJManch1.jpg" width="600" height="450"/> 
+                   </div>
+                   <div class="carousel-item">
+                       <h:graphicImage library="images" name="BJManch2.jpg" width="600" height="450"/>
+                   </div>
+                   <div class="carousel-item">
+                       <h:graphicImage library="images" name="BJManch3.jpg" width="600" height="450"/>
+                   </div>
+                   <div class="carousel-item">
+                      <h:graphicImage library="images" name="BJManch4.jpg" width="600" height="450"/> 
+                   </div>
+                   <div class="carousel-item">
+                      <h:graphicImage library="images" name="BJManch5.jpg" width="600" height="450"/> 
+                   </div>
+                   <div class="carousel-item">
+                      <h:graphicImage library="images" name="BJManch6.jpg" width="600" height="450"/> 
+                   </div>
+                   <div class="carousel-item">
+                      <h:graphicImage library="images" name="BJManch7.jpg" width="600" height="450"/> 
+                   </div>
+                   <div class="carousel-item">
+                      <h:graphicImage library="images" name="BJManch8.jpg" width="600" height="450"/> 
+                   </div>
+                   <div class="carousel-item">
+                      <h:graphicImage library="images" name="BJManch9.jpg" width="600" height="450"/> 
+                   </div>
+                   <div class="carousel-item">
+                      <h:graphicImage library="images" name="BJManch10.jpg" width="600" height="450"/> 
+                   </div>
+                   <div class="carousel-item">
+                      <h:graphicImage library="images" name="BJManch11.jpg" width="600" height="450"/> 
+                   </div>
+                   <div class="carousel-item">
+                     <h:graphicImage library="images" name="BJManch12.jpg" width="600" height="450"/>  
+                   </div>
+                   <div class="carousel-item">
+                      <h:graphicImage library="images" name="BJManch13.jpg" width="600" height="450"/> 
+                   </div>
+                   <div class="carousel-item">
+                      <h:graphicImage library="images" name="BJManch14.jpg" width="600" height="450"/> 
+                   </div>
+                   <div class="carousel-item">
+                      <h:graphicImage library="images" name="BJManch15.jpg" width="600" height="450"/> 
+                   </div>
+                   <div class="carousel-item">
+                      <h:graphicImage library="images" name="BJManch16.jpg" width="600" height="450"/> 
+                   </div>
+               </div>
+               <!-- Left and right controls/icons -->
+               <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                   <span class="carousel-control-prev-icon"></span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                   <span class="carousel-control-next-icon"></span>
+               </button>
+                
+            </div>

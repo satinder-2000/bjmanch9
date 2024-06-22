@@ -1,0 +1,3876 @@
+STATE_CODE;CONSTITUENCY
+AP;Ichchapuram
+AP;Palasa
+AP;Tekkali
+AP;Pathapatnam
+AP;Srikakulam
+AP;Amadalavalasa
+AP;Etcherla
+AP;Narasannapeta
+AP;Rajam
+AP;Palakonda
+AP;Kurupam
+AP;Parvathipuram
+AP;Salur
+AP;Bobbili
+AP;Cheepurupalli
+AP;Gajapathinagaram
+AP;Nellimarla
+AP;Vizianagaram
+AP;Srungavarapukota
+AP;Bhimili
+AP;Visakhapatnam East
+AP;Visakhapatnam South
+AP;Visakhapatnam North
+AP;Visakhapatnam West
+AP;Gajuwaka
+AP;Chodavaram
+AP;Madugula
+AP;Araku Valley
+AP;Paderu
+AP;Anakapalle
+AP;Pendurthi
+AP;Elamanchili
+AP;Payakaraopet
+AP;Narsipatnam
+AP;Tuni
+AP;Prathipadu
+AP;Pithapuram
+AP;Kakinada Rural
+AP;Peddapuram
+AP;Anaparthy
+AP;Kakinada City
+AP;Ramachandrapuram
+AP;Mummidivaram
+AP;Amalapuram
+AP;Razole
+AP;Gannavaram
+AP;Kothapeta
+AP;Mandapeta
+AP;Rajanagaram
+AP;Rajahmundry City
+AP;Rajahmundry Rural
+AP;Jaggampeta
+AP;Rampachodavaram
+AP;Kovvur
+AP;Nidadavole
+AP;Achanta
+AP;Palakollu
+AP;Narasapuram
+AP;Bhimavaram
+AP;Undi
+AP;Tanuku
+AP;Tadepalligudem
+AP;Unguturu
+AP;Denduluru
+AP;Eluru
+AP;Gopalapuram
+AP;Polavaram
+AP;Chintalapudi
+AP;Tiruvuru
+AP;Nuzvid
+AP;Gannavaram
+AP;Gudivada
+AP;Kaikalur
+AP;Pedana
+AP;Machilipatnam
+AP;Avanigadda
+AP;Pamarru
+AP;Penamaluru
+AP;Vijayawada West
+AP;Vijayawada Central
+AP;Vijayawada East
+AP;Mylavaram
+AP;Nandigama
+AP;Jaggayyapeta
+AP;Pedakurapadu
+AP;Tadikonda
+AP;Mangalagiri
+AP;Ponnuru
+AP;Vemuru
+AP;Repalle
+AP;Tenali
+AP;Bapatla
+AP;Prathipadu
+AP;Guntur West
+AP;Guntur East
+AP;Chilakaluripet
+AP;Narasaraopet
+AP;Sattenapalle
+AP;Vinukonda
+AP;Gurajala
+AP;Macherla
+AP;Yerragondapalem
+AP;Darsi
+AP;Parchur
+AP;Addanki
+AP;Chirala
+AP;Santhanuthalapadu
+AP;Ongole
+AP;Kandukur
+AP;Kondapi
+AP;Markapuram
+AP;Giddalur
+AP;Kanigiri
+AP;Kavali
+AP;Atmakur
+AP;Kovur
+AP;Nellore City
+AP;Nellore Rural
+AP;Sarvepalli
+AP;Gudur
+AP;Sullurpeta
+AP;Venkatagiri
+AP;Udayagiri
+AP;Badvel
+AP;Rajampet
+AP;Kadapa
+AP;Kodur
+AP;Rayachoti
+AP;Pulivendla
+AP;Kamalapuram
+AP;Jammalamadugu
+AP;Proddatur
+AP;Mydukur
+AP;Allagadda
+AP;Srisailam
+AP;Nandikotkur
+AP;Kurnool
+AP;Panyam
+AP;Nandyal
+AP;Banaganapalle
+AP;Dhone
+AP;Pattikonda
+AP;Kodumur
+AP;Yemmiganur
+AP;Mantralayam
+AP;Adoni
+AP;Alur
+AP;Rayadurg
+AP;Uravakonda
+AP;Guntakal
+AP;Tadipatri
+AP;Singanamala
+AP;Anantapur Urban
+AP;Kalyandurg
+AP;Raptadu
+AP;Madakasira
+AP;Hindupur
+AP;Penukonda
+AP;Puttaparthi
+AP;Dharmavaram
+AP;Kadiri
+AP;Thamballapalle
+AP;Pileru
+AP;Madanapalle
+AP;Punganur
+AP;Chandragiri
+AP;Tirupati
+AP;Srikalahasti
+AP;Sathyavedu
+AP;Nagari
+AP;Gangadhara Nellore
+AP;Chittoor
+AP;Puthalapattu
+AP;Palamaner
+AP;Kuppam
+AR;Lumla
+AR;Tawang
+AR;Mukto
+AR;Dirang
+AR;Kalaktang
+AR;Thrizino-Buragaon
+AR;Bomdila
+AR;Bameng
+AR;Chayangtajo
+AR;Seppa East
+AR;Seppa West
+AR;Pakke-Kasang
+AR;Itanagar
+AR;Doimukh
+AR;Sagalee
+AR;Yachuli
+AR;Ziro-Hapoli
+AR;Palin
+AR;Nyapin
+AR;Tali
+AR;Koloriang
+AR;Nacho
+AR;Taliha
+AR;Daporijo
+AR;Raga
+AR;Damporijo
+AR;Liromoba
+AR;Likabali
+AR;Basar
+AR;Along West
+AR;Along East
+AR;Rumgong
+AR;Mechuka
+AR;Tuting-Yingkiong
+AR;Pangin
+AR;Nari-Koyu
+AR;Pasighat West
+AR;Pasighat East
+AR;Mebo
+AR;Mariyang-Geku
+AR;Anini
+AR;Dambuk
+AR;Roing
+AR;Tezu
+AR;Hayuliang
+AR;Chowkham
+AR;Namsai
+AR;Lekang
+AR;Bordumsa-Diyum
+AR;Miao
+AR;Nampong
+AR;Changlang South
+AR;Changlang North
+AR;Namsang
+AR;Khonsa East
+AR;Khonsa West
+AR;Borduria-Bagapani
+AR;Kanubari
+AR;Longding-Pumao
+AR;Pongchau-Wakka
+AS;Ratabari
+AS;Patharkandi
+AS;Karimganj North
+AS;Karimganj South
+AS;Badarpur
+AS;Hailakandi
+AS;Katlicherra
+AS;Algapur
+AS;Silchar
+AS;Sonai
+AS;Dholai
+AS;Udharbond
+AS;Lakhipur
+AS;Barkhola
+AS;Katigorah
+AS;Haflong
+AS;Bokajan
+AS;Howraghat
+AS;Diphu
+AS;Baithalangso
+AS;Mankachar
+AS;Salmara South
+AS;Dhubri
+AS;Gauripur
+AS;Golakganj
+AS;Bilasipara West
+AS;Bilasipara East
+AS;Gossaigaon
+AS;Kokrajhar West
+AS;Kokrajhar East
+AS;Sidli
+AS;Bongaigaon
+AS;Bijni
+AS;Abhayapuri North
+AS;Abhayapuri South
+AS;Dudhnai
+AS;Goalpara East
+AS;Goalpara West
+AS;Jaleswar
+AS;Sorbhog
+AS;Bhabanipur
+AS;Patacharkuchi
+AS;Barpeta
+AS;Jania
+AS;Baghbar
+AS;Sarukhetri
+AS;Chenga
+AS;Boko
+AS;Chaygaon
+AS;Palasbari
+AS;Jalukbari
+AS;Dispur
+AS;Gauhati East
+AS;Gauhati West
+AS;Hajo
+AS;Kamalpur
+AS;Rangiya
+AS;Tamulpur
+AS;Nalbari
+AS;Barkhetry
+AS;Dharmapur
+AS;Barama
+AS;Chapaguri
+AS;Panery
+AS;Kalaigaon
+AS;Sipajhar
+AS;Mangaldoi
+AS;Dalgaon
+AS;Udalguri
+AS;Majbat
+AS;Dhekiajuli
+AS;Barchalla
+AS;Tezpur
+AS;Rangapara
+AS;Sootea
+AS;Biswanath
+AS;Behali
+AS;Gohpur
+AS;Jagiroad
+AS;Marigaon
+AS;Laharighat
+AS;Raha
+AS;Dhing
+AS;Batadroba
+AS;Rupohihat
+AS;Nowgong
+AS;Barhampur
+AS;Samaguri
+AS;Kaliabor
+AS;Jamunamukh
+AS;Hojai
+AS;Lumding
+AS;Bokakhat
+AS;Sarupathar
+AS;Golaghat
+AS;Khumtai
+AS;Dergaon
+AS;Jorhat
+AS;Majuli
+AS;Titabar
+AS;Mariani
+AS;Teok
+AS;Amguri
+AS;Nazira
+AS;Mahmara
+AS;Sonari
+AS;Thowra
+AS;Sibsagar
+AS;Bihpuria
+AS;Naoboicha
+AS;Lakhimpur
+AS;Dhakuakhana
+AS;Dhemaji
+AS;Jonai
+AS;Moran
+AS;Dibrugarh
+AS;Lahowal
+AS;Duliajan
+AS;Tingkhong
+AS;Naharkatia
+AS;Chabua
+AS;Tinsukia
+AS;Digboi
+AS;Margherita
+AS;Doomdooma
+AS;Sadiya
+BR;Valmiki Nagar 
+BR;"Ramnagar
+BR;Narkatiaganj 
+BR;Bagaha 
+BR;Lauriya 
+BR;Nautan 
+BR;Chanpatia 
+BR;Bettiah 
+BR;Sikta 
+BR;Raxaul 
+BR;Sugauli 
+BR;Narkatiya 
+BR;Harsidhi 
+BR;Govindganj 
+BR;Kesaria 
+BR;"Kalyanpur
+BR;"Pipra
+BR;Madhuban 
+BR;Motihari 
+BR;Chiraia 
+BR;Dhaka 
+BR;Sheohar 
+BR;Riga 
+BR;Bathnaha 
+BR;Parihar 
+BR;Sursand 
+BR;Bajpatti 
+BR;Sitamarhi 
+BR;Runnisaidpur 
+BR;Belsand 
+BR;Harlakhi 
+BR;Benipatti 
+BR;Khajauli 
+BR;Babubarhi 
+BR;Bisfi 
+BR;Madhubani 
+BR;"Rajnagar
+BR;Jhanjharpur 
+BR;Phulparas 
+BR;Laukaha 
+BR;Nirmali 
+BR;"Pipra
+BR;Supaul 
+BR;Triveniganj 
+BR;Chhatapur 
+BR;Narpatganj 
+BR;"Raniganj
+BR;Forbesganj 
+BR;Araria 
+BR;Jokihat 
+BR;Sikti 
+BR;Bahadurganj 
+BR;Thakurganj 
+BR;Kishanganj 
+BR;Kochadhaman 
+BR;Amour 
+BR;Baisi 
+BR;"Kasba
+BR;Banmankhi 
+BR;Rupauli 
+BR;Dhamdaha 
+BR;Purnia 
+BR;Katihar 
+BR;Kadwa 
+BR;"Balrampur
+BR;Pranpur 
+BR;Manihari 
+BR;Barari 
+BR;Korha 
+BR;Alamnagar 
+BR;Bihariganj 
+BR;Singheshwar 
+BR;Madhepura 
+BR;"Sonbarsha
+BR;Saharsa 
+BR;Simri Bakhtiarpur 
+BR;Mahishi 
+BR;Kusheshwar Asthan 
+BR;Gaura Bauram 
+BR;Benipur 
+BR;Alinagar 
+BR;Darbhanga Rural 
+BR;Darbhanga 
+BR;Hayaghat 
+BR;Bahadurpur 
+BR;Keoti 
+BR;Jale 
+BR;Gaighat 
+BR;Aurai 
+BR;Minapur 
+BR;Bochahan 
+BR;Sakra 
+BR;Kurhani 
+BR;Muzaffarpur 
+BR;Kanti 
+BR;Baruraj 
+BR;Paroo 
+BR;"Sahebganj
+BR;Baikunthpur 
+BR;"Barauli
+BR;Gopalganj 
+BR;Kuchaikote 
+BR;Bhore 
+BR;Hathua 
+BR;Siwan 
+BR;Ziradei 
+BR;Darauli 
+BR;"Raghunathpur
+BR;Daraunda 
+BR;Barharia 
+BR;Goriakothi 
+BR;"Maharajganj
+BR;Ekma 
+BR;Manjhi 
+BR;Baniapur 
+BR;Taraiya 
+BR;Marhaura 
+BR;"Chapra
+BR;Garkha 
+BR;Amnour 
+BR;Parsa 
+BR;Sonepur 
+BR;Hajipur 
+BR;Lalganj 
+BR;Vaishali 
+BR;Mahua 
+BR;Raja Pakar 
+BR;"Raghopur
+BR;Mahnar 
+BR;Patepur 
+BR;"Kalyanpur
+BR;Warisnagar 
+BR;Samastipur 
+BR;Ujiarpur 
+BR;Morwa 
+BR;Sarairanjan 
+BR;Mohiuddinnagar 
+BR;Bibhutipur 
+BR;Rosera 
+BR;Hasanpur 
+BR;Cheria-Bariarpur 
+BR;Bachhwara 
+BR;Teghra 
+BR;Matihani 
+BR;Sahebpur Kamal 
+BR;Begusarai 
+BR;Bakhri 
+BR;Alauli 
+BR;Khagaria 
+BR;Beldaur 
+BR;Parbatta 
+BR;Bihpur 
+BR;Gopalpur 
+BR;Pirpainti 
+BR;Kahalgaon 
+BR;Bhagalpur 
+BR;Sultanganj 
+BR;Nathnagar 
+BR;Amarpur 
+BR;Dhoraiya 
+BR;Banka 
+BR;Katoria 
+BR;Belhar 
+BR;Tarapur 
+BR;Munger 
+BR;"Jamalpur
+BR;Suryagarha 
+BR;Lakhisarai 
+BR;Sheikhpura 
+BR;Barbigha 
+BR;Asthawan 
+BR;Biharsharif 
+BR;Rajgir 
+BR;"Islampur
+BR;Hilsa 
+BR;Nalanda 
+BR;Harnaut 
+BR;Mokama 
+BR;Barh 
+BR;Bakhtiarpur 
+BR;Digha 
+BR;Bankipur 
+BR;Kumhrar 
+BR;Patna Sahib 
+BR;Fatuha 
+BR;Danapur 
+BR;Maner 
+BR;Phulwari 
+BR;Masaurhi 
+BR;Paliganj 
+BR;Bikram 
+BR;Sandesh 
+BR;Barhara 
+BR;Arrah 
+BR;Agiaon 
+BR;Tarari 
+BR;Jagdishpur 
+BR;Shahpur 
+BR;Brahampur 
+BR;Buxar 
+BR;Dumraon 
+BR;Rajpur 
+BR;"Ramgarh
+BR;Mohania 
+BR;Bhabua 
+BR;Chainpur 
+BR;Chenari 
+BR;Sasaram 
+BR;Kargahar 
+BR;Dinara 
+BR;Nokha 
+BR;Dehri 
+BR;Karakat 
+BR;Arwal 
+BR;Kurtha 
+BR;Jehanabad 
+BR;Ghosi 
+BR;Makhdumpur 
+BR;Goh 
+BR;Obra 
+BR;Nabinagar 
+BR;Kutumba 
+BR;Aurangabad 
+BR;Rafiganj 
+BR;Gurua 
+BR;Sherghati 
+BR;Imamganj 
+BR;Barachatti 
+BR;Bodh Gaya 
+BR;Gaya Town 
+BR;Tikari 
+BR;Belaganj 
+BR;Atri 
+BR;Wazirganj 
+BR;Rajauli 
+BR;Hisua 
+BR;Nawada 
+BR;Gobindpur 
+BR;Warsaliganj 
+BR;Sikandra 
+BR;Jamui 
+BR;Jhajha 
+BR;Chakai 
+CT;Bharatpur-Sonhat
+CT;Manendragarh
+CT;Baikunthpur
+CT;Premnagar
+CT;Bhatgaon
+CT;Pratappur
+CT;Ramanujganj
+CT;Samri
+CT;Lundra
+CT;Ambikapur
+CT;Sitapur
+CT;Jashpur
+CT;Kunkuri
+CT;Pathalgaon
+CT;Lailunga
+CT;Raigarh
+CT;Sarangarh
+CT;Kharsia
+CT;Dharamjaigarh
+CT;Rampur
+CT;Korba
+CT;Katghora
+CT;Pali-Tanakhar
+CT;Marwahi
+CT;Kota
+CT;Lormi
+CT;Mungeli
+CT;Takhatpur
+CT;Bilha
+CT;Bilaspur
+CT;Beltara
+CT;Masturi
+CT;Akaltara
+CT;Janjgir-Champa
+CT;Sakti
+CT;Chandrapur
+CT;Jaijaipur
+CT;Pamgarh
+CT;Saraipali
+CT;Basna
+CT;Khallari
+CT;Mahasamund
+CT;Bilaigarh
+CT;Kasdol
+CT;Baloda Bazar
+CT;Bhatapara
+CT;Dharsiwa
+CT;Raipur Rural
+CT;Raipur City West
+CT;Raipur City North
+CT;Raipur City South
+CT;Arang
+CT;Abhanpur
+CT;Rajim
+CT;Bindrawagarh
+CT;Sihawa
+CT;Kurud
+CT;Dhamtari
+CT;Sanjari Balod
+CT;Daundi Lohara
+CT;Gunderdehi
+CT;Patan
+CT;Durg Gramin
+CT;Durg City
+CT;Bhilai Nagar
+CT;Vaishali Nagar
+CT;Ahiwara
+CT;Saja
+CT;Bemetara
+CT;Navagarh
+CT;Pandariya
+CT;Kawardha
+CT;Khairagarh
+CT;Dongargarh
+CT;Rajnandgaon
+CT;Dongargaon
+CT;Khujji
+CT;Mohla-Manpur
+CT;Antagarh
+CT;Bhanupratappur
+CT;Kanker
+CT;Keshkal
+CT;Kondagaon
+CT;Narayanpur
+CT;Bastar (Jagdalpur rural)
+CT;Jagdalpur city
+CT;Chitrakot
+CT;Dantewada
+CT;Bijapur
+CT;Konta
+DL;Nerela
+DL;Burari
+DL;Timarpur
+DL;Adarsh Nagar
+DL;Badli
+DL;Rithala
+DL;Bawana
+DL;Mundka
+DL;Kirari
+DL;Sultanpur Majra
+DL;Nangloi Jat
+DL;Mangol Puri
+DL;Rohini
+DL;Shalimar Bagh
+DL;Shakur Basti
+DL;Tri Nagar
+DL;Wazirpur
+DL;Model Town
+DL;Sadar Bazar
+DL;Chandni Chowk
+DL;Matia Mahal
+DL;Ballimaran
+DL;Karol Bagh
+DL;Patel Nagar
+DL;Moti Nagar
+DL;Madipur
+DL;Rajouri Garden
+DL;Hari Nagar
+DL;Tilak Nagar
+DL;Janakpuri
+DL;Vikaspuri
+DL;Uttam Nagar
+DL;Dwarka
+DL;Matiala
+DL;Najafgarh
+DL;Bijwasan
+DL;Palam
+DL;Delhi Cantonment
+DL;Rajinder Nagar
+DL;New Delhi
+DL;Jangpura
+DL;Kasturba Nagar
+DL;Malviya Nagar
+DL;R K Puram
+DL;Mehrauli
+DL;Chhatarpur
+DL;Deoli
+DL;Ambedkar Nagar
+DL;Sangam Vihar
+DL;Greater Kailash
+DL;Kalkaji
+DL;Tughlkabad
+DL;Badarpur
+DL;Okhla
+DL;Trilokpuri
+DL;Kondli
+DL;Patparganj
+DL;Laxmi Nagar
+DL;Vishwas Nagar
+DL;Krishna Nagar
+DL;Gandhi Nagar
+DL;Shahdara
+DL;Seemapuri
+DL;Rohtas Nagar
+DL;Seelampur
+DL;Ghonda
+DL;Babarpur
+DL;Gokalpur
+DL;Mustafabad
+DL;Karawal Nagar
+GA;Mandrem
+GA;Pernem
+GA;Bicholim
+GA;Tivim
+GA;Mapusa
+GA;Siolim
+GA;Saligao
+GA;Calangute
+GA;Porvorim
+GA;Aldona
+GA;Panaji
+GA;Taleigao
+GA;Santa Cruz
+GA;St. Andre
+GA;Cumbarjua
+GA;Maem
+GA;Sanquelim
+GA;Poriem
+GA;Valpoi
+GA;Priol
+GA;Ponda
+GA;Siroda
+GA;Marcaim
+GA;Mormugao
+GA;Vasco Da Gama
+GA;Dabolim
+GA;Cortalim
+GA;Nuvem
+GA;Curtorim
+GA;Fatorda
+GA;Margao
+GA;Benaulim
+GA;Navelim
+GA;Cuncolim
+GA;Velim
+GA;Quepem
+GA;Curchorem
+GA;Sanvordem
+GA;Sanguem
+GA;Canacona
+GJ;Abdasa
+GJ;Mandvi
+GJ;Bhuj
+GJ;Anjar
+GJ;Gandhidham
+GJ;Rapar
+GJ;Vav
+GJ;Tharad
+GJ;Dhanera
+GJ;Danta
+GJ;Vadgam
+GJ;Palanpur
+GJ;Deesa
+GJ;Deodar
+GJ;Kankrej
+GJ;Radhanpur
+GJ;Chanasma
+GJ;Patan
+GJ;Sidhpur
+GJ;Kheralu
+GJ;Unjha
+GJ;Visnagar
+GJ;Bechraji
+GJ;Kadi
+GJ;Mahesana
+GJ;Vijapur
+GJ;Himatnagar
+GJ;Idar
+GJ;Khedbrahma
+GJ;Prantij
+GJ;Bhiloda
+GJ;Modasa
+GJ;Bayad
+GJ;Dahegam
+GJ;Gandhinagar South
+GJ;Gandhinagar North
+GJ;Mansa
+GJ;Kalol
+GJ;Viramgam
+GJ;Sanand
+GJ;Ghatlodia
+GJ;Vejalpur
+GJ;Vatva
+GJ;Ellisbridge
+GJ;Naranpura
+GJ;Nikol
+GJ;Naroda
+GJ;Thakkarbapa Nagar
+GJ;Bapunagar
+GJ;Amraiwadi
+GJ;Dariapur
+GJ;Jamalpur-Khadiya
+GJ;Maninagar
+GJ;Danilimda
+GJ;Sabarmati
+GJ;Asarwa
+GJ;Daskroi
+GJ;Dholka
+GJ;Dhandhuka
+GJ;Dasada
+GJ;Limdi
+GJ;Wadhwan
+GJ;Chotila
+GJ;Dhangadhra
+GJ;Morbi
+GJ;Tankara
+GJ;Wankaner
+GJ;Rajkot East
+GJ;Rajkot West
+GJ;Rajkot South
+GJ;Rajkot Rural
+GJ;Jasdan
+GJ;Gondal
+GJ;Jetpur
+GJ;Dhoraji
+GJ;Kalavad
+GJ;Jamnagar Rural
+GJ;Jamnagar North
+GJ;Jamnagar South
+GJ;Jamjodhpur
+GJ;Khambhaliya
+GJ;Dwarka
+GJ;Porbandar
+GJ;Kutiyana
+GJ;Manavadar
+GJ;Junagadh
+GJ;Visavadar
+GJ;Keshod
+GJ;Mangrol
+GJ;Somnath
+GJ;Talala
+GJ;Kodinar
+GJ;Una
+GJ;Dhari
+GJ;Amreli
+GJ;Lathi
+GJ;Savarkundla
+GJ;Rajula
+GJ;Mahuva
+GJ;Talaja
+GJ;Gariadhar
+GJ;Palitana
+GJ;Bhavnagar Rural
+GJ;Bhavnagar East
+GJ;Bhavnagar West
+GJ;Gadhada
+GJ;Botad
+GJ;Khambhat
+GJ;Borsad
+GJ;Anklav
+GJ;Umreth
+GJ;Anand
+GJ;Petlad
+GJ;Sojitra
+GJ;Matar
+GJ;Nadiad
+GJ;Mehmedabad
+GJ;Mahudha
+GJ;Thasra
+GJ;Kapadvanj
+GJ;Balasinor
+GJ;Lunawada
+GJ;Santrampur
+GJ;Shehra
+GJ;Morva Hadaf
+GJ;Godhara
+GJ;Kaalol
+GJ;Halol
+GJ;Fatepura
+GJ;Jhalod
+GJ;Limkheda
+GJ;Dahod
+GJ;Garbada
+GJ;Devgadhbariya
+GJ;Jetpur (ST)
+GJ;Chhota Udaipur
+GJ;Sankheda
+GJ;Savli
+GJ;Vaghodiya
+GJ;Dabhoi
+GJ;Vadodara City
+GJ;Sayajigunj
+GJ;Akota
+GJ;Raopura
+GJ;Manjalpur
+GJ;Padra
+GJ;Karjan
+GJ;Nandod
+GJ;Dediapada
+GJ;Jambusar
+GJ;Vagra
+GJ;Jhagadiya
+GJ;Bharuch
+GJ;Ankleshwar
+GJ;Olpad
+GJ;Mangrol
+GJ;Mandvi
+GJ;Kamrej
+GJ;Surat East
+GJ;Surat North
+GJ;Varachha Road
+GJ;Karanj
+GJ;Limbayat
+GJ;Udhana
+GJ;Majura
+GJ;Katargam
+GJ;Surat West
+GJ;Choryasi
+GJ;Bardoli
+GJ;Mahuva
+GJ;Vyara
+GJ;Nizar
+GJ;Dang
+GJ;Jalalpore
+GJ;Navsari
+GJ;Gandevi
+GJ;Vansda
+GJ;Dharampur
+GJ;Valsad
+GJ;Pardi
+GJ;Kaprada
+GJ;Umbergaon
+HR;Kalka
+HR;Panchkula
+HR;Naraingarh
+HR;Ambala Cantt
+HR;Ambala City
+HR;Mulana
+HR;Sadhaura
+HR;Jagadhri
+HR;Yamunanagar
+HR;Radaur
+HR;Ladwa
+HR;Shahbad
+HR;Thanesar
+HR;Pehowa
+HR;Guhla
+HR;Kalayat
+HR;Kaithal
+HR;Pundri
+HR;Nilokheri
+HR;Indri
+HR;Karnal
+HR;Gharaunda
+HR;Assandh
+HR;Panipat Rural
+HR;Panipat City
+HR;Israna
+HR;Samalkha
+HR;Ganaur
+HR;Rai
+HR;Kharkhauda
+HR;Sonipat
+HR;Gohana
+HR;Baroda
+HR;Julana
+HR;Safidon
+HR;Jind
+HR;Uchana Kalan
+HR;Narwana
+HR;Tohana
+HR;Fatehabad
+HR;Ratia
+HR;Kalanwali
+HR;Dabwali
+HR;Rania
+HR;Sirsa
+HR;Ellenabad
+HR;Adampur
+HR;Uklana
+HR;Narnaund
+HR;Hansi
+HR;Barwala
+HR;Hisar
+HR;Nalwa
+HR;Loharu
+HR;Badhra
+HR;Charkhi Dadri
+HR;Bhiwani
+HR;Tosham
+HR;Bawani Khera
+HR;Meham
+HR;Garhi Sampla-Kiloi
+HR;Rohtak
+HR;Kalanaur
+HR;Bahadurgarh
+HR;Badli
+HR;Jhajjar
+HR;Beri
+HR;Ateli
+HR;Mahendragarh
+HR;Narnaul
+HR;Nangal Chaudhry
+HR;Bawal
+HR;Kosli
+HR;Rewari
+HR;Pataudi
+HR;Badshahpur
+HR;Gurgaon
+HR;Sohna
+HR;Nuh
+HR;Ferozepur Jhirka
+HR;Punahana
+HR;Hathin
+HR;Hodal
+HR;Palwal
+HR;Prithla
+HR;Faridabad NIT
+HR;Badkhal
+HR;Ballabgarh
+HR;Faridabad
+HR;Tigaon
+HP;Churah
+HP;Bharmour
+HP;Chamba
+HP;Dalhousie
+HP;Bhattiyat
+HP;Nurpur
+HP;Indora
+HP;Fatehpur
+HP;Jawali
+HP;Dehra
+HP;Jaswan-Pragpur
+HP;Jawalamukhi
+HP;Jaisinghpur
+HP;Sullah
+HP;Nagrota
+HP;Kangra
+HP;Shahpur
+HP;Dharamshala
+HP;Palampur
+HP;Baijnath
+HP;Lahaul and Spiti
+HP;Manali
+HP;Kullu
+HP;Banjar
+HP;Anni
+HP;Karsog
+HP;Sundernagar
+HP;Nachan
+HP;Seraj
+HP;Darang
+HP;Jogindernagar
+HP;Dharampur
+HP;Mandi
+HP;Balh
+HP;Sarkaghat
+HP;Bhoranj
+HP;Sujanpur
+HP;Hamirpur
+HP;Barsar
+HP;Nadaun
+HP;Chintpurni
+HP;Gagret
+HP;Haroli
+HP;Una
+HP;Kutlehar
+HP;Jhanduta
+HP;Ghumarwin
+HP;Bilaspur
+HP;Sri Naina Devi Ji
+HP;Arki
+HP;Nalagarh
+HP;Doon
+HP;Solan
+HP;Kasauli
+HP;Pachhad
+HP;Nahan
+HP;Sri Renukaji
+HP;Paonta Sahib
+HP;Shillai
+HP;Chopal
+HP;Theog
+HP;Kasumpti
+HP;Shimla
+HP;Shimla Rural
+HP;Jubbal-Kotkhai
+HP;Rampur
+HP;Rohru
+HP;Kinnaur
+JK;Karnah
+JK;Kupwara
+JK;Lolab
+JK;Handwara
+JK;Langate
+JK;Uri
+JK;Rafiabad
+JK;Sopore
+JK;Gurez
+JK;Bandipora
+JK;Sonawari
+JK;Sangrama
+JK;Baramulla
+JK;Gulmarg
+JK;Pattan
+JK;Kangan
+JK;Ganderbal
+JK;Hazratbal
+JK;Zadibal
+JK;Eidgah
+JK;Khanyar
+JK;Habba Kadal
+JK;Amira Kadal
+JK;Sonawar
+JK;Batmaloo
+JK;Chadoora
+JK;Budgam
+JK;Beerwah
+JK;Khan Sahib
+JK;Charari Sharief
+JK;Tral
+JK;Pampore
+JK;Pulwama
+JK;Rajpora
+JK;Wachi
+JK;Shopian
+JK;Noorabad
+JK;Kulgam
+JK;Hom Shali Bugh
+JK;Anantnag
+JK;Devsar
+JK;Dooru
+JK;Kokernag
+JK;Shangus
+JK;Bijbehara
+JK;Pahalgam
+JK;Nubra
+JK;Leh
+JK;Kargil
+JK;Zanskar
+JK;Kishtwar
+JK;Inderwal
+JK;Doda
+JK;Bhaderwah
+JK;Ramban
+JK;Banihal
+JK;Gulabgarh
+JK;Reasi
+JK;Gool Arnas
+JK;Udhampur
+JK;Chenani
+JK;Chenani
+JK;Bani
+JK;Basohli
+JK;Kathua
+JK;Billawar
+JK;Hiranagar
+JK;Samba
+JK;Vijaypur
+JK;Nagrota
+JK;Gandhinagar
+JK;Jammu East
+JK;Jammu West
+JK;Bishnah
+JK;RS Pura
+JK;Suchetgarh
+JK;Marh
+JK;Raipur Domana
+JK;Akhnoor
+JK;Chhamb
+JK;Nowshera
+JK;Darhal
+JK;Rajouri
+JK;Kalakote
+JK;Kalakote
+JK;Mendhar
+JK;Poonch Haveli
+JH;Rajmahal
+JH;Borio
+JH;Barhait
+JH;Litipara
+JH;Pakur
+JH;Maheshpur
+JH;Sikaripara
+JH;Nala
+JH;Jamtara
+JH;Dumka
+JH;Jama
+JH;Jarmundi
+JH;Madhupur
+JH;Sarath
+JH;Devghar
+JH;Poreyahat
+JH;Godda
+JH;Mahagama
+JH;Kodarma
+JH;Barkatha
+JH;Barhi
+JH;Barkagaon
+JH;Ramgarh
+JH;Mandu
+JH;Hazaribagh
+JH;Simaria
+JH;Chatra
+JH;Dhanwar
+JH;Bagodar
+JH;Jamua
+JH;Gandey
+JH;Giridih
+JH;Dumri
+JH;Gomia
+JH;Bermo
+JH;Bokaro
+JH;Chandan kiyari
+JH;Sindri
+JH;Nirsa
+JH;Dhanbad
+JH;Jharia
+JH;Tundi
+JH;Baghmara
+JH;Baharagora
+JH;Ghatsila
+JH;Potka
+JH;Jugsalai
+JH;Jamshedpur East
+JH;Jamshedpur West
+JH;Ichagarh
+JH;Seraikella
+JH;Chaibasa
+JH;Majhgaon
+JH;Jaganathpur
+JH;Manoharpur
+JH;Chakradharpur
+JH;Kharsawan
+JH;Tamar
+JH;Torpa
+JH;Khunti
+JH;Silli
+JH;Khijri
+JH;Ranchi
+JH;Hatia
+JH;Kanke
+JH;Mandar
+JH;Sisai
+JH;Gumla
+JH;Bishunpur
+JH;Simdega
+JH;Kolebira
+JH;Lohardaga
+JH;Manika
+JH;Latehar
+JH;Panki
+JH;Daltonganj
+JH;Bishrampur
+JH;Chhatarpur
+JH;Hussainabad
+JH;Garhwa
+JH;Bhawanathpur
+KA;Nippani
+KA;Chikkodi-Sadalga
+KA;Athani
+KA;Kagwad
+KA;Kudachi
+KA;Raybag
+KA;Hukkeri
+KA;Arabhavi
+KA;Gokak
+KA;Yemkanmardi
+KA;Belagavi Uttar
+KA;Belagavi Dakshin
+KA;Belagavi Rural
+KA;Khanapur
+KA;Kittur
+KA;Bailhongal
+KA;Saundatti Yellamma
+KA;Ramdurg
+KA;Mudhol
+KA;Terdal
+KA;Jamkhandi
+KA;Bilgi
+KA;Badami
+KA;Bagalkot
+KA;Hungund
+KA;Muddebihal
+KA;Devar Hippargi
+KA;Basavana Bagevadi
+KA;Babaleshwar
+KA;Bijapur City
+KA;Nagathan
+KA;Indi
+KA;Sindgi
+KA;Afzalpur
+KA;Jevargi
+KA;Shorapur
+KA;Shahapur
+KA;Yadgir
+KA;Gurmitkal
+KA;Chittapur
+KA;Sedam
+KA;Chincholi
+KA;Gulbarga Rural
+KA;Gulbarga Dakshin
+KA;Gulbarga Uttar
+KA;Aland
+KA;Basavakalyan
+KA;Homnabad
+KA;Bidar South
+KA;Bidar
+KA;Bhalki
+KA;Aurad
+KA;Raichur Rural
+KA;Raichur
+KA;Manvi
+KA;Devadurga
+KA;Lingsugur
+KA;Sindhanur
+KA;Maski
+KA;Kushtagi
+KA;Kanakagiri
+KA;Gangawati
+KA;Yelburga
+KA;Koppal
+KA;Shirahatti
+KA;Gadag
+KA;Ron
+KA;Nargund
+KA;Navalgund
+KA;Kundgol
+KA;Dharwad
+KA;Hubli-Dharwad-East
+KA;Hubli-Dharwad-Central
+KA;Hubli-Dharwad-West
+KA;Kalghatgi
+KA;Haliyal
+KA;Karwar
+KA;Kumta
+KA;Bhatkal
+KA;Sirsi
+KA;Yellapur
+KA;Hangal
+KA;Shiggaon
+KA;Haveri
+KA;Byadgi
+KA;Hirekerur
+KA;Ranibennur
+KA;Hadagalli
+KA;Hagaribommanahalli
+KA;Vijayanagara
+KA;Kampli
+KA;Siruguppa
+KA;Bellary
+KA;Bellary City
+KA;Sandur
+KA;Kudligi
+KA;Molakalmuru
+KA;Challakere
+KA;Chitradurga
+KA;Hiriyur
+KA;Hosadurga
+KA;Holalkere
+KA;Jagalur
+KA;Harapanahalli
+KA;Harihar
+KA;Davanagere North
+KA;Davanagere South
+KA;Mayakonda
+KA;Channagiri
+KA;Honnali
+KA;Shimoga Rural
+KA;Bhadravati
+KA;Shimoga
+KA;Tirthahalli
+KA;Shikaripura
+KA;Sorab
+KA;Sagar
+KA;Baindur
+KA;Kundapura
+KA;Udupi
+KA;Kaup
+KA;Karkal
+KA;Sringeri
+KA;Mudigere
+KA;Chikmagalur
+KA;Tarikere
+KA;Kadur
+KA;Chiknayakanhalli
+KA;Tiptur
+KA;Turuvekere
+KA;Kunigal
+KA;Tumkur City
+KA;Tumkur Rural
+KA;Koratagere
+KA;Gubbi
+KA;Sira
+KA;Pavagada
+KA;Madhugiri
+KA;Gauribidanur
+KA;Bagepalli
+KA;Chikkaballapur
+KA;Sidlaghatta
+KA;Chintamani
+KA;Srinivaspur
+KA;Mulbagal
+KA;Kolar Gold Field
+KA;Bangarapet
+KA;Kolar
+KA;Malur
+KA;Yelahanka
+KA;Krishnarajapuram
+KA;Byatarayanapura
+KA;Yeshwantpur
+KA;Rajarajeshwarinagar
+KA;Dasarahalli
+KA;Mahalakshmi Layout
+KA;Malleshwaram
+KA;Hebbal
+KA;Pulakeshinagar
+KA;Sarvagnanagar
+KA;C. V. Raman Nagar
+KA;Shivajinagar
+KA;Shanti Nagar
+KA;Gandhi Nagar
+KA;Rajaji Nagar
+KA;Govindraj Nagar
+KA;Vijay Nagar
+KA;Chamrajpet
+KA;Chickpet
+KA;Basavanagudi
+KA;Padmanabhanagar
+KA;B.T.M. Layout
+KA;Jayanagar
+KA;Mahadevapura
+KA;Bommanahalli
+KA;Bangalore South
+KA;Anekal
+KA;Hoskote
+KA;Devanahalli
+KA;Doddaballapur
+KA;Nelamangala
+KA;Magadi
+KA;Ramanagaram
+KA;Kanakapura
+KA;Channapatna
+KA;Malavalli
+KA;Maddur
+KA;Melukote
+KA;Mandya
+KA;Shrirangapattana
+KA;Nagamangala
+KA;Krishnarajapet
+KA;Shravanabelagola
+KA;Arsikere
+KA;Belur
+KA;Hassan
+KA;Holenarasipur
+KA;Arkalgud
+KA;Sakleshpur
+KA;Belthangady
+KA;Moodabidri
+KA;Mangalore City North
+KA;Mangalore City South
+KA;Mangalore
+KA;Bantval
+KA;Puttur
+KA;Sullia
+KA;Madikeri
+KA;Virajpet
+KA;Periyapatna
+KA;Krishnarajanagara
+KA;Hunsur
+KA;Heggadadevankote
+KA;Nanjangud
+KA;Chamundeshwari
+KA;Krishnaraja
+KA;Chamaraja
+KA;Narasimharaja
+KA;Varuna
+KA;T. Narasipur
+KA;Hanur
+KA;Kollegal
+KA;Chamarajanagar
+KA;Gundlupet
+KL;Manjeshwaram
+KL;Kasaragod
+KL;Udma
+KL;Kanhangad
+KL;Thrikaripur
+KL;Payyanur
+KL;Kalliasseri
+KL;Taliparamba
+KL;Irikkur
+KL;Azhikode
+KL;Kannur
+KL;Dharmadom
+KL;Thalassery
+KL;Kuthuparamba
+KL;Mattanur
+KL;Peravoor
+KL;Mananthavady
+KL;Sulthan Bathery
+KL;Kalpetta
+KL;Vatakara
+KL;Kuttiady
+KL;Nadapuram
+KL;Koyilandy
+KL;Perambra
+KL;Balussery
+KL;Elathur
+KL;Kozhikode North
+KL;Kozhikode South
+KL;Beypore
+KL;Kunnamangalam
+KL;Koduvally
+KL;Thiruvambady
+KL;Kondotty
+KL;Eranad
+KL;Nilambur
+KL;Wandoor
+KL;Manjeri
+KL;Perinthalmanna
+KL;Mankada
+KL;Malappuram
+KL;Vengara
+KL;Vallikkunnu
+KL;Tirurangadi
+KL;Tanur
+KL;Tirur
+KL;Kottakkal
+KL;Thavanur
+KL;Ponnani
+KL;Thrithala
+KL;Pattambi
+KL;Shornur
+KL;Ottapalam
+KL;Kongad
+KL;Mannarkkad
+KL;Malampuzha
+KL;Palakkad
+KL;Tarur
+KL;Chittur
+KL;Nenmara
+KL;Alathur
+KL;Chelakkara
+KL;Kunnamkulam
+KL;Guruvayur
+KL;Manalur
+KL;Wadakkanchery
+KL;Ollur
+KL;Thrissur
+KL;Nattika
+KL;Kaipamangalam
+KL;Irinjalakuda
+KL;Puthukkad
+KL;Chalakudy
+KL;Kodungallur
+KL;Perumbavoor
+KL;Angamaly
+KL;Aluva
+KL;Kalamassery
+KL;Paravur
+KL;Vypin
+KL;Kochi
+KL;Thrippunithura
+KL;Ernakulam
+KL;Thrikkakara
+KL;Kunnathunad 
+KL;Piravom
+KL;Muvattupuzha
+KL;Kothamangalam
+KL;Devikulam
+KL;Udumbanchola
+KL;Thodupuzha
+KL;Idukki
+KL;Peerumade
+KL;Pala
+KL;Kaduthuruthy
+KL;Vaikom
+KL;Ettumanoor
+KL;Kottayam
+KL;Puthuppally
+KL;Changanassery
+KL;Kanjirappally
+KL;Poonjar
+KL;Aroor
+KL;Cherthala
+KL;Alappuzha
+KL;Ambalappuzha
+KL;Kuttanad
+KL;Haripad
+KL;Kayamkulam
+KL;Mavelikara
+KL;Chengannur
+KL;Thiruvalla
+KL;Ranni
+KL;Aranmula
+KL;Konni
+KL;Adoor
+KL;Karunagapally
+KL;Chavara
+KL;Kunnathur
+KL;Kottarakkara
+KL;Pathanapuram
+KL;Punalur
+KL;Chadayamangalam
+KL;Kundara
+KL;Kollam
+KL;Eravipuram
+KL;Chathannoor
+KL;Varkala
+KL;Attingal
+KL;Chirayinkeezhu
+KL;Nedumangad
+KL;Vamanapuram
+KL;Kazhakkoottam
+KL;Vattiyoorkavu
+KL;Thiruvananthapuram
+KL;Nemom
+KL;Aruvikkara
+KL;Parassala
+KL;Kattakkada
+KL;Kovalam
+KL;Neyyattinkara
+MP;Sheopur
+MP;Vijaypur
+MP;Sabalgarh
+MP;Joura
+MP;Sumawali
+MP;Morena
+MP;Dimani
+MP;Ambah
+MP;Ater
+MP;Bhind
+MP;Lahar
+MP;Mehgaon
+MP;Gohad
+MP;Gwalior Rural
+MP;Gwalior
+MP;Gwalior East
+MP;Gwalior South
+MP;Bhitarwar
+MP;Dabra
+MP;Sewda
+MP;Bhander
+MP;Datia
+MP;Karera
+MP;Pohari
+MP;Shivpuri
+MP;Pichhore
+MP;Kolaras
+MP;Bamori
+MP;Guna
+MP;Chachoura
+MP;Raghogarh
+MP;Ashok Nagar
+MP;Chanderi
+MP;Mungaoli
+MP;Bina
+MP;Khurai
+MP;Surkhi
+MP;Deori
+MP;Rehli
+MP;Naryoli
+MP;Sagar
+MP;Banda
+MP;Tikamgarh
+MP;Jatara
+MP;Prithvipur
+MP;Niwari
+MP;Khargapur
+MP;Maharajpur
+MP;Chandla
+MP;Rajnagar
+MP;Chhatarpur
+MP;Bijawar
+MP;Malhara
+MP;Pathariya
+MP;Damoh
+MP;Jabera
+MP;Hatta
+MP;Pawai
+MP;Gunnaor
+MP;Panna
+MP;Chitrakoot
+MP;Raigaon
+MP;Satna
+MP;Nagod
+MP;Maihar
+MP;Amarpatan
+MP;Rampur-Baghelan
+MP;Sirmour
+MP;Semariya
+MP;Teonthar
+MP;Mauganj
+MP;Deotalab
+MP;Mangawan
+MP;Rewa
+MP;Gurh
+MP;Churhat
+MP;Sidhi
+MP;Sihawal
+MP;Chitrangi
+MP;Singrauli
+MP;Devsar
+MP;Dhauhani
+MP;Beohari
+MP;Jaisingnagar
+MP;Jaitpur
+MP;Kotma
+MP;Anuppur
+MP;Pushprajgarh
+MP;Bandhavgarh
+MP;Manpur
+MP;Barwara
+MP;Vijayraghavgarh
+MP;Murwara
+MP;Bahoriband
+MP;Patan
+MP;Bargi
+MP;Jabalpur Purba
+MP;Jabalpur Uttar
+MP;Jabalpur Cantonment
+MP;Jabalpur Paschim
+MP;Panagar
+MP;Sihora
+MP;Shahpura
+MP;Dindori
+MP;Bichhiya
+MP;Niwas
+MP;Mandla
+MP;Baihar
+MP;Lanji
+MP;Paraswada
+MP;Balaghat
+MP;Waraseoni
+MP;Katangi
+MP;Barghat
+MP;Seoni
+MP;Keolari
+MP;Lakhnadon
+MP;Gotegaon
+MP;Narsingpur
+MP;Tendukheda
+MP;Gadarwara
+MP;Junnardeo
+MP;Amarwara
+MP;Churai
+MP;Saunsar
+MP;Chhindwara
+MP;Parasia
+MP;Pandhurna
+MP;Multai
+MP;Amla
+MP;Betul
+MP;Ghoradongri
+MP;Bhainsdehi
+MP;Timarni
+MP;Harda
+MP;Seoni-Malwa
+MP;Hoshangabad
+MP;Sohagpur
+MP;Pipariya
+MP;Udaipura
+MP;Bhojpur
+MP;Sanchi
+MP;Silwani
+MP;Vidisha
+MP;Basoda
+MP;Kurwai
+MP;Sironj
+MP;Shamshabad
+MP;Berasia
+MP;Bhopal Uttar
+MP;Narela
+MP;Bhopal Dakshin-Paschim
+MP;Bhopal Madhya
+MP;Govindpura
+MP;Huzur
+MP;Budhni
+MP;Ashta
+MP;Ichhawar
+MP;Sehore
+MP;Narsinghgarh
+MP;Biaora
+MP;Rajgarh
+MP;Khilchipur
+MP;Sarangpur
+MP;Susner
+MP;Agar
+MP;Shajapur
+MP;Shujalpur
+MP;Kalapipal
+MP;Sonkatch
+MP;Dewas
+MP;Hatpipliya
+MP;Khategaon
+MP;Bagali
+MP;Mandhata
+MP;Harsud
+MP;Khandwa
+MP;Pandhana
+MP;Nepanagar
+MP;Burhanpur
+MP;Bikhangaon
+MP;Badwah
+MP;Maheshwar
+MP;Kasrawad
+MP;Khargone
+MP;Bhagwanpura
+MP;Sendhawa
+MP;Rajpur
+MP;Pansemal
+MP;Badwani
+MP;Alirajpur
+MP;Jobat
+MP;Jhabua
+MP;Thandla
+MP;Petlawad
+MP;Sardarpur
+MP;Gandhwani
+MP;Kukshi
+MP;Manawar
+MP;Dharampuri
+MP;Dhar
+MP;Badnawar
+MP;Depalpur
+MP;Indore-1
+MP;Indore-2
+MP;Indore-3
+MP;Indore-4
+MP;Indore-5
+MP;Dr. Ambedkar Nagar-Mhow
+MP;Rau
+MP;Sanwer
+MP;Nagada-Khachrod
+MP;Mahidpur
+MP;Tarana
+MP;Ghatiya
+MP;Ujjain Uttar
+MP;Ujjain Dakshin
+MP;Badnagar
+MP;Ratlam Rural
+MP;Ratlam City
+MP;Sailana
+MP;Jaora
+MP;Alot
+MP;Mandsour
+MP;Malhargarh
+MP;Suwasra
+MP;Garoth
+MP;Manasa
+MP;Neemuch
+MP;Jawad
+MH;Akkalkuwa
+MH;Shahada
+MH;Nandurbar
+MH;Navapur
+MH;Sakri
+MH;Dhule Rural
+MH;Dhule City
+MH;Sindkheda
+MH;Shirpur
+MH;Chopda
+MH;Raver
+MH;Bhusawal
+MH;Jalgaon City
+MH;Jalgaon Rural
+MH;Amalner
+MH;Erandol
+MH;Chalisgaon
+MH;Pachora
+MH;Jamner
+MH;Muktainagar
+MH;Malkapur
+MH;Buldhana
+MH;Chikhali
+MH;Sindkhed Raja
+MH;Mehkar
+MH;Khamgaon
+MH;Jalgaon (Jamod)
+MH;Akot
+MH;Balapur
+MH;Akola West
+MH;Akola East
+MH;Murtizapur
+MH;Risod
+MH;Washim
+MH;Karanja
+MH;Dhamangaon Railway
+MH;Badnera
+MH;Amravati
+MH;Teosa
+MH;Daryapur
+MH;Melghat
+MH;Achalpur
+MH;Morshi
+MH;Arvi
+MH;Deoli
+MH;Hinganghat
+MH;Wardha
+MH;Katol
+MH;Savner
+MH;Hingna
+MH;Umred
+MH;Nagpur South West
+MH;Nagpur South
+MH;Nagpur East
+MH;Nagpur Central
+MH;Nagpur West
+MH;Nagpur North
+MH;Kamthi
+MH;Ramtek
+MH;Tumsar
+MH;Bhandara
+MH;Sakoli
+MH;Arjuni Morgaon
+MH;Tirora
+MH;Gondiya
+MH;Amgaon
+MH;Armori
+MH;Gadchiroli
+MH;Aheri
+MH;Rajura
+MH;Chandrapur
+MH;Ballarpur
+MH;Brahmapuri
+MH;Chimur
+MH;Warora
+MH;Wani
+MH;Ralegaon
+MH;Yavatmal
+MH;Digras
+MH;Arni
+MH;Pusad
+MH;Umarkhed
+MH;Kinwat
+MH;Hadgaon
+MH;Bhokar
+MH;Nanded North
+MH;Nanded South
+MH;Loha
+MH;Naigaon
+MH;Deglur
+MH;Mukhed
+MH;Basmath
+MH;Kalamnuri
+MH;Hingoli
+MH;Jintur
+MH;Parbhani
+MH;Gangakhed
+MH;Pathri
+MH;Partur
+MH;Ghansawangi
+MH;Jalna
+MH;Badnapur
+MH;Bhokardan
+MH;Sillod
+MH;Kannad
+MH;Phulambri
+MH;Aurangabad Central
+MH;Aurangabad West
+MH;Aurangabad East
+MH;Paithan
+MH;Gangapur
+MH;Vaijapur
+MH;Nandgaon
+MH;Malegaon Central
+MH;Malegaon Outer
+MH;Baglan
+MH;Kalvan
+MH;Chandvad
+MH;Yewla
+MH;Sinnar
+MH;Niphad
+MH;Dindori
+MH;Nashik East
+MH;Nashik Central
+MH;Nashik West
+MH;Deolali
+MH;Igatpuri
+MH;Dahanu
+MH;Vikramgad
+MH;Palghar
+MH;Boisar
+MH;Nalasopara
+MH;Vasai
+MH;Bhiwandi Rural
+MH;Shahapur
+MH;Bhiwandi West
+MH;Bhiwandi East
+MH;Kalyan West
+MH;Murbad
+MH;Ambernath
+MH;Ulhasnagar
+MH;Kalyan East
+MH;Dombivali
+MH;Kalyan Rural
+MH;Mira Bhayandar
+MH;Ovala-Majiwada
+MH;Kopri-Pachpakhadi
+MH;Thane
+MH;Mumbra-Kalwa
+MH;Airoli
+MH;Belapur
+MH;Borivali
+MH;Dahisar
+MH;Magathane
+MH;Mulund
+MH;Vikhroli
+MH;Bhandup West
+MH;Jogeshwari East
+MH;Dindoshi
+MH;Kandivali East
+MH;Charkop
+MH;Malad West
+MH;Goregaon
+MH;Versova
+MH;Andheri West
+MH;Andheri East
+MH;Vile Parle
+MH;Chandivali
+MH;Ghatkopar West
+MH;Ghatkopar East
+MH;Mankhurd Shivaji Nagar
+MH;Anushakti Nagar
+MH;Chembur
+MH;Kurla
+MH;Kalina
+MH;Vandre East
+MH;Vandre West
+MH;Dharavi
+MH;Sion Koliwada
+MH;Wadala
+MH;Mahim
+MH;Worli
+MH;Shivadi
+MH;Byculla
+MH;Malabar Hill
+MH;Mumbadevi
+MH;Colaba
+MH;Panvel
+MH;Karjat
+MH;Uran
+MH;Pen
+MH;Alibag
+MH;Shrivardhan
+MH;Mahad
+MH;Junnar
+MH;Ambegaon
+MH;Khed Alandi
+MH;Shirur
+MH;Daund
+MH;Indapur
+MH;Baramati
+MH;Purandar
+MH;Bhor
+MH;Maval
+MH;Chinchwad
+MH;Pimpri
+MH;Bhosari
+MH;Vadgaon Sheri
+MH;Shivajinagar
+MH;Kothrud
+MH;Khadakwasala
+MH;Parvati
+MH;Hadapsar
+MH;Pune Cantonment
+MH;Kasba Peth
+MH;Akole
+MH;Sangamner
+MH;Shirdi
+MH;Kopargaon
+MH;Shrirampur
+MH;Nevasa
+MH;Shevgaon
+MH;Rahuri
+MH;Parner
+MH;Ahmednagar City
+MH;Shrigonda
+MH;Karjat Jamkhed
+MH;Georai
+MH;Majalgaon
+MH;Beed
+MH;Ashti
+MH;Kaij
+MH;Parli
+MH;Latur Rural
+MH;Latur City
+MH;Ahmadpur
+MH;Udgir
+MH;Nilanga
+MH;Ausa
+MH;Umarga
+MH;Tuljapur
+MH;Osmanabad
+MH;Paranda
+MH;Karmala
+MH;Madha
+MH;Barshi
+MH;Mohol
+MH;Solapur City North
+MH;Solapur City Central
+MH;Akkalkot
+MH;Solapur South
+MH;Pandharpur
+MH;Sangole
+MH;Malshiras
+MH;Phaltan
+MH;Wai
+MH;Koregaon
+MH;Man
+MH;Karad North
+MH;Karad South
+MH;Patan
+MH;Satara
+MH;Dapoli
+MH;Guhagar
+MH;Chiplun
+MH;Ratnagiri
+MH;Rajapur
+MH;Kankavli
+MH;Kudal
+MH;Sawantwadi
+MH;Chandgad
+MH;Radhanagari
+MH;Kagal
+MH;Kolhapur South
+MH;Karvir
+MH;Kolhapur North
+MH;Shahuwadi
+MH;Hatkanangle
+MH;Ichalkaranji
+MH;Shirol
+MH;Miraj
+MH;Sangli
+MH;Islampur
+MH;Shirala
+MH;Palus-Kadegaon
+MH;Khanapur
+MH;Tasgaon-Kavathe Mahankal
+MH;Jat
+MN;Khundrakpam
+MN;Heingang
+MN;Khurai
+MN;Kshetrigao
+MN;Thongju
+MN;Keirao
+MN;Andro
+MN;Lamlai
+MN;Thangmeiband
+MN;Uripok
+MN;Sagolband
+MN;Keishamthong
+MN;Singjamei
+MN;Yaiskul
+MN;Wangkhei
+MN;Sekmai 
+MN;Lamsang
+MN;Konthoujam
+MN;Patsoi
+MN;Langthabal
+MN;Naoriya Pakhanglakpa
+MN;Wangoi
+MN;Mayang Imphal
+MN;Nambol
+MN;Oinam
+MN;Bishnupur
+MN;Moirang
+MN;Thanga
+MN;Kumbi
+MN;Lilong
+MN;Thoubal
+MN;Wangkhem
+MN;Heirok
+MN;Wangjing Tentha
+MN;Khangabok
+MN;Wabgai
+MN;Kakching
+MN;Hiyanglam
+MN;Sugnu
+MN;Jiribam
+MN;Chandel
+MN;Tengnoupal
+MN;Phungyar
+MN;Ukhrul
+MN;Chingai
+MN;Saikul
+MN;Karong
+MN;Mao
+MN;Tadubi
+MN;Kang
+MN;Saitu
+MN;Tamei
+MN;Tamenglong
+MN;Nungba
+MN;Tipaimukh
+MN;Thanlon
+MN;Henglep
+MN;Churachandpur
+MN;Saikot
+MN;Singhat
+ML;Nartiang
+ML;Jowai
+ML;Raliang
+ML;Mowkaiaw
+ML;Sutnga Saipung
+ML;Khliehriat
+ML;Amlarem
+ML;Mawhati
+ML;Nongpoh
+ML;Jirang
+ML;Umsning
+ML;Umroi
+ML;Mawrengkneng
+ML;Pynthorumkhrah
+ML;Mawlai
+ML;East Shillong
+ML;North Shillong
+ML;South Shillong
+ML;West Shillong
+ML;Mylliem
+ML;Nongthymmai
+ML;Nongkrem
+ML;Sohiong
+ML;Mawphlang
+ML;Mawsynram
+ML;Pynursla
+ML;Sohra
+ML;Mawkynrew
+ML;Mairang
+ML;Mawthadraishan
+ML;Nongstoin
+ML;Rambrai Jyrngam
+ML;Mawshynrut
+ML;Ranikor
+ML;Mawkyrwat
+ML;Kharkutta
+ML;Mendipathar
+ML;Resubelpara
+ML;Bagengdoba
+ML;Songsak
+ML;Rongjeng
+ML;Willamnagar
+ML;Raksamgre
+ML;Tikrikilla
+ML;Phulbari
+ML;Rajabala
+ML;Selsella
+ML;Dadenggre
+ML;North Tura
+ML;South Tura
+ML;Rangsakon
+ML;Ampati
+ML;Mahendraganj
+ML;Salmanpara
+ML;Gambegre
+ML;Dalu
+ML;Rongara Siju
+ML;Chokpot
+ML;Baghmara
+MZ;Hachhek
+MZ;Dampa
+MZ;Mamit
+MZ;Tuirial
+MZ;Kolasib
+MZ;Serlui
+MZ;Tuivawl
+MZ;Chalfilh
+MZ;Tawi
+MZ;Aizawl North I
+MZ;Aizawl North Ii
+MZ;Aizawl North Iii
+MZ;Aizawl East I
+MZ;Aizawl East Ii
+MZ;Aizawl West I
+MZ;Aizawl West Ii
+MZ;Aizawl West Iii
+MZ;Aizawl South I
+MZ;Aizawl South Ii
+MZ;Aizawl South Iii
+MZ;Lengteng
+MZ;Tuichang
+MZ;Champhai North
+MZ;Champhai South
+MZ;East Tuipui
+MZ;Serchhip
+MZ;Tuikum
+MZ;Hrangturzo
+MZ;South Tuipui
+MZ;Lunglei North
+MZ;Lunglei East
+MZ;Lunglei West
+MZ;Lunglei South
+MZ;Thorang
+MZ;West Tuipui
+MZ;Tuichawng
+MZ;Lawngtlai West
+MZ;Lawngtlai East
+MZ;Saiha
+MZ;Palak
+NL;Dimapur-I
+NL;Dimapur-II
+NL;Dimapur-III
+NL;Ghaspani-I
+NL;Ghaspani-II
+NL;Tenning
+NL;Peren
+NL;Western Angami
+NL;Kohima Town
+NL;Northern Angami-I
+NL;Northern Angami II
+NL;Tseminyu
+NL;Pughoboto
+NL;Southern Angami I
+NL;Southern Angami II
+NL;Pfutsero
+NL;Chizami
+NL;Chazouba
+NL;Phek
+NL;Meluri
+NL;Tuli
+NL;Arkakong
+NL;Impur
+NL;Angetyongpang
+NL;Mongoya
+NL;Aonglenden
+NL;Mokokchung Town
+NL;Koridang
+NL;Jangpetkong
+NL;Alongtaki
+NL;Akuluto
+NL;Atoizu
+NL;Suruhoto
+NL;Aghunato
+NL;Aghunato
+NL;Satakha
+NL;Tyui
+NL;Wokha
+NL;Sanis
+NL;Bhandari
+NL;Tizit
+NL;Wakching
+NL;Tapi
+NL;Phomching
+NL;Tehok
+NL;Mon Town
+NL;Aboi
+NL;Aboi
+NL;Tamlu
+NL;Longleng
+NL;Noksen
+NL;Longkhim Chare
+NL;Tuensang Sadar I
+NL;Tuensang Sadar II
+NL;Tobu
+NL;Noklak
+NL;Thonoknyu
+NL;Shamator Chessore
+NL;Seyochung Sitimi
+NL;Pungro Kiphire
+OR;Padampur
+OR;Bijepur
+OR;Bargarh
+OR;Attabira
+OR;Bhatli
+OR;Brajarajnagar
+OR;Jharsuguda
+OR;Talsara
+OR;Sundargarh
+OR;Biramitrapur
+OR;Raghunathpali
+OR;Rourkela
+OR;Rajgangpur
+OR;Bonai
+OR;Kuchinda
+OR;Rengali
+OR;Sambalpur
+OR;Rairakhol
+OR;Deogarh
+OR;Telkoi
+OR;Ghasipura
+OR;Anandpur
+OR;Patna
+OR;Keonjhar
+OR;Champua
+OR;Jashipur
+OR;Saraskana
+OR;Rairangpur
+OR;Bangriposi
+OR;Karanjia
+OR;Udala
+OR;Badasahi
+OR;Baripada
+OR;Morada
+OR;Jaleswar
+OR;Bhograi
+OR;Basta
+OR;Balasore
+OR;Remuna
+OR;Nilagiri
+OR;Soro
+OR;Simulia
+OR;Bhandaripokhari
+OR;Bhadrak
+OR;Basudevpur
+OR;Dhamnagar
+OR;Chandabali
+OR;Binjharpur
+OR;Bari
+OR;Barchana
+OR;Dharmasala
+OR;Jajpur
+OR;Korei
+OR;Sukinda
+OR;Dhenkanal
+OR;Hindol
+OR;Kamakhyanagar
+OR;Parjanga
+OR;Pallahara
+OR;Talcher
+OR;Angul
+OR;Chhendipada
+OR;Athmallik
+OR;Birmaharajpur
+OR;Sonepur
+OR;Loisingha
+OR;Patnagarh
+OR;Bolangir
+OR;Titilagarh
+OR;Kantabanji
+OR;Nuapada
+OR;Khariar
+OR;Umarkote
+OR;Jharigam
+OR;Nabarangpur
+OR;Dabugam
+OR;Lanjigarh
+OR;Junagarh
+OR;Dharmagarh
+OR;Bhawanipatna
+OR;Narla
+OR;Baliguda
+OR;G. Udayagiri
+OR;Phulbani
+OR;Kantamal
+OR;Boudh
+OR;Baramba
+OR;Banki
+OR;Athgarh
+OR;Barabati-Cuttack
+OR;Choudwar-Cuttack
+OR;Niali
+OR;Cuttack Sadar
+OR;Salipur
+OR;Mahanga
+OR;Patkura
+OR;Kendrapara
+OR;Aul
+OR;Rajanagar
+OR;Mahakalapada
+OR;Paradeep
+OR;Tirtol
+OR;Balikuda-Erasama
+OR;Jagatsinghpur
+OR;Kakatpur
+OR;Nimapara
+OR;Puri
+OR;Brahmagiri
+OR;Satyabadi
+OR;Pipili
+OR;Jayadev
+OR;Bhubaneswar Central (Madhya)
+OR;Bhubaneswar North
+OR;Ekamra Bhubaneswar
+OR;Jatani
+OR;Begunia
+OR;Khurda
+OR;Chilika
+OR;Ranpur
+OR;Khandapada
+OR;Daspalla
+OR;Nayagarh
+OR;Bhanjanagar
+OR;Polasara
+OR;Kabisuryanagar
+OR;Khalikote
+OR;Chhatrapur
+OR;Asika
+OR;Surada
+OR;Sanakhemundi
+OR;Hinjili
+OR;Gopalpur
+OR;Berhampur
+OR;Digapahandi
+OR;Chikiti
+OR;Mohana
+OR;Parlakhemundi
+OR;Gunupur
+OR;Bissam Cuttack
+OR;Rayagada
+OR;Lakshmipur
+OR;Kotpad
+OR;Jeypore
+OR;Koraput
+OR;Pottangi
+OR;Malkangiri
+OR;Chitrakonda
+PY;Mannadipet
+PY;Thirubuvanai
+PY;Ossudu
+PY;Mangalam
+PY;Villianur
+PY;Ozhukarai
+PY;Kadirkamam
+PY;Indira Nagar
+PY;Thattanchavady
+PY;Kamaraj Nagar
+PY;Lawspet
+PY;Kalapet
+PY;Muthialpet
+PY;Raj Bhavan
+PY;Oupalam
+PY;Orleampeth
+PY;Nellithope
+PY;Mudaliarpet
+PY;Ariankuppam
+PY;Manavely
+PY;Embalam
+PY;Nettapakkam
+PY;Bahour
+PY;Nedungadu
+PY;Thirunallar
+PY;Karaikal North
+PY;Karaikal South
+PY;Neravy T R Pattinam
+PY;Mahe
+PY;Yanam
+PB;Sujanpur
+PB;Bhoa
+PB;Pathankot
+PB;Gurdaspur
+PB;Dina Nagar
+PB;Qadian
+PB;Batala
+PB;Sri Hargobindpur
+PB;Fatehgarh Churian
+PB;Dera Baba Nanak
+PB;Ajnala
+PB;Raja Sansi
+PB;Majitha
+PB;Jandiala
+PB;Amritsar North
+PB;Amritsar West
+PB;Amritsar Central
+PB;Amritsar East
+PB;Amritsar South
+PB;Attari
+PB;Tarn Taran
+PB;Khem Karan
+PB;Patti
+PB;Khadoor Sahib
+PB;Baba Bakala
+PB;Bholath
+PB;Kapurthala
+PB;Sultanpur Lodhi
+PB;Phagwara
+PB;Phillaur
+PB;Nakodar
+PB;Shahkot
+PB;Kartarpur
+PB;Jalandhar West
+PB;Jalandhar Central
+PB;Jalandhar North
+PB;Jalandhar Cantt.
+PB;Adampur
+PB;Mukerian
+PB;Dasuya
+PB;Urmar
+PB;Sham Chaurasi
+PB;Hoshiarpur
+PB;Chabbewal
+PB;Garhshankar
+PB;Banga 
+PB;Nawanshahr
+PB;Balachaur
+PB;Anandpur Sahib
+PB;Rupnagar
+PB;Chamkaur Sahib
+PB;Kharar
+PB;S.A.S. Nagar
+PB;Bassi Pathana
+PB;Fatehgarh Sahib
+PB;Amloh
+PB;Khanna
+PB;Samrala
+PB;Sahnewal
+PB;Ludhiana East
+PB;Ludhiana South
+PB;Atam Nagar
+PB;Ludhiana Central
+PB;Ludhiana West
+PB;Ludhiana North
+PB;Gill
+PB;Payal
+PB;Dakha
+PB;Raikot
+PB;Jagraon
+PB;Nihal Singhwala
+PB;Bhagha Purana
+PB;Moga
+PB;Dharamkot
+PB;Zira
+PB;Firozpur City
+PB;Firozpur Rural
+PB;Guru Har Sahai
+PB;Jalalabad
+PB;Fazilka
+PB;Abohar
+PB;Balluana
+PB;Lambi
+PB;Gidderbaha
+PB;Malout
+PB;Muktsar
+PB;Faridkot
+PB;Kotkapura
+PB;Jaitu
+PB;Rampura Phul
+PB;Bhucho Mandi
+PB;Bathinda Urban
+PB;Bathinda Rural
+PB;Talwandi Sabo
+PB;Maur
+PB;Mansa
+PB;Sardulgarh
+PB;Budhlada
+PB;Lehra
+PB;Dirba
+PB;Sunam
+PB;Bhadaur
+PB;Barnala
+PB;Mehal Kalan
+PB;Malerkotla
+PB;Amargarh
+PB;Dhuri
+PB;Sangrur
+PB;Nabha
+PB;Patiala Rural
+PB;Rajpura
+PB;Dera Bassi
+PB;Ghanaur
+PB;Sanour
+PB;Patiala
+PB;Samana
+PB;Shutrana
+RJ;Sadulshahar
+RJ;Ganganagar
+RJ;Karanpur
+RJ;Suratgarh
+RJ;Raisinghnagar
+RJ;Anupgarh
+RJ;Sangaria
+RJ;Hanumangarh
+RJ;Pilibanga
+RJ;Nohar
+RJ;Bhadra
+RJ;Khajuwala
+RJ;Bikaner West
+RJ;Bikaner East
+RJ;Kolayat
+RJ;Lunkaransar
+RJ;Dungargarh
+RJ;Nokha
+RJ;Sadulpur
+RJ;Taranagar
+RJ;Sardarshahar
+RJ;Churu
+RJ;Ratangarh
+RJ;Sujangarh
+RJ;Pilani
+RJ;Surajgarh
+RJ;Jhunjhunu
+RJ;Mandawa
+RJ;Nawalgarh
+RJ;Udaipurwati
+RJ;Khetri
+RJ;Fatehpur
+RJ;Lachhmangarh
+RJ;Dhod
+RJ;Sikar
+RJ;Danta Ramgarh
+RJ;Khandela
+RJ;Neem Ka Thana
+RJ;Sri Madhopur
+RJ;Kotputli
+RJ;Viratnagar
+RJ;Shahpura
+RJ;Chomu
+RJ;Phulera
+RJ;Dudu
+RJ;Jhotwara
+RJ;Amber
+RJ;Jamwa Ramgarh
+RJ;Hawa Mahal
+RJ;Vidhyadhar Nagar
+RJ;Civil Lines
+RJ;Kishan Pole
+RJ;Adarsh Nagar
+RJ;Malviya Nagar
+RJ;Sanganer
+RJ;Bagru
+RJ;Bassi
+RJ;Chaksu
+RJ;Tijara
+RJ;Kishangarh Bas
+RJ;Mundawar
+RJ;Behror
+RJ;Bansur
+RJ;Thanagazi
+RJ;Alwar Rural
+RJ;Alwar Urban
+RJ;Ramgarh
+RJ;Rajgarh–Laxmangarh
+RJ;Kathumar
+RJ;Kaman
+RJ;Nagar
+RJ;Deeg–Kumher
+RJ;Bharatpur
+RJ;Nadbai
+RJ;Weir
+RJ;Bayana
+RJ;Baseri
+RJ;Bari
+RJ;Dholpur
+RJ;Rajakhera
+RJ;Todabhim
+RJ;Hindaun
+RJ;Karauli
+RJ;Sapotra
+RJ;Bandikui
+RJ;Mahuwa
+RJ;Sikrai
+RJ;Dausa
+RJ;Lalsot
+RJ;Gangapur
+RJ;Bamanwas
+RJ;Sawai Madhopur
+RJ;Khandar
+RJ;Malpura
+RJ;Niwai
+RJ;Tonk
+RJ;Deoli–Uniara
+RJ;Kishangarh
+RJ;Pushkar
+RJ;Ajmer North
+RJ;Ajmer South
+RJ;Nasirabad
+RJ;Beawar
+RJ;Masuda
+RJ;Kekri
+RJ;Ladnun
+RJ;Deedwana
+RJ;Jayal
+RJ;Nagaur
+RJ;Khinvsar
+RJ;Merta
+RJ;Degana
+RJ;Makrana
+RJ;Parbatsar
+RJ;Nawan
+RJ;Jaitaran
+RJ;Sojat
+RJ;Pali
+RJ;Marwar Junction
+RJ;Bali
+RJ;Sumerpur
+RJ;Phalodi
+RJ;Lohawat
+RJ;Shergarh
+RJ;Osian
+RJ;Bhopalgarh
+RJ;Sardarpura
+RJ;Jodhpur
+RJ;Soorsagar
+RJ;Luni
+RJ;Bilara
+RJ;Jaisalmer
+RJ;Pokaran
+RJ;Sheo
+RJ;Barmer
+RJ;Baytoo
+RJ;Pachpadra
+RJ;Siwana
+RJ;Gudha Malani
+RJ;Chohtan
+RJ;Ahore
+RJ;Jalore
+RJ;Bhinmal
+RJ;Sanchore
+RJ;Raniwara
+RJ;Sirohi
+RJ;Pindwara–Abu
+RJ;Reodar
+RJ;Gogunda
+RJ;Jhadol
+RJ;Kherwara
+RJ;Udaipur Rural
+RJ;Udaipur
+RJ;Mavli
+RJ;Vallabhnagar
+RJ;Salumber
+RJ;Dhariawad
+RJ;Dungarpur
+RJ;Aspur
+RJ;Sagwara
+RJ;Chorasi
+RJ;Ghatol
+RJ;Garhi
+RJ;Banswara
+RJ;Bagidora
+RJ;Kushalgarh
+RJ;Kapasan
+RJ;Begun
+RJ;Chittorgarh
+RJ;Nimbahera
+RJ;Bari Sadri
+RJ;Pratapgarh
+RJ;Bhim
+RJ;Kumbhalgarh
+RJ;Rajsamand
+RJ;Nathdwara
+RJ;Asind
+RJ;Mandal
+RJ;Sahara
+RJ;Bhilwara
+RJ;Shahpura
+RJ;Jahazpur
+RJ;Mandalgarh
+RJ;Hindoli
+RJ;Keshoraipatan
+RJ;Bundi
+RJ;Pipalda
+RJ;Sangod
+RJ;Kota North
+RJ;Kota South
+RJ;Ladpura
+RJ;Ramganj Mandi
+RJ;Anta
+RJ;Kishanganj
+RJ;Baran–Atru
+RJ;Chhabra
+RJ;Dag
+RJ;Jhalarapatan
+RJ;Khanpur
+RJ;Manohar Thana
+SK;Yoksam- Tashiding (BL)
+SK;Yangthang
+SK;Maneybong Dentam
+SK;Gyalshing Barnyak
+SK;Rinchenpong (BL)
+SK;Daramdin (BL)
+SK;Soreng Chakung
+SK;Salghari Zoom 
+SK;Barfung (BL)
+SK;Poklok Kamrang
+SK;Namchi Singhithang
+SK;Melli
+SK;Namthang Rateypani
+SK;Temi Namphing
+SK;Rangang Yangang
+SK;Tumin Lingee (BL)
+SK;Khamdong Singtam
+SK;West Pendam 
+SK;Rhenock
+SK;Chujachen
+SK;Gnathang Machong (BL)
+SK;Namchaybong
+SK;Shyari (BL)
+SK;Martam Rumtek (BL)
+SK;Upper Tadong
+SK;Arithang
+SK;Gangtok (BL)
+SK;Upper Burtuk
+SK;Kabi Lungchuk (BL)
+SK;Djongu (BL)
+SK;Lachen Mangan (BL)
+SK;Sangha
+TN;Gummidipoondi
+TN;Ponneri
+TN;Tiruttani
+TN;Thiruvallur
+TN;Poonamallee
+TN;Avadi
+TN;Maduravoyal
+TN;Ambattur
+TN;Madavaram
+TN;Thiruvottiyur
+TN;Dr. Radhakrishnan Nagar
+TN;Perambur
+TN;Kolathur
+TN;Villivakkam
+TN;Thiru. Vi. Ka. Nagar
+TN;Egmore
+TN;Royapuram
+TN;Harbour
+TN;Chepauk-Thiruvallikeni
+TN;Thousand Lights
+TN;Anna Nagar
+TN;Virugambakkam
+TN;Saidapet
+TN;T. Nagar
+TN;Mylapore
+TN;Velachery
+TN;Sholinganallur
+TN;Alandur
+TN;Sriperumbudur
+TN;Pallavaram
+TN;Tambaram
+TN;Chengalpattu
+TN;Thiruporur
+TN;Cheyyur
+TN;Maduranthakam
+TN;Uthiramerur
+TN;Kancheepuram
+TN;Arakkonam
+TN;Sholingur
+TN;Katpadi (Vellore North)
+TN;Ranipet
+TN;Arcot
+TN;Vellore (Vellore south)
+TN;Anaikattu
+TN;K. V. Kuppam
+TN;Gudiyattam
+TN;Vaniyambadi
+TN;Ambur
+TN;Jolarpet
+TN;"Tirupattur
+TN;Uthangarai
+TN;Bargur
+TN;Krishnagiri
+TN;Veppanahalli
+TN;Hosur
+TN;Thalli
+TN;Palacode
+TN;Pennagaram
+TN;Dharmapuri
+TN;Pappireddippatti
+TN;Harur
+TN;Chengam
+TN;Tiruvannamalai
+TN;Kilpennathur
+TN;Kalasapakkam
+TN;Polur
+TN;Arani
+TN;Cheyyar
+TN;Vandavasi
+TN;Gingee
+TN;Mailam
+TN;Tindivanam
+TN;Vanur
+TN;Villupuram
+TN;Vikravandi
+TN;Tirukkoyilur
+TN;Ulundurpettai
+TN;Rishivandiyam
+TN;Sankarapuram
+TN;Kallakurichi
+TN;Gangavalli
+TN;Attur
+TN;Yercaud
+TN;Omalur
+TN;Mettur
+TN;Edapadi
+TN;Sankagiri
+TN;Salem (West)
+TN;Salem (North)
+TN;Salem (South)
+TN;Veerapandi
+TN;Rasipuram
+TN;Senthamangalam
+TN;Namakkal
+TN;Paramathi Velur
+TN;Tiruchengodu
+TN;Kumarapalayam
+TN;Erode (East)
+TN;Erode (West)
+TN;Modakkurichi
+TN;Perundurai
+TN;Bhavani
+TN;Anthiyur
+TN;Gobichettipalayam
+TN;Bhavanisagar
+TN;Dharapuram
+TN;Kangayam
+TN;Avanashi
+TN;Tiruppur (North)
+TN;Tiruppur (South)
+TN;Palladam
+TN;Udumalaipettai
+TN;Madathukulam
+TN;Udhagamandalam
+TN;Coonoor
+TN;Gudalur
+TN;Mettupalayam
+TN;Sulur
+TN;Kavundampalayam
+TN;Coimbatore North
+TN;Thondamuthur
+TN;Coimbatore (South)
+TN;Singanallur
+TN;Kinathukadavu
+TN;Pollachi
+TN;Valparai
+TN;Palani
+TN;Oddanchatram
+TN;Athoor
+TN;Nilakottai
+TN;Natham
+TN;Dindigul
+TN;Vedasandur
+TN;Aravakurichi
+TN;Karur
+TN;Krishnarayapuram
+TN;Kulithalai
+TN;Manapaarai
+TN;Srirangam
+TN;Tiruchirappalli (West)
+TN;Tiruchirappalli (East)
+TN;Thiruverumbur
+TN;Lalgudi
+TN;Manachanallur
+TN;Musiri
+TN;Thuraiyur
+TN;Perambalur
+TN;Kunnam
+TN;Ariyalur
+TN;Jayankondam
+TN;Tittakudi
+TN;Vriddhachalam
+TN;Neyveli
+TN;Panruti
+TN;Cuddalore
+TN;Kurinjipadi
+TN;Bhuvanagiri
+TN;Chidambaram
+TN;Kattumannarkoil
+TN;Sirkazhi
+TN;Mayiladuthurai
+TN;Poompuhar
+TN;Nagapattinam
+TN;Kilvelur
+TN;Vedaranyam
+TN;Thiruthuraipoondi
+TN;Mannargudi
+TN;Thiruvarur
+TN;Nannilam
+TN;Thiruvidaimarudur
+TN;Kumbakonam
+TN;Papanasam
+TN;Thiruvaiyaru
+TN;Thanjavur
+TN;Orathanadu
+TN;Pattukkottai
+TN;Peravurani
+TN;Gandharvakottai
+TN;Viralimalai
+TN;Pudukkottai
+TN;Thirumayam
+TN;Alangudi
+TN;Aranthangi
+TN;Karaikudi
+TN;"Tiruppattur
+TN;Sivaganga
+TN;Manamadurai
+TN;Melur
+TN;Madurai East
+TN;Sholavandan
+TN;Madurai North
+TN;Madurai South
+TN;Madurai Central
+TN;Madurai West
+TN;Thiruparankundram
+TN;Tirumangalam
+TN;Usilampatti
+TN;Andipatti
+TN;Periyakulam
+TN;Bodinayakanur
+TN;Cumbum
+TN;Rajapalayam
+TN;Srivilliputhur
+TN;Sattur
+TN;Sivakasi
+TN;Virudhunagar
+TN;Aruppukkottai
+TN;Tiruchuli
+TN;Paramakudi
+TN;Tiruvadanai
+TN;Ramanathapuram
+TN;Mudhukulathur
+TN;Vilathikulam
+TN;Thoothukudi
+TN;Tiruchendur
+TN;Tiruvaikuntam
+TN;Ottapidaram
+TN;Kovilpatti
+TN;Sankarankovil
+TN;Vasudevanallur
+TN;Kadayanallur
+TN;Tenkasi
+TN;Alangulam
+TN;Tirunelveli
+TN;Ambasamudram
+TN;Palayamkottai
+TN;Nanguneri
+TN;Radhapuram
+TN;Kanniyakumari
+TN;Nagercoil
+TN;Colachal
+TN;Padmanabhapuram
+TN;Vilavancode
+TN;Killiyoor
+TG;Musheerabad
+TG;Malakpet
+TG;Amberpet
+TG;Khairatabad
+TG;Jubilee Hills
+TG;Sanathnagar
+TG;Nampally
+TG;Karwan
+TG;Goshamahal
+TG;Charminar
+TG;Chandrayangutta
+TG;Yakutpura
+TG;Bahadurpura
+TG;Secunderabad
+TG;Secunderabad Cantt.
+TG;Medchal
+TG;Malkajgiri
+TG;Quthbullapur
+TG;Kukatpally
+TG;Uppal
+TG;Ibrahimpatnam
+TG;L. B. Nagar
+TG;Maheshwaram
+TG;Rajendranagar
+TG;Serilingampally
+TG;Chevella 
+TG;Pargi
+TG;Vikarabad 
+TG;Tandur
+TG;Siddipet
+TG;Medak
+TG;Narayankhed
+TG;Andole 
+TG;Narsapur
+TG;Zahirabad 
+TG;Sangareddy
+TG;Patancheru
+TG;Dubbak
+TG;Gajwel
+TG;Sirpur
+TG;Chennur 
+TG;Bellampalli 
+TG;Mancheriala
+TG;Asifabad (ST)
+TG;Khanapur (ST)
+TG;Adliabad
+TG;Boath (ST)
+TG;Nirmal
+TG;Mudhole
+TG;Koratla
+TG;Jagtial
+TG;Dharmapuri 
+TG;Ramagundam
+TG;Manthani
+TG;Peddapalle
+TG;Karimnagar
+TG;Choppadandi 
+TG;Vemulawada
+TG;Sircilla
+TG;Manakondur 
+TG;Huzurabad
+TG;Husnabad
+TG;Khammam
+TG;Palair
+TG;Madhira 
+TG;Wyra
+TG;Sathupalli 
+TG;Aswaraopeta
+TG;Yellandu
+TG;Kothagudem
+TG;Bhadrachalam
+TG;Pinapaka
+TG;Kodangal
+TG;Narayanpet
+TG;Mahbubnagar
+TG;Jadcherla
+TG;Devarkadra
+TG;Makthal
+TG;Wanaparthy
+TG;Gadwal
+TG;Alampur
+TG;Nagarkurnool
+TG;Achampet
+TG;Kalwakurthy
+TG;Shadnagar
+TG;Kollapur
+TG;Nalgonda
+TG;Suryapet
+TG;Devarakonda
+TG;Nagarjuna Sagar
+TG;Miryalaguda
+TG;Huzurnagar
+TG;Kodad
+TG;Munugode
+TG;Bhongir
+TG;Nakrekal 
+TG;Thungathurthi 
+TG;Alair
+TG;Armur
+TG;Bodhan
+TG;Jukkal 
+TG;Banswada
+TG;Yellareddy
+TG;Kamareddy
+TG;Nizamabad (Urban)
+TG;Nizamabad (Rural)
+TG;Balkonda
+TG;Jangaon
+TG;Ghanpur(Station)
+TG;Palakurthi
+TG;Dornakal
+TG;Mahabubabad
+TG;Narsampet
+TG;Parkal
+TG;Warangal West
+TG;Warangal East
+TG;Waradhanapet
+TG;Bhupalpalle
+TG;Mulug
+TR;Simna
+TR;Mohanpur
+TR;Bamutia
+TR;Barjala
+TR;Khayerpur
+TR;Agartala
+TR;Ramnagar
+TR;Town Bordowali
+TR;Banamalipur
+TR;Majlishpur
+TR;Mandaibazar
+TR;Takarjala
+TR;Pratapgarh
+TR;Badharghat
+TR;Kamalasagar
+TR;Bishalgarh
+TR;Golaghati
+TR;Suryamaninagar
+TR;Charilam
+TR;Boxanagar
+TR;Nalchar
+TR;Sonamura
+TR;Dhanpur
+TR;Ramchandraghat
+TR;Khowai
+TR;Asharambari
+TR;Kalyanpur-Pramodenagar
+TR;Teliamura
+TR;Krishnapur
+TR;Bagma
+TR;Radhakishorpur
+TR;Matarbari
+TR;Kakraban-Salgarh
+TR;Rajnagar
+TR;Belonia
+TR;Santirbazar
+TR;Hrishyamukh
+TR;Jolaibari
+TR;Manu
+TR;Sabroom
+TR;Ampinagar
+TR;Amarpur
+TR;Karbook
+TR;Raima Valley
+TR;Kamalpur
+TR;Surma
+TR;Ambassa
+TR;Karmachhara
+TR;Chawamanu
+TR;Pabiachhara
+TR;Fatikroy
+TR;Chandipur
+TR;Kailashahar
+TR;Kadamtala-Kurti
+TR;Bagbassa
+TR;Dharmanagar
+TR;Jubarajnagar
+TR;Panisagar
+TR;Pencharthal
+TR;Kanchanpur
+UP;Agra Cantt.
+UP;Agra North
+UP;Agra Rural
+UP;Agra South
+UP;Ajagara
+UP;Akbarpur
+UP;Akbarpur - Raniya
+UP;Alapur
+UP;Aliganj
+UP;Aligarh
+UP;Allahabad North
+UP;Allahabad South
+UP;Allahabad West
+UP;Amanpur
+UP;Amethi
+UP;Amritpur
+UP;Amroha
+UP;Anupshahr
+UP;Aonla
+UP;Arya Nagar
+UP;Asmoli
+UP;Atrauli
+UP;Atrauliya
+UP;Aurai
+UP;Auraiya
+UP;Ayah Shah
+UP;Ayodhya
+UP;Azamgarh
+UP;Babaganj
+UP;Baberu
+UP;Babina
+UP;Bachhrawan
+UP;Badaun
+UP;Badlapur
+UP;Bagpat
+UP;Bah
+UP;Baheri
+UP;Bahraich
+UP;Bairia
+UP;Bakshi Kaa Talab
+UP;Balamau
+UP;Baldev
+UP;Balha
+UP;Ballia Nagar
+UP;Balrampur
+UP;Banda
+UP;Bangarmau
+UP;Bansdih
+UP;Bansgaon
+UP;Bansi
+UP;Bara
+UP;Barabanki
+UP;Barauli
+UP;Baraut
+UP;Bareilly
+UP;Bareilly Cantt.
+UP;Barhaj
+UP;Barhapur
+UP;Barkhera
+UP;Basti Sadar
+UP;Behat
+UP;Belthara Road
+UP;Bhadohi
+UP;Bhagwantnagar
+UP;Bharthana
+UP;Bhatpar Rani
+UP;Bhinga
+UP;Bhognipur
+UP;Bhojipura
+UP;Bhojpur
+UP;Bhongaon
+UP;Bidhuna
+UP;Bijnor
+UP;Bikapur
+UP;Bilari
+UP;Bilaspur
+UP;Bilgram-Mallanwan
+UP;Bilhaur
+UP;Bilsi
+UP;Bindki
+UP;Bisalpur
+UP;Bisauli
+UP;Biswan
+UP;Bithari Chainpur
+UP;Bithoor
+UP;Budhana
+UP;Bulandshahr
+UP;Caimpiyarganj
+UP;Chail
+UP;Chakia
+UP;Chamraua
+UP;Chandausi
+UP;Chandpur
+UP;Charkhari
+UP;Charthawal
+UP;Chauri-Chaura
+UP;Chhanbey
+UP;Chhaprauli
+UP;Chharra
+UP;Chhata
+UP;Chhibramau
+UP;Chillupar
+UP;Chitrakoot
+UP;Chunar
+UP;Colonelganj
+UP;Dadraul
+UP;Dadri
+UP;Dariyabad
+UP;Dataganj
+UP;Debai
+UP;Deoband
+UP;Deoria
+UP;Dhampur
+UP;Dhanaura
+UP;Dhanghata
+UP;Dhaurahra
+UP;Dhaulana
+UP;Dibiyapur
+UP;Didarganj
+UP;Domariyaganj
+UP;Duddhi
+UP;Etah
+UP;Etawah
+UP;Etmadpur
+UP;Faridpur
+UP;Farrukhabad
+UP;Fatehabad
+UP;Fatehpur
+UP;Fatehpur Sikri
+UP;Fazilnagar
+UP;Firozabad
+UP;Gainsari
+UP;Gangoh
+UP;Garautha
+UP;Garhmukteshwar
+UP;Gaura
+UP;Gauriganj
+UP;Ghatampur
+UP;Ghaziabad
+UP;Ghazipur
+UP;Ghorawal
+UP;Ghosi
+UP;Gola Gokrannath
+UP;Gonda
+UP;Gopalpur
+UP;Gopamau
+UP;Gorakhpur Rural
+UP;Gorakhpur Urban
+UP;Goshainganj
+UP;Goverdhan
+UP;Govindnagar
+UP;Gunnaur
+UP;Gyanpur
+UP;Haidergarh
+UP;Hamirpur
+UP;Handia
+UP;Hapur
+UP;Harchandpur
+UP;Hardoi
+UP;Hargaon
+UP;Harraiya
+UP;Hasanpur
+UP;Hastinapur
+UP;Hata
+UP;Hathras
+UP;Husainganj
+UP;Iglas
+UP;Isauli
+UP;Itwa
+UP;Jagdishpur
+UP;Jahanabad
+UP;Jakhanian
+UP;Jalalabad
+UP;Jalalpur
+UP;Jalesar
+UP;Jangipur
+UP;Jasrana
+UP;Jaswantnagar
+UP;Jaunpur
+UP;Jewar
+UP;Jhansi Nagar
+UP;Kadipur
+UP;Kaimganj
+UP;Kairana
+UP;Kaiserganj
+UP;Kalpi
+UP;Kalyanpur
+UP;Kannauj
+UP;Kanpur Cantt.
+UP;Kanth
+UP;Kapilvastu
+UP;Kaptanganj
+UP;Karachhana
+UP;Karhal
+UP;Kasganj
+UP;Kasta
+UP;Katehari
+UP;Katra
+UP;Katra Bazar
+UP;Kerakat
+UP;Khadda
+UP;Khaga
+UP;Khair
+UP;Khajani
+UP;Khalilabad
+UP;Khatauli
+UP;Kheragarh
+UP;Khurja
+UP;Kidwai Nagar
+UP;Kishni
+UP;Kithore
+UP;Koil
+UP;Koraon
+UP;Kunda
+UP;Kundarki
+UP;Kursi
+UP;Kushinagar
+UP;Laharpur
+UP;Lakhimpur
+UP;Lalganj
+UP;Lalitpur
+UP;Lambhua
+UP;Loni
+UP;Lucknow Cantt.
+UP;Lucknow Central
+UP;Lucknow East
+UP;Lucknow North
+UP;Lucknow West
+UP;Machhlishahr
+UP;Madhaugarh
+UP;Madhuban
+UP;Mahadewa
+UP;Maharajganj
+UP;Maharajpur
+UP;Mahasi
+UP;Mahmoodabad
+UP;Mahoba
+UP;Maholi
+UP;Mainpuri
+UP;Majhawan
+UP;Malhani
+UP;Malihabad
+UP;Manikpur
+UP;Manjhanpur
+UP;Mankapur
+UP;Mant
+UP;Marhara
+UP;Madihan
+UP;Mariyahu
+UP;Matera
+UP;Mathura
+UP;Mau
+UP;Mauranipur
+UP;Meerapur
+UP;Meerganj
+UP;Meerut
+UP;Meerut Cantt.
+UP;Meerut South
+UP;Mehnagar
+UP;Mehnaun
+UP;Mehroni
+UP;Meja
+UP;Menhdawal
+UP;Milak
+UP;Milkipur
+UP;Mirzapur
+UP;Misrikh
+UP;Modinagar
+UP;Mohammadabad
+UP;Mohammdi
+UP;Mohan
+UP;Mohanlalganj
+UP;Moradabad Nagar
+UP;Moradabad Rural
+UP;Mubarakpur
+UP;Mughalsarai
+UP;Muhammadabad-Gohna
+UP;Mungra Badshahpur
+UP;Muradnagar
+UP;Muzaffarnagar
+UP;Nagina
+UP;Najibabad
+UP;Nakur
+UP;Nanpara
+UP;Naraini
+UP;Naugawan Sadat
+UP;Nautanwa
+UP;Nawabganj
+UP;Nehtaur
+UP;Nighasan
+UP;Nizamabad
+UP;Noida
+UP;Noorpur
+UP;Obra
+UP;Orai
+UP;Padrauna
+UP;Palia
+UP;Paniyara
+UP;Pathardeva
+UP;Patiyali
+UP;Patti
+UP;Payagpur
+UP;Phaphamau
+UP;Pharenda
+UP;Phephana
+UP;Phoolpur Pawai
+UP;Phulpur
+UP;Pilibhit
+UP;Pindra
+UP;Pipraich
+UP;Powayan
+UP;Pratapgarh
+UP;Pratappur
+UP;Puranpur
+UP;Purqazi
+UP;Purwa
+UP;Rae Bareli
+UP;Ram Nagar
+UP;Ramkola
+UP;Rampur
+UP;Rampur Karkhana
+UP;Rampur Khas
+UP;Rampur Maniharan
+UP;Raniganj
+UP;Rasara
+UP;Rasulabad
+UP;Rath
+UP;Robertsganj
+UP;Rohaniya
+UP;Rudauli
+UP;Rudhauli
+UP;Rudrapur
+UP;Sadabad
+UP;Sadar
+UP;Safipur
+UP;Sagri
+UP;Sahajanwa
+UP;Saharanpur
+UP;Saharanpur Nagar
+UP;Sahaswan
+UP;Sahibabad
+UP;Saidpur
+UP;Saiyadraja
+UP;Sakaldiha
+UP;Salempur
+UP;Salon
+UP;Sambhal
+UP;Sandi
+UP;Sandila
+UP;Sardhana
+UP;Sareni
+UP;Sarojini Nagar
+UP;Sawayazpur
+UP;Sevapuri
+UP;Sevata
+UP;Shahabad
+UP;Shahganj
+UP;Shahjahanpur
+UP;Shamli
+UP;Shekhupur
+UP;Shikarpur
+UP;Shikohabad
+UP;Shivpur
+UP;Shohratgarh
+UP;Shrawasti
+UP;Sidhauli
+UP;Sikanderpur
+UP;Sikandra
+UP;Sikandra Rao
+UP;Sikandrabad
+UP;Sirathu
+UP;Sirsaganj
+UP;Sishamau
+UP;Siswa
+UP;Sitapur
+UP;Siwalkhas
+UP;Soraon
+UP;Sri Nagar
+UP;Suar
+UP;Sultanpur
+UP;Syana
+UP;Tamkuhi Raj
+UP;Tanda
+UP;Tarabganj
+UP;Thakurdwara
+UP;Thana Bhawan
+UP;Tilhar
+UP;Tiloi
+UP;Tindwari
+UP;Tirwa
+UP;Tulsipur
+UP;Tundla
+UP;Unchahar
+UP;Unnao
+UP;Utraula
+UP;Varanasi Cantt.
+UP;Varanasi North
+UP;Varanasi South
+UP;Vishwanathganj
+UP;Zafrabad
+UP;Zahoorabad
+UP;Zaidpur
+UP;Zamania
+UT;Purola
+UT;Yamunotri
+UT;Gangotri
+UT;Badrinath
+UT;Tharali
+UT;Karnaprayag
+UT;Kedarnath
+UT;Rudraprayag
+UT;Ghansali
+UT;Devprayag
+UT;Narendranagar
+UT;Pratapnagar
+UT;Tehri
+UT;Dhanaulti
+UT;Chakrata
+UT;Vikasnagar
+UT;Sahaspur
+UT;Dharampur
+UT;Raipur
+UT;Rajpur Road
+UT;Dehradun Cantt
+UT;Mussoorie
+UT;Doiwala
+UT;Rishikesh
+UT;Haridwar
+UT;BHEL Ranipur
+UT;Jwalapur
+UT;Bhagwanpur
+UT;Jhabrera
+UT;Piran Kaliyar
+UT;Roorkee
+UT;Khanpur
+UT;Manglaur
+UT;Laksar
+UT;Haridwar Rural
+UT;Yamkeshwar
+UT;Pauri
+UT;Srinagar
+UT;Chaubattakhal
+UT;Lansdowne
+UT;Kotdwar
+UT;Dharchula
+UT;Didihat
+UT;Pithoragarh
+UT;Gangolihat
+UT;Kapkot
+UT;Bageshwar
+UT;Dwarahat
+UT;Salt
+UT;Ranikhet
+UT;Someshwar
+UT;Almora
+UT;Jageshwar
+UT;Lohaghat
+UT;Champawat
+UT;Lalkuan
+UT;Bhimtal
+UT;Nainital
+UT;Haldwani
+UT;Kaladhungi
+UT;Ramnagar
+UT;Jaspur
+UT;Kashipur
+UT;Bajpur
+UT;Gadarpur
+UT;Rudrapur
+UT;Kichha
+UT;Sitarganj
+UT;Nanakmatta
+UT;Khatima
+WB;Mekliganj
+WB;Mathabhanga
+WB;Cooch Behar (Uttar)
+WB;Cooch Behar (Dakshin)
+WB;Sitalkuchi
+WB;Sitai
+WB;Dinhata
+WB;Natabari
+WB;Tufanganj
+WB;Kumargram
+WB;Kalchini
+WB;Alipurudars
+WB;Falakata
+WB;Madarihat
+WB;Dhupguri
+WB;Maynaguri
+WB;Jalpaiguri
+WB;Rajganj
+WB;Dabgram-Phulbari
+WB;Mal
+WB;Nagrakata
+WB;Kalimpong
+WB;Darjeeling
+WB;Kurseong
+WB;Matigara-Naxalbari
+WB;Siliguri
+WB;Phansidewa
+WB;Chopra
+WB;Islampur
+WB;Goalpokhar
+WB;Chakulia
+WB;Karandighi
+WB;Hemtabad
+WB;Kaliaganj
+WB;Raiganj
+WB;Itahar
+WB;Kushmandi
+WB;Kumarganj
+WB;Balurghat
+WB;Tapan
+WB;Gangarampur
+WB;Harirampur
+WB;Habibpur
+WB;Gazole
+WB;Chanchal
+WB;Harishchandrapur
+WB;Malatipur
+WB;Ratua
+WB;Manikchak
+WB;Maldah

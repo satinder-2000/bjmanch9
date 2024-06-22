@@ -1,0 +1,77 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <!-- Left Column -->
+    <div class="w3-col m3">
+        <!-- Profile -->
+        <div class="w3-card w3-round w3-white">
+            <div class="w3-container">
+                <c:choose>
+                    <c:when test="#{session.getAttribute('access')!=null}">
+                        <h4 class="w3-center">My Profile</h4>
+                        <p class="w3-center">
+                            <h:graphicImage value="/UserImageServlet" styleClass="w3-circle" style="height:106px;width:106px"/>
+                        </p>
+                        <hr/>
+                        <p class="w3-margin-left">Email: #{session.getAttribute('access').email}</p>
+                        <p class="w3-margin-left">Since: #{session.getAttribute('access').createdOn}</p>
+                    </c:when>
+                    <c:otherwise>
+                        <p class="w3-center">
+                            <h:graphicImage library="images" name="Logo120.jpg" />
+
+                        </p>
+                        <p class="w3-margin-left">
+                            <h4 style="color: #ff0000; text-align: center"><b>bjmanch.in</b></h4>
+                        </p>
+                    </c:otherwise>
+                </c:choose>
+            </div>
+        </div>
+        <br/>
+
+        <!-- Accordion -->
+        <div class="w3-card w3-round">
+            <div class="w3-white">
+                <h:outputLink value="#{request.contextPath}/forum/UserForums.xhtml" disabled="#{session.getAttribute('access')==null}" styleClass="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Forums</h:outputLink>
+                <h:outputLink value="#{request.contextPath}/survey/UserSurveys.xhtml" disabled="#{session.getAttribute('access')==null}" styleClass="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Surveys</h:outputLink>
+                <h:outputLink value="#{request.contextPath}/surveyFromForum/UserSurveysFromForums.xhtml" disabled="#{session.getAttribute('access')==null}" styleClass="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Surveys From Forums</h:outputLink>
+            </div>      
+        </div>
+        <br/>
+        <!-- Alert Box -->
+        <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+            <p><strong>Manage Account!</strong></p>
+            <h:form><h:commandLink action="#{manageAccountMBean.changePasswordReq()}" value="Change Password" disabled="#{session.getAttribute('access')==null}" styleClass="w3-button w3-block w3-theme-l1 w3-left-align"/></h:form>
+            <h:form><h:commandLink action="#{manageAccountMBean.changeStateReq()}" value="Change State" disabled="#{session.getAttribute('access')==null}" styleClass="w3-button w3-block w3-theme-l1 w3-left-align"/></h:form>
+            <br/>
+            <br/>
+        </div>
+        <br/>
+
+        <!-- Interests --> 
+        <div class="w3-card w3-round w3-white w3-hide-small">
+            <div class="w3-container">
+                <p>Interests</p>
+                <p>
+                    <span class="w3-tag w3-small w3-theme-d5">News</span>
+                    <span class="w3-tag w3-small w3-theme-d4">W3Schools</span>
+                    <span class="w3-tag w3-small w3-theme-d3">Labels</span>
+                    <span class="w3-tag w3-small w3-theme-d2">Games</span>
+                    <span class="w3-tag w3-small w3-theme-d1">Friends</span>
+                    <span class="w3-tag w3-small w3-theme">Games</span>
+                    <span class="w3-tag w3-small w3-theme-l1">Friends</span>
+                    <span class="w3-tag w3-small w3-theme-l2">Food</span>
+                    <span class="w3-tag w3-small w3-theme-l3">Design</span>
+                    <span class="w3-tag w3-small w3-theme-l4">Art</span>
+                    <span class="w3-tag w3-small w3-theme-l5">Photos</span>
+                </p>
+            </div>
+        </div>
+        <br/>
+
+
+
+        <!-- End Left Column -->
+    </div>
+</html>

@@ -1,0 +1,81 @@
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+                template="/WEB-INF/template/BjmTemplate.xhtml"
+                xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+    <ui:define name="content">
+        <div class="w3-col m7">
+            <div class="w3-row-padding">
+                <div class="w3-col m12">
+                    <div class="w3-card w3-round w3-white">
+                        <div class="w3-container w3-padding">
+                            <h4 class="w3-margin-left">Contact Us</h4>
+                            <br/>
+                            <p style="w3-margin-left">
+                                <ul style="text-align: left;">Use the form below in the following scenarios:
+                                    <li style="text-align: left;">You need some clarification on the feature or functionality of this website.</li>
+                                    <li style="text-align: left;">You need to propose Category or/and Subcategory for Forums and Surveys.</li>
+                                    <li style="text-align: left;">Any other feedback you wish to give regarding this website.</li>
+                                </ul>
+                            </p>
+                            <h:form>
+                                <h:messages infoStyle="color:blue;margin:5px;" errorStyle="color:red;margin:5px;"/>
+                                <div class="w3-row-padding" style="margin:0 -16px">
+                                    <c:choose>
+                                        <c:when test="#{session.getAttribute('access')!=null}">
+                                            <div class="w3-half">
+                                                <h:outputLabel for="email" value="Email"/>
+                                            </div>
+                                            <div class="w3-half">
+                                                <h:inputText id="email" disabled="true" value="#{contactUsMBean.userEmail}" styleClass="w3-input"/>
+                                            </div>
+                                        </c:when>
+                                        <c:otherwise>
+                                            <div class="w3-half">
+                                                <h:outputLabel for="email" value="Email"/>
+                                            </div>
+                                            <div class="w3-half">
+                                                <h:inputText id="email" value="#{contactUsMBean.userEmail}" styleClass="w3-input"/>
+                                            </div>
+                                        </c:otherwise>
+                                    </c:choose>
+                                </div>
+                                <br/>
+                                <div class="w3-row-padding" style="margin:0 -16px">
+                                    <div class="w3-half">
+                                        <h:outputLabel for="subject" value="Subject"/>
+                                    </div>
+                                    <div class="w3-half">
+                                        <h:inputText id="subject" value="#{contactUsMBean.subject}" styleClass="w3-input"/>
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="w3-row-padding" style="margin:0 -16px">
+                                    <div class="w3-half">
+                                        <h:outputLabel for="message" value="Message"/>
+                                    </div>
+                                    <div class="w3-half">
+                                        <h:inputTextarea id="message" value="#{contactUsMBean.message}"  rows="10" styleClass="w3-input"  /> 
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="w3-row-padding" style="margin:0 -16px">
+                                    <div class="w3-half">
+                                        <h:outputLabel value="&#160;"/>  
+                                    </div>
+                                    <div class="w3-half">
+                                        <h:commandButton value="Submit" action="#{contactUsMBean.sendRequest()}" styleClass="w3-button w3-theme-d1 w3-margin-left w3-margin-bottom">
+                                            <f:ajax execute="@form" render="@form" />
+                                        </h:commandButton>
+                                    </div>
+                                </div>
+                            </h:form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ui:define>
+</ui:composition>

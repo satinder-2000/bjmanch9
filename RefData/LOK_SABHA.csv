@@ -1,0 +1,545 @@
+stateCode,constituency
+AP,Araku
+AP,Srikakulam
+AP,Vizianagaram
+AP,Visakhapatnam
+AP,Anakapalli
+AP,Kakinada
+AP,Amalapuram
+AP,Rajahmundry
+AP,Narasapuram
+AP,Eluru
+AP,Machilipatnam
+AP,Vijayawada
+AP,Guntur
+AP,Narasaraopet
+AP,Bapatla
+AP,Ongole
+AP,Nandyal
+AP,Kurnool
+AP,Anantapur
+AP,Hindupur
+AP,Kadapa
+AP,Nellore
+AP,Tirupati
+AP,Rajampet
+AP,Chittoor
+AR,Arunachal West
+AR,Arunachal East
+AS,Karimganj
+AS,Silchar
+AS,Autonomous District
+AS,Dhubri
+AS,Kokrajhar
+AS,Barpeta
+AS,Gauhati
+AS,Mangaldoi
+AS,Tezpur
+AS,Nowgong
+AS,Kaliabor
+AS,Jorhat
+AS,Dibrugarh
+AS,Lakhimpur
+BR,Valmiki Nagar
+BR,Paschim Champaran
+BR,Purvi Champaran
+BR,Sheohar
+BR,Sitamarhi
+BR,Madhubani
+BR,Jhanjharpur
+BR,Supaul
+BR,Araria
+BR,Kishanganj
+BR,Katihar
+BR,Purnia
+BR,Madhepura
+BR,Darbhanga
+BR,Muzaffarpur
+BR,Vaishali
+BR,Gopalganj
+BR,Siwan
+BR,Maharajganj
+BR,Saran
+BR,Hajipur
+BR,Ujiarpur
+BR,Samastipur
+BR,Begusarai
+BR,Khagaria
+BR,Bhagalpur
+BR,Banka
+BR,Munger
+BR,Nalanda
+BR,Patna Sahib
+BR,Pataliputra
+BR,Arrah
+BR,Buxar
+BR,Sasaram
+BR,Karakat
+BR,Jahanabad
+BR,Aurangabad
+BR,Gaya
+BR,Nawada
+BR,Jamui
+CH,Chandigarh
+CT,Sarguja
+CT,Raigarh
+CT,Janjgir-Champa
+CT,Korba
+CT,Bilaspur
+CT,Rajnandgaon
+CT,Durg
+CT,Raipur
+CT,Mahasamund
+CT,Bastar
+CT,Kanker
+GA,North Goa
+GA,South Goa
+GJ,Kachchh
+GJ,Banaskantha
+GJ,Patan
+GJ,Mahesana
+GJ,Sabarkantha
+GJ,Gandhinagar
+GJ,Ahmedabad East
+GJ,Ahmedabad West
+GJ,Surendranagar
+GJ,Rajkot
+GJ,Porbandar
+GJ,Jamnagar
+GJ,Junagadh
+GJ,Amreli
+GJ,Bhavnagar
+GJ,Anand
+GJ,Kheda
+GJ,Panchmahal
+GJ,Dahod
+GJ,Vadodara
+GJ,Chhota Udaipur
+GJ,Bharuch
+GJ,Bardoli
+GJ,Surat
+GJ,Navsari
+GJ,Valsad
+HR,Ambala
+HR,Kurukshetra
+HR,Sirsa
+HR,Hisar
+HR,Karnal
+HR,Sonipat
+HR,Rohtak
+HR,Bhiwani-Mahendragarh
+HR,Gurgaon
+HR,Faridabad
+HP,Kangra
+HP,Mandi
+HP,Hamirpur
+HP,Shimla
+JH,Rajmahal
+JH,Dumka
+JH,Godda
+JH,Chatra
+JH,Kodarma
+JH,Giridih
+JH,Dhanbad
+JH,Ranchi
+JH,Jamshedpur
+JH,Singhbhum
+JH,Khunti
+JH,Lohardaga
+JH,Palamau
+JH,Hazaribagh
+KA,Chikkodi
+KA,Belgaum
+KA,Bagalkot
+KA,Bijapur
+KA,Gulbarga
+KA,Raichur
+KA,Bidar
+KA,Koppal
+KA,Bellary
+KA,Haveri
+KA,Dharwad
+KA,Uttara Kannada
+KA,Davanagere
+KA,Shimoga
+KA,Udupi Chikmagalur
+KA,Hassan
+KA,Dakshina Kannada
+KA,Chitradurga
+KA,Tumkur
+KA,Mandya
+KA,Mysore
+KA,Chamarajanagar
+KA,Bangalore Rural
+KA,Bangalore North
+KA,Bangalore Central
+KA,Bangalore South
+KA,Chikballapur
+KA,Kolar
+KL,Kasaragod
+KL,Kannur
+KL,Vatakara
+KL,Wayanad
+KL,Kozhikode
+KL,Malappuram
+KL,Ponnani
+KL,Palakkad
+KL,Alathur
+KL,Thrissur
+KL,Chalakudy
+KL,Ernakulam
+KL,Idukki
+KL,Kottayam
+KL,Alappuzha
+KL,Mavelikara
+KL,Pathanamthitta
+KL,Kollam
+KL,Attingal
+KL,Thiruvananthapuram
+MP,Morena
+MP,Bhind
+MP,Gwalior
+MP,Guna
+MP,Sagar
+MP,Tikamgarh
+MP,Damoh
+MP,Khajuraho
+MP,Satna
+MP,Rewa
+MP,Sidhi
+MP,Shahdol
+MP,Jabalpur
+MP,Mandla
+MP,Balaghat
+MP,Chhindwara
+MP,Hoshangabad
+MP,Vidisha
+MP,Bhopal
+MP,Rajgarh
+MP,Dewas
+MP,Ujjain
+MP,Mandsour
+MP,Ratlam
+MP,Dhar
+MP,Indore
+MP,Khargone
+MP,Khandwa
+MP,Betul
+MH,Nandurbar
+MH,Dhule
+MH,Jalgaon
+MH,Raver
+MH,Buldhana
+MH,Akola
+MH,Amravati
+MH,Wardha
+MH,Ramtek
+MH,Nagpur
+MH,Bhandara–Gondiya
+MH,Gadchiroli–Chimur
+MH,Chandrapur
+MH,Yavatmal–Washim
+MH,Hingoli
+MH,Nanded
+MH,Parbhani
+MH,Jalna
+MH,Aurangabad
+MH,Dindori
+MH,Nashik
+MH,Palghar
+MH,Bhiwandi
+MH,Kalyan
+MH,Thane
+MH,Mumbai North
+MH,Mumbai North West
+MH,Mumbai North East
+MH,Mumbai North Central
+MH,Mumbai South Central
+MH,Mumbai South
+MH,Raigad
+MH,Maval
+MH,Pune
+MH,Baramati
+MH,Shirur
+MH,Ahmednagar
+MH,Shirdi
+MH,Beed
+MH,Osmanabad
+MH,Latur
+MH,Solapur
+MH,Madha
+MH,Sangli
+MH,Satara
+MH,Ratnagiri–Sindhudurg
+MH,Kolhapur
+MH,Hatkanangle
+MN,Inner Manipur
+MN,Outer Manipur
+ML,Shillong
+ML,Tura
+MZ,Mizoram
+NL,Nagaland
+OR,Bargarh
+OR,Sundargarh
+OR,Sambalpur
+OR,Keonjhar
+OR,Mayurbhanj
+OR,Balasore
+OR,Bhadrak
+OR,Jajpur
+OR,Dhenkanal
+OR,Bolangir
+OR,Kalahandi
+OR,Nabarangpur
+OR,Kandhamal
+OR,Cuttack
+OR,Kendrapara
+OR,Jagatsinghpur
+OR,Puri
+OR,Bhubaneswar
+OR,Aska
+OR,Berhampur
+OR,Koraput
+PB,Gurdaspur
+PB,Amritsar
+PB,Khadoor Sahib
+PB,Jalandhar
+PB,Hoshiarpur
+PB,Anandpur Sahib
+PB,Ludhiana
+PB,Fatehgarh Sahib
+PB,Faridkot
+PB,Firozpur
+PB,Bathinda
+PB,Sangrur
+PB,Patiala
+RJ,Ganganagar
+RJ,Bikaner
+RJ,Churu
+RJ,Jhunjhunu
+RJ,Sikar
+RJ,Jaipur Rural
+RJ,Jaipur
+RJ,Alwar
+RJ,Bharatpur
+RJ,Karauli–Dholpur
+RJ,Dausa
+RJ,Tonk–Sawai Madhopur
+RJ,Ajmer
+RJ,Nagaur
+RJ,Pali
+RJ,Jodhpur
+RJ,Barmer
+RJ,Jalore
+RJ,Udaipur
+RJ,Banswara
+RJ,Chittorgarh
+RJ,Rajsamand
+RJ,Bhilwara
+RJ,Kota
+RJ,Jhalawar–Baran
+SK,Sikkim
+TN,Thiruvallur
+TN,Chennai North
+TN,Chennai South
+TN,Chennai Central
+TN,Sriperumbudur
+TN,Kancheepuram
+TN,Arakkonam
+TN,Vellore
+TN,Krishnagiri
+TN,Dharmapuri
+TN,Tiruvannamalai
+TN,Arani
+TN,Villupuram
+TN,Kallakurichi
+TN,Salem
+TN,Namakkal
+TN,Erode
+TN,Tiruppur
+TN,Nilgiris
+TN,Coimbatore
+TN,Pollachi
+TN,Dindigul
+TN,Karur
+TN,Tiruchirappalli
+TN,Perambalur
+TN,Cuddalore
+TN,Chidambaram
+TN,Mayiladuturai
+TN,Nagapattinam
+TN,Thanjavur
+TN,Sivaganga
+TN,Madurai
+TN,Theni
+TN,Virudhunagar
+TN,Ramanathapuram
+TN,Thoothukkudi
+TN,Tenkasi
+TN,Tirunelveli
+TN,Kanyakumari
+TG,Adilabad
+TG,Peddapalle
+TG,Karimnagar
+TG,Nizamabad
+TG,Zahirabad
+TG,Medak
+TG,Malkajgiri
+TG,Secunderabad
+TG,Hyderabad
+TG,Chevella
+TG,Mahbubnagar
+TG,Nagarkurnool
+TG,Nalgonda
+TG,Bhongir
+TG,Warangal
+TG,Mahabubabad
+TG,Khammam
+TR,Tripura West
+TR,Tripura East
+UP,Saharanpur
+UP,Kairana
+UP,Muzaffarnagar
+UP,Bijnor
+UP,Nagina
+UP,Moradabad
+UP,Rampur
+UP,Sambhal
+UP,Amroha
+UP,Meerut
+UP,Baghpat
+UP,Ghaziabad
+UP,Gautam Buddha Nagar
+UP,Bulandshahr
+UP,Aligarh
+UP,Hathras
+UP,Mathura
+UP,Agra
+UP,Fatehpur Sikri
+UP,Firozabad
+UP,Mainpuri
+UP,Etah
+UP,Badaun
+UP,Aonla
+UP,Bareilly
+UP,Pilibhit
+UP,Shahjahanpur
+UP,Kheri
+UP,Dhaurahra
+UP,Sitapur
+UP,Hardoi
+UP,Misrikh
+UP,Unnao
+UP,Mohanlalganj
+UP,Lucknow
+UP,Rae Bareli
+UP,Amethi
+UP,Sultanpur
+UP,Pratapgarh
+UP,Farrukhabad
+UP,Etawah
+UP,Kannauj
+UP,Kanpur Urban
+UP,Akbarpur
+UP,Jalaun
+UP,Jhansi
+UP,Hamirpur
+UP,Banda
+UP,Fatehpur
+UP,Kaushambi
+UP,Phulpur
+UP,Allahabad
+UP,Barabanki
+UP,Faizabad
+UP,Ambedkar Nagar
+UP,Bahraich
+UP,Kaiserganj
+UP,Shrawasti
+UP,Gonda
+UP,Domariyaganj
+UP,Basti
+UP,Sant Kabir Nagar
+UP,Maharajganj
+UP,Gorakhpur
+UP,Kushi Nagar
+UP,Deoria
+UP,Bansgaon
+UP,Lalganj
+UP,Azamgarh
+UP,Ghosi
+UP,Salempur
+UP,Ballia
+UP,Jaunpur
+UP,Machhlishahr
+UP,Ghazipur
+UP,Chandauli
+UP,Varanasi
+UP,Bhadohi
+UP,Mirzapur
+UP,Robertsganj
+UT,Tehri Garhwal
+UT,Garhwal
+UT,Almora
+UT,Nainital–Udhamsingh Nagar
+UT,Haridwar
+WB,Cooch Behar
+WB,Alipurduars
+WB,Jalpaiguri
+WB,Darjeeling
+WB,Raiganj
+WB,Balurghat
+WB,Maldaha Uttar
+WB,Maldaha Dakshin
+WB,Jangipur
+WB,Baharampur
+WB,Murshidabad
+WB,Krishnanagar
+WB,Ranaghat
+WB,Bangaon
+WB,Barrackpore
+WB,Dum Dum
+WB,Barasat
+WB,Basirhat
+WB,Jaynagar
+WB,Mathurapur
+WB,Diamond Harbour
+WB,Jadavpur
+WB,Kolkata Dakshin
+WB,Kolkata Uttar
+WB,Howrah
+WB,Uluberia
+WB,Srerampur
+WB,Hooghly
+WB,Arambag
+WB,Tamluk
+WB,Kanthi
+WB,Ghatal
+WB,Jhargram
+WB,Medinipur
+WB,Purulia
+WB,Bankura
+WB,Bishnupur
+WB,Bardhaman Purba
+WB,Bardhaman–Durgapur
+WB,Asansol
+WB,Bolpur
+WB,Birbhum
+AN,Andaman and Nicobar Islands
+CH,Chandigarh
+DN,Dadra and Nagar Haveli
+DD,Daman and Diu
+DL,Chandni Chowk
+DL,North East Delhi
+DL,East Delhi
+DL,New Delhi
+DL,North West Delhi
+DL,West Delhi
+DL,South Delhi
+JK,Baramulla
+JK,Srinagar
+JK,Anantnag–Rajouri
+JK,Udhampur
+JK,Jammu
+LA,Ladakh
+LD,Lakshadweep
+PY,Puducherry

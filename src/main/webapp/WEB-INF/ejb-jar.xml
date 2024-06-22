@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar xmlns="https://jakarta.ee/xml/ns/jakartaee"
+        version="4.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/ejb-jar_4_0.xsd">
+    
+    <enterprise-beans>
+        <session>
+            <display-name>EmailEjb</display-name>
+            <ejb-name>EmailEjb</ejb-name>
+            <ejb-class>org.bjm.ejbs.EmailEjb</ejb-class>
+            <env-entry>
+                <env-entry-name>sender</env-entry-name>
+                <env-entry-type>java.lang.String</env-entry-type>
+                <env-entry-value>admin@bjmanch.in</env-entry-value>
+            </env-entry>
+            <env-entry>
+                <env-entry-name>webURI</env-entry-name>
+                <env-entry-type>java.lang.String</env-entry-type>
+                <env-entry-value>http://localhost:8080/bjmanch9/</env-entry-value>
+            </env-entry>
+           <env-entry>
+                <env-entry-name>createAccessURI</env-entry-name>
+                <env-entry-type>java.lang.String</env-entry-type>
+                <env-entry-value>createAccess.xhtml?email=%s</env-entry-value>
+            </env-entry>
+            <env-entry>
+                <env-entry-name>forumCreatedURI</env-entry-name>
+                <env-entry-type>java.lang.String</env-entry-type>
+                <env-entry-value>forum/ForumDetails.xhtml?forumId=%s&amp;forumCreatorEmail=%s</env-entry-value>
+            </env-entry>
+            <env-entry>
+                <env-entry-name>surveyCreatedURI</env-entry-name>
+                <env-entry-type>java.lang.String</env-entry-type>
+                <env-entry-value>survey/SurveyDetails.xhtml?surveyId=%s&amp;surveyCreatorEmail=%s</env-entry-value>
+            </env-entry>
+            <env-entry>
+                <env-entry-name>surveyCreatedFromForumURI</env-entry-name>
+                <env-entry-type>java.lang.String</env-entry-type>
+                <env-entry-value>surveyFromForum/SurveyFromForumDetails.xhtml?surveyId=%s&amp;surveyCreatorEmail=%s</env-entry-value>
+            </env-entry>
+            <env-entry>
+                <env-entry-name>loginURI</env-entry-name>
+                <env-entry-type>java.lang.String</env-entry-type>
+                <env-entry-value>login.xhtml</env-entry-value>
+            </env-entry>
+            <env-entry>
+                <env-entry-name>passwordResetURI</env-entry-name>
+                <env-entry-type>java.lang.String</env-entry-type>
+                <env-entry-value>passwordReset.xhtml</env-entry-value>
+            </env-entry>
+        </session>
+    </enterprise-beans>
+
+</ejb-jar>

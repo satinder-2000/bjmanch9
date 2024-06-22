@@ -1,0 +1,28 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                template="/WEB-INF/template/BjmTemplate.xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <ui:define name="content">
+        <div class="col-sm-8">
+            <h2>New Candidate Nomination - Vidhan Sabha</h2>
+            <h:form>
+            <div class="row form-group">
+                <p>Congratulations!!</p>
+                <p>You have successfully nominated the Candidate <h:outputText value="#{vidhanSabhaNominationMBean.candidateSelected}"/> for your constituency <h:outputText value="#{vidhanSabhaNominationMBean.user.vidhanSabha}"/>.</p>
+            </div>
+            <br/>
+            <div class="row form-group">
+                <div class="col-sm-6">
+                    <span/>
+                </div>
+                <div class="col-sm-6">
+                    <h:outputLink value="#{request.contextPath}/home/userHome.xhtml" styleClass="btn btn-primary">Home</h:outputLink>
+                </div>
+            </div>
+            </h:form>
+        </div>
+        
+    </ui:define>
+
+</ui:composition>

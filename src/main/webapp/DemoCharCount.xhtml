@@ -1,0 +1,24 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                template="/WEB-INF/template/BjmTemplate.xhtml"
+                xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+
+    <ui:define name="content">
+        <h:form>
+        <h:inputTextarea id="ta" value="#{tempMBean.text}" cols="20" rows="2" onkeydown="limitTextArea(this, ${initParam.get('descriptionLimit')})"
+                         onkeyup="limitTextArea(this,${initParam.get('descriptionLimit')})" pt:placeholder="Max chars : ${initParam.get('descriptionLimit')}"></h:inputTextarea>
+            <span id="counter"></span>
+         </h:form>
+        <script>
+                function limitTextArea(element, limit){
+                    document.getElementById('counter').innerHTML = element.value.length;
+                    if(element.value.length >= limit){
+                        element.value = element.value.substring(0, limit);
+                    }
+                }
+           </script> 
+    </ui:define>
+                   
+
+</ui:composition>

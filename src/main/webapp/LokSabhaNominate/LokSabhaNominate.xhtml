@@ -1,0 +1,123 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                template="/WEB-INF/template/BjmTemplate.xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+
+    <ui:define name="content">
+        <div class="w3-col m7">
+            <div class="w3-row-padding">
+                <div class="w3-col m12">
+                    <div class="w3-card w3-round w3-white">
+                        <div class="w3-container w3-padding">
+                            <h:form> 
+                                <h4 class="w3-margin-left">Candidate Nomination - Lok Sabha</h4>
+
+                                <h:messages infoStyle="color:blue;" errorStyle="color:red;"/>
+                                <div class="w3-row-padding" style="margin:0 -16px">
+                                    <div class="w3-half">
+                                        <h:outputLabel for="state" value="State"/>
+                                    </div>
+                                    <div class="w3-half">
+                                        <h:outputText id="state" value="#{lokSabhaNominationMBean.state.name}" styleClass="w3-input"/>
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="w3-row-padding" style="margin:0 -16px">
+                                    <div class="w3-half">
+                                        <h:outputLabel for="consti" value="Constituency"/>
+                                    </div>
+                                    <div class="w3-half">
+                                        <h:outputText id="consti" value="#{lokSabhaNominationMBean.user.lokSabha}" styleClass="w3-input"/>
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="w3-row-padding" style="margin:0 -16px">
+                                    <div class="w3-half">
+                                        <h:outputLabel for="nominated" value="Nominations"/>
+                                    </div>
+                                    <div class="w3-half">
+                                        <h:selectOneMenu id="nominated" value="#{lokSabhaNominationMBean.candidateSelected}" styleClass="w3-input">
+                                            <f:selectItems value="#{lokSabhaNominationMBean.nominatedCandidates}" var="nc" itemLabel="#{nc}" itemValue="#{nc}" />
+                                        </h:selectOneMenu>
+                                    </div>
+                                </div>
+                                <br/>
+                                <ui:fragment rendered="#{lokSabhaNominationMBean.fuzzyCandidates.size()>0}">
+                                    <div class="w3-row-padding" style="margin:0 -16px">
+                                        <div class="w3-third">
+                                            <span></span>
+                                        </div>
+                                        <div class="w3-row-padding" style="margin:0 -16px">
+                                            <div class="w3-panel w3-pale-yellow w3-border">
+                                                <span>We have found that the following candidate(s) might match from your nominated Candidate. Kindly pick from the already Nominated Candidates above, else continue with your new nomination by clicking on Force Nomination checkbox below.</span>
+                                            </div>
+                                        </div>
+                                        <div class="w3-third">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div class="w3-row-padding" style="margin:0 -16px">
+                                        <div class="w3-third">
+                                            <span></span>
+                                        </div>
+                                        <div class="w3-twothird">
+                                            <h:selectOneRadio value="#{lokSabhaNominationMBean.candidateSelected}" >
+                                                <f:selectItems value="#{lokSabhaNominationMBean.fuzzyCandidates}" var="fc" itemLabel="&#160;&#160;#{fc}" itemValue="#{fc}"/>
+                                            </h:selectOneRadio>
+                                        </div>
+                                        <div class="w3-third">
+                                            <span></span>
+                                        </div>
+
+                                    </div>
+                                </ui:fragment>
+                                <div class="w3-row-padding" style="margin:0 -16px">
+                                    <div class="w3-half">
+                                        <span><b>OR</b></span>
+                                    </div>
+                                    <div class="w3-half">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="w3-row-padding" style="margin:0 -16px">
+                                    <div class="w3-half">
+                                        <h:outputLabel for="nomiNew" value="Nominate New Candidate"/>
+                                    </div>
+                                    <div class="w3-half">
+                                        <h:inputText id="nomiNew" value="#{lokSabhaNominationMBean.candidateNew}" styleClass="w3-input"/>
+                                    </div>
+                                </div>
+                                <br/>
+                                <ui:fragment rendered="#{lokSabhaNominationMBean.reloaded}">
+                                    <div class="w3-row-padding" style="margin:0 -16px">
+                                        <div class="w3-half">
+                                            <h:outputLabel for="forceNom" value="Force Nomination"/> 
+                                        </div>
+                                        <div class="w3-half">
+                                            <h:selectBooleanCheckbox id="forceNom" value="#{lokSabhaNominationMBean.forceNomination}"/>
+                                        </div>
+                                    </div>
+
+                                </ui:fragment>
+                                <div class="w3-row-padding" style="margin:0 -16px">
+                                    <div class="w3-half w3-center">
+                                        <h:outputText value="&#160;"/>
+                                    </div>
+                                    <div class="w3-half w3-center">
+                                        <h:commandButton action="#{lokSabhaNominationMBean.processNomination()}" value="Continue" styleClass="w3-button w3-theme-d1 w3-margin-left w3-margin-bottom" />
+                                    </div>
+                                </div>
+                                <br/>
+
+                            </h:form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ui:define>
+</ui:composition>

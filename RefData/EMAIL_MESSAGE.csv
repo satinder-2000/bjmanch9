@@ -1,0 +1,37 @@
+TEMPLATE,MESSAGE_TITLE,TEXT
+USER_REGISTRATION,registrationUser,Registration - User
+USER_REGISTRATION,registrationUser,Registration - User
+USER_REGISTRATION,successfullyReg,You have successfully registered yourself on BJManch.in
+USER_REGISTRATION,setPassword,Please set your access password by clicking the following link:
+USER_REGISTRATION,subject,Registration Successful!!
+ACCESS_CONFIRM,thankYou,Thank you for confirming the access. Your registration is now complete.
+ACCESS_CONFIRM,thankYou,Thank you for confirming the access. Your registration is now complete.
+ACCESS_CONFIRM,welcome,Welcome to BJManch.in
+ACCESS_CONFIRM,subject,Access Confirmed
+SURVEY_CREATED,surveyCreated,Survey Created:
+SURVEY_CREATED,surveyCreated,Survey Created:
+SURVEY_CREATED,successCreated,You have successfully started a new Survey on BJManch.in
+SURVEY_CREATED,viewLink,Please view the Survey by following the Link below:
+FORUM_CREATED,forumCreated,Forum Created:
+FORUM_CREATED,forumCreated,Forum Created:
+FORUM_CREATED,successCreated,You have successfully started a new Forum on BJManch.in
+FORUM_CREATED,viewLink,Please view the Forum by following the Link below:
+PASSWORD_RESET,passReset,Password Reset
+PASSWORD_RESET,passReset,Password Reset
+PASSWORD_RESET,requestMade,If you have made a request for password reset on BJManch.in
+PASSWORD_RESET,clickLink,Please reset your access password by clicking the following link:
+CONTACT_US,msgFromUser,Message from User
+CONTACT_US,msgFromUser,Message from User
+CONTACT_US,admin,Admin
+CONTACT_US,adminMsg,Please address the following message from our registered User $userEmail
+CONTACT_US,subject,Subject 
+LS_NOMINATE,nominated,Candidate Nomination - Lok Sabha
+LS_NOMINATE,nominated,Candidate Nomination - Lok Sabha
+LS_NOMINATE,msg,You have successfully nominated Candidate of your choice $candidateName for the Lok Sabha constituency of $constituency on BJManch.in
+LS_NOMINATE,name,Dear $userName,
+LS_NOMINATE,constituency,$constituency
+VS_NOMINATE,nominated,Candidate Nomination – Vidhan Sabha
+VS_NOMINATE,nominated,Candidate Nomination – Vidhan Sabha
+VS_NOMINATE,msg,You have successfully nominated Candidate of your choice $candidateName for the Vidhan Sabha constituency of $constituency on BJManch.in
+VS_NOMINATE,name,Dear $userName,
+VS_NOMINATE,constituency,$constituency

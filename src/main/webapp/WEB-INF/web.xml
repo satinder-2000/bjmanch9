@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="5.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd">
+    <context-param>
+        <param-name>jakarta.faces.PROJECT_STAGE</param-name>
+        <param-value>Production</param-value>
+    </context-param>
+    <context-param>
+        <param-name>MONGODB_URL</param-name>
+        <param-value>mongodb://localhost:27017</param-value>
+        <!--param-value>mongodb+srv://ssingh2023:Wether%40lDr@cluster0.2mwjnu2.mongodb.net/?retryWrites=true&amp;w=majority</param-value -->
+        <!--param-value>mongodb+srv://ssingh2023:Wether%40lDr69@cluster0.2mwjnu2.mongodb.net/?retryWrites=true&amp;w=majority</param-value--> 
+    </context-param>
+    <context-param>
+        <param-name>MONGODB_DB</param-name>
+        <param-value>bjm</param-value>
+    </context-param>
+    <context-param>
+        <param-name>imageSize</param-name>
+        <param-value>150</param-value>
+    </context-param>
+    <context-param>
+        <param-name>imageFormat</param-name>
+        <param-value>png</param-value>
+    </context-param>
+    <context-param>
+        <param-name>activityListSize</param-name>
+        <param-value>15</param-value>
+    </context-param>
+    <context-param>
+        <param-name>descriptionLimit</param-name>
+        <param-value>5000</param-value>
+    </context-param>
+    <context-param>
+        <param-name>commentLimit</param-name>
+        <param-value>2500</param-value>
+    </context-param>
+    <context-param>
+        <param-name>reportAbuseLimit</param-name>
+        <param-value>2500</param-value>
+    </context-param>
+    <context-param>
+        <param-name>adminEmail</param-name>
+        <param-value>admin@bjmanch.in</param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>Faces Servlet</servlet-name>
+        <servlet-class>jakarta.faces.webapp.FacesServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>*.xhtml</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.xhtml</welcome-file>
+    </welcome-file-list>
+</web-app>

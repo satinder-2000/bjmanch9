@@ -1,0 +1,131 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                template="/WEB-INF/template/BjmTemplate.xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <ui:define name="content">
+        <div class="w3-col m7">
+            <div class="w3-row-padding">
+                <div class="w3-col m12">
+                    <div class="w3-card w3-round w3-white">
+                        <div class="w3-container w3-padding">
+                            <h:form> 
+                                <h4 class="w3-margin-left">User Register - Confirm</h4>
+
+                                <div class="w3-row-padding" style="margin:0 -16px">
+                                    <div class="w3-half">
+                                        <h:outputLabel for="email" value="Email"/>
+                                    </div>
+                                    <div class="w3-half">
+                                        <h:outputText id="email" value="#{userRegisterMBean.userDto.email}" styleClass="w3-input" />
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="w3-row-padding" style="margin:0 -16px">
+                                    <div class="w3-half">
+                                        <h:outputLabel for="fname" value="First Name"/>
+                                    </div>
+                                    <div class="w3-half">
+                                        <h:outputText id="fname" value="#{userRegisterMBean.userDto.firstName}" styleClass="w3-input" />
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="w3-row-padding" style="margin:0 -16px">
+                                    <div class="w3-half">
+                                        <h:outputLabel for="lname" value="Last Name"/>
+                                    </div>
+                                    <div class="w3-half">
+                                        <h:outputText id="lname" value="#{userRegisterMBean.userDto.lastName}" styleClass="w3-input" />
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="w3-row-padding" style="margin:0 -16px">
+                                    <div class="w3-half">
+                                        <h:outputLabel for="gender" value="Gender"/>
+                                    </div>
+                                    <div class="w3-half">
+                                        <h:outputText id="gender" value="#{userRegisterMBean.userDto.gender}" styleClass="w3-input" />
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="w3-row-padding" style="margin:0 -16px">
+                                    <div class="w3-half">
+                                        <h:outputLabel for="dob" value="Date of Birth"/>
+                                    </div>
+                                    <div class="w3-half">
+                                        <h:outputText id="dob" value="#{userRegisterMBean.userDto.dob}" styleClass="w3-input" />
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="w3-row-padding" style="margin:0 -16px">
+                                    <div class="w3-half">
+                                        <h:outputLabel for="mobile" value="Mobile"/>
+                                    </div>
+                                    <div class="w3-half">
+                                        <h:outputText id="mobile" value="#{userRegisterMBean.userDto.mobile}" styleClass="w3-input" />
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="w3-row-padding" style="margin:0 -16px">
+                                    <div class="w3-half">
+                                        <h:outputLabel for="phone" value="Phone"/>
+                                    </div>
+                                    <div class="w3-half">
+                                        <h:outputText id="phone" value="#{userRegisterMBean.userDto.phone}" styleClass="w3-input" />
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="w3-row-padding" style="margin:0 -16px">
+                                    <div class="w3-half">
+                                        <h:outputLabel for="state" value="State"/>
+                                    </div>
+                                    <div class="w3-half">
+                                        <h:outputText id="state" value="#{userRegisterMBean.userDto.stateCode}" styleClass="w3-input" />
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="w3-row-padding" style="margin:0 -16px">
+                                    <div class="w3-half">
+                                        <h:outputLabel for="lokSabha" value="Lok Sabha"/>
+                                    </div>
+                                    <div class="w3-half">
+                                        <h:outputText id="lokSabha" value="#{userRegisterMBean.userDto.lokSabha}" styleClass="w3-input" />
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="w3-row-padding" style="margin:0 -16px">
+                                    <div class="w3-half">
+                                        <h:outputLabel for="vidhanSabha" value="Vidhan Sabha"/>
+                                    </div>
+                                    <div class="w3-half">
+                                        <h:outputText id="vidhanSabha" value="#{userRegisterMBean.userDto.vidhanSabha}" styleClass="w3-input" />
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="w3-row-padding" style="margin:0 -16px">
+                                    <div class="w3-half">
+                                        <h:outputLabel for="profileImg" value="Profile Image"/>
+                                    </div>
+                                    <div class="w3-half">
+                                        <h:graphicImage value="/UserRegisterImageServlet" width="50" height="50" style="border-radius: 50%;"/>
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="w3-row-padding" style="margin:0 -16px">
+                                    <div class="w3-half w3-center">
+                                        <h:commandButton action="#{userRegisterMBean.amendUser()}" value="Amend" styleClass="w3-button w3-theme-d1 w3-margin-left w3-margin-bottom"/> 
+                                    </div>
+                                    <div class="w3-half w3-center">
+                                        <h:commandButton action="returnFromUserRegisterFlow" value="Submit" styleClass="w3-button w3-theme-d1 w3-margin-left w3-margin-bottom"/> 
+                                    </div>
+                                </div>
+                                <br/>
+
+                            </h:form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ui:define>
+</ui:composition>
