@@ -6,9 +6,10 @@
     </context-param>
     <context-param>
         <param-name>MONGODB_URL</param-name>
-        <param-value>mongodb://localhost:27017</param-value>
+        <!--param-value>mongodb://localhost:27017</param-value -->
         <!--param-value>mongodb+srv://ssingh2023:Wether%40lDr@cluster0.2mwjnu2.mongodb.net/?retryWrites=true&amp;w=majority</param-value -->
-        <!--param-value>mongodb+srv://ssingh2023:Wether%40lDr69@cluster0.2mwjnu2.mongodb.net/?retryWrites=true&amp;w=majority</param-value--> 
+        <param-value>mongodb+srv://satinder:StanmoreHA7@cluster0.cj7umih.mongodb.net/?retryWrites=true&amp;=majority&amp;appName=Cluster0</param-value> 
+    
     </context-param>
     <context-param>
         <param-name>MONGODB_DB</param-name>

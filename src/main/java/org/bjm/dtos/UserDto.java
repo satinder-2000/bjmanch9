@@ -23,9 +23,9 @@ public class UserDto {
     @Pattern(regexp = "\\d{1,2}\\/\\d{1,2}\\/\\d{4}", message = "Incorrect DOB format")
     private String dob;
     private String gender;
-    @Pattern(regexp = "\\d{5}([- ]*)\\d{6}", message = "Incorrect Phone number")
+    //@Pattern(regexp = "\\d{5}([- ]*)\\d{6}", message = "Incorrect Phone number")
     private String phone;
-    @Pattern(regexp = "^[6-9]\\d{9}$", message = "Incorrect Mobile number")
+    //@Pattern(regexp = "^[6-9]\\d{9}$", message = "Incorrect Mobile number")
     private String mobile;
     private String stateCode;
     private List<State> allStates;

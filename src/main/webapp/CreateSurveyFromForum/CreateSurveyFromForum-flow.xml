@@ -5,7 +5,7 @@
               xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-facesconfig_3_0.xsd">
     <flow-definition id="CreateSurveyFromForum">
         <flow-return id="returnFromCreateSurveyFromForumFlow">
-            <from-outcome>#{createSurveyFromForum.returnValue}</from-outcome>
+            <from-outcome>#{createSurveyFromForumMBean.returnValue}</from-outcome>
         </flow-return>
     </flow-definition>
 </faces-config>

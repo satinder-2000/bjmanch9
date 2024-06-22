@@ -36,13 +36,13 @@
                                 <h:outputLabel for="confirmPassword" value="Confirm Password" styleClass="w3-margin-left w3-margin-bottom"/>
                             </div>
                             <div class="w3-half">
-                                <h:inputSecret id="confirmPassword" value="#{createAccessMBean.accessDto.password}"  styleClass="w3-input"/> 
+                                <h:inputSecret id="confirmPassword" value="#{createAccessMBean.accessDto.confirmPassword}"  styleClass="w3-input"/> 
                             </div>
                         </div>
                         <br/>
                         <div class="w3-row-padding" style="margin:0 -16px">
                             <div class="w3-half">
-                                <h:outputText/>
+                                <h:outputText value="&#160;"/>
                             </div>
                             <div class="w3-half">
                                 <h:commandButton value="Continue" action="#{createAccessMBean.createAccess()}" styleClass="w3-button w3-theme-d1 w3-margin-bottom">
