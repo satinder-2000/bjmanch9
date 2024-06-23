@@ -21,7 +21,7 @@
     <div class="w3-dropdown-hover w3-mobile">
       <button class="w3-button">Create Survey <i class="fa fa-caret-down"></i></button>
       <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
-        <h:outputLink value="#{request.contextPath}/CreateSurvey/CreateSurvey.xhtml" disabled="#{session.getAttribute('access')==null}" styleClass="w3-bar-item w3-button w3-mobile">New Survey</h:outputLink>
+        <h:form prependId="false"><h:commandLink id="createSurveyLink" action="CreateSurvey" value="New Survey" disabled="#{session.getAttribute('access')==null}" styleClass="w3-bar-item w3-button w3-mobile"/></h:form>  
         <h:outputLink value="#{request.contextPath}/CreateSurveyFromForum/CreateSurveyFromForumIndex.xhtml" disabled="#{session.getAttribute('access')==null}" styleClass="w3-bar-item w3-button">Survey From Forum</h:outputLink>
       </div>
     </div>

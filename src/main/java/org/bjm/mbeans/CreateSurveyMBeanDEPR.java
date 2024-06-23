@@ -38,32 +38,34 @@ import org.bson.codecs.configuration.CodecRegistry;
  *
  * @author singh
  */
-@Named(value = "createSurveyMBean")
-@FlowScoped(value = "CreateSurvey")
-public class CreateSurveyMBean implements Serializable {
+@Named(value = "createSurveyMBeanDEPR")
+@FlowScoped(value = "CreateSurveyDEPR")
+public class CreateSurveyMBeanDEPR implements Serializable {
     
-    private static final Logger LOGGER = Logger.getLogger(CreateSurveyMBean.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(CreateSurveyMBeanDEPR.class.getName());
     
     private SurveyDto surveyDto;
     
     @Inject
     private ActivityMBean activityMBean;
-    
     @Inject
     private EmailEjbLocal emailEjbLocal;
+    
+    private int surveyDescriptionChars;
     
     @PostConstruct
     public void init(){
         surveyDto=new SurveyDto();
-        ServletContext servletContext=(ServletContext) FacesContext.getCurrentInstance().getExternalContext().getContext();
-        MongoClient mongoClient=(MongoClient) servletContext.getAttribute("mongoClient");
+        ServletContext servletContext = (ServletContext) FacesContext.getCurrentInstance().getExternalContext().getContext();
+        MongoClient mongoClient = (MongoClient) servletContext.getAttribute("mongoClient");
         CodecProvider pojoCodecProvider=PojoCodecProvider.builder().automatic(true).build();
-        CodecRegistry pojoCodecRegistry=fromRegistries(MongoClientSettings.getDefaultCodecRegistry(), fromProviders(pojoCodecProvider));
+        CodecRegistry pojoCodecRegistry=fromRegistries(MongoClientSettings.getDefaultCodecRegistry(),fromProviders(pojoCodecProvider));
         MongoDatabase mongoDatabase=mongoClient.getDatabase(servletContext.getInitParameter("MONGODB_DB")).withCodecRegistry(pojoCodecRegistry);
         MongoCollection<SurveyCategory> surveyCatColl=mongoDatabase.getCollection("SurveyCategory", SurveyCategory.class);
         Iterable<SurveyCategory> surveyCatItrble=surveyCatColl.find();
         Iterator<SurveyCategory> surveyCatItr=surveyCatItrble.iterator();
         surveyDto.setSurveyCategoryMap(new HashMap<>());
+        surveyDto.getSurveyCategoryMap().put("--Select One--", null);
         while(surveyCatItr.hasNext()){
             SurveyCategory sc=surveyCatItr.next();
             Set<String> mapKeys=surveyDto.getSurveyCategoryMap().keySet();
@@ -84,11 +86,11 @@ public class CreateSurveyMBean implements Serializable {
     public void ajaxTypeListener(AjaxBehaviorEvent abe){
         surveyDto.setCategorySubTypes(surveyDto.getSurveyCategoryMap().get(surveyDto.getCategoryType()));
     }
-    
+
     public String prepareSurvey(){
         return "CreateSurveyConfirm?faces-redirect=true";
     }
-
+    
     public String amendSurvey(){
         return "CreateSurvey?faces-redirect=true";
     }
@@ -123,10 +125,9 @@ public class CreateSurveyMBean implements Serializable {
         activity.setOwnerEmail(access.getEmail());
         activity.setCreatedOn(LocalDateTime.now());
         activityMBean.addActivity(activity);
-        
         //Last Step - send Email
         emailEjbLocal.sendSurveyCreatedEmail(access, survey);
-        
+        surveyDto=new SurveyDto();//To erase the previous data as we are working in a session.
     }
     
     public String getReturnValue(){
@@ -141,9 +142,14 @@ public class CreateSurveyMBean implements Serializable {
     public void setSurveyDto(SurveyDto surveyDto) {
         this.surveyDto = surveyDto;
     }
-    
-    
-    
-    
+
+    public int getSurveyDescriptionChars() {
+        return surveyDescriptionChars;
+    }
+
+    public void setSurveyDescriptionChars(int surveyDescriptionChars) {
+        this.surveyDescriptionChars = surveyDescriptionChars;
+    }
+
     
 }
