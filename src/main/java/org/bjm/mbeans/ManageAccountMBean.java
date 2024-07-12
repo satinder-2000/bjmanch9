@@ -13,10 +13,15 @@ import jakarta.enterprise.context.SessionScoped;
 import jakarta.faces.application.FacesMessage;
 import jakarta.faces.context.FacesContext;
 import jakarta.faces.event.AjaxBehaviorEvent;
+import jakarta.faces.view.ViewScoped;
+import jakarta.inject.Inject;
 import jakarta.inject.Named;
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
+import jakarta.servlet.http.Part;
+import java.io.IOException;
+import java.io.InputStream;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -30,6 +35,8 @@ import org.bjm.collections.User;
 import org.bjm.collections.VidhanSabha;
 import org.bjm.dtos.AccessDto;
 import org.bjm.dtos.UserDto;
+import org.bjm.ejbs.EmailEjbLocal;
+import org.bjm.utils.ConvertPngToJpg;
 import org.bjm.utils.PasswordUtil;
 import org.bson.Document;
 import org.bson.codecs.configuration.CodecProvider;
@@ -53,13 +60,13 @@ public class ManageAccountMBean implements Serializable {
     private AccessDto accessDto;
     private UserDto userDto;
     
+    private Part profileImage;
+    
     @PostConstruct 
-   public void init(){
+    public void init(){
        
     
     }
-    
-    
     
     public String changePasswordReq(){
         HttpServletRequest request=(HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
@@ -68,6 +75,35 @@ public class ManageAccountMBean implements Serializable {
         accessDto=new AccessDto();
         accessDto.setEmail(access.getEmail());
         return "/home/changePassword?faces-redirect=true";
+    }
+    
+    public String changePersonalDetailsReq(){
+        HttpServletRequest request=(HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
+        HttpSession session=request.getSession();
+        Access access=(Access)session.getAttribute("access");
+        ServletContext servletContext=(ServletContext) FacesContext.getCurrentInstance().getExternalContext().getContext();
+        MongoClient mongoClient=(MongoClient) servletContext.getAttribute("mongoClient");
+        CodecProvider pojoCodecProvider=PojoCodecProvider.builder().automatic(true).build();
+        CodecRegistry pojoCodecRegistry=fromRegistries(MongoClientSettings.getDefaultCodecRegistry(),fromProviders(pojoCodecProvider));
+        MongoDatabase mongoDatabase=mongoClient.getDatabase(servletContext.getInitParameter("MONGODB_DB")).withCodecRegistry(pojoCodecRegistry);
+        MongoCollection<User> userColl=mongoDatabase.getCollection("User", User.class);
+        Bson filter=Filters.eq("email", access.getEmail());
+        User user=userColl.find(filter).first();
+        userDto=new UserDto();
+        userDto.setFirstName(user.getFirstName());
+        userDto.setLastName(user.getLastName());
+        userDto.setMobile(user.getMobile());
+        userDto.setPhone(user.getPhone());
+        return "/home/changePersonalDetails?faces-redirect=true";
+    }
+    
+    public String changeProfileImageReq(){
+        HttpServletRequest request=(HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
+        HttpSession session=request.getSession();
+        Access access=(Access)session.getAttribute("access");
+        accessDto=new AccessDto();
+        accessDto.setEmail(access.getEmail());
+        return "/home/changeProfileImage?faces-redirect=true";
     }
     
     public String submitNewPassword(){
@@ -119,7 +155,7 @@ public class ManageAccountMBean implements Serializable {
         while(stateItr.hasNext()){
             userDto.getAllStates().add(stateItr.next());
         }
-        return "/home/changeState?faces-redirect=true";        
+        return "/home/changePersonalDetails?faces-redirect=true";        
     }
     
     public void constituencyListener(AjaxBehaviorEvent event){
@@ -186,6 +222,114 @@ public class ManageAccountMBean implements Serializable {
             FacesContext.getCurrentInstance().addMessage("password", new FacesMessage(FacesMessage.SEVERITY_INFO, "State details changed successfully","State details changed successfully"));
             return null;
     }
+    
+    public String changeAccountDetails(){
+        ServletContext servletContext=(ServletContext) FacesContext.getCurrentInstance().getExternalContext().getContext();
+        MongoClient mongoClient=(MongoClient) servletContext.getAttribute("mongoClient");
+        CodecProvider pojoCodecProvider=PojoCodecProvider.builder().automatic(true).build();
+        CodecRegistry pojoCodecRegistry=fromRegistries(MongoClientSettings.getDefaultCodecRegistry(), fromProviders(pojoCodecProvider));
+        MongoDatabase mongoDatabase=mongoClient.getDatabase(servletContext.getInitParameter("MONGODB_DB")).withCodecRegistry(pojoCodecRegistry);
+        MongoCollection<User> userColl = mongoDatabase.getCollection("User",User.class);
+        HttpServletRequest request=(HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
+        HttpSession session=request.getSession();
+        Access access=(Access)session.getAttribute("access");
+        Bson filter=Filters.eq("email", access.getEmail());
+        User user= userColl.find(filter).first();
+        MongoCollection<Document> userCollDoc=mongoDatabase.getCollection("User");
+        Document query = new Document().append("email",  access.getEmail());
+        Bson updates=Updates.combine(
+                    Updates.set("_id", user.getId()),
+                Updates.set("createdOn", user.getCreatedOn()),
+                Updates.set("dob", user.getDob()),
+                Updates.set("email", user.getEmail()),
+                Updates.set("firstName", user.getFirstName()),
+                Updates.set("gender", user.getGender()),
+                Updates.set("lastName", user.getLastName()),
+                Updates.set("profileFile", access.getProfileFile()),
+                Updates.set("stateCode", user.getStateCode()),
+                Updates.set("lokSabha", user.getLokSabha()),
+                Updates.set("vidhanSabha", user.getVidhanSabha()),
+                Updates.set("mobile", userDto.getMobile()),
+                Updates.set("phone", userDto.getPhone()),
+                Updates.set("updatedOn", LocalDateTime.now())
+            );
+            UpdateOptions options=new UpdateOptions().upsert(true);
+            
+            UpdateResult result = userCollDoc.updateOne(query, updates, options);
+            LOGGER.info(String.format(" For User ID %s the Upserted ID is %s",user.getId(),result.getUpsertedId()));
+            FacesContext.getCurrentInstance().addMessage("", new FacesMessage(FacesMessage.SEVERITY_INFO, "Account details updated successfully","Account details updated successfully"));
+            return null;
+        
+    }
+    
+    public String changeProfileImage() {
+        ServletContext servletContext = (ServletContext) FacesContext.getCurrentInstance().getExternalContext().getContext();
+        MongoClient mongoClient = (MongoClient) servletContext.getAttribute("mongoClient");
+        CodecProvider pojoCodecProvider = PojoCodecProvider.builder().automatic(true).build();
+        CodecRegistry pojoCodecRegistry = fromRegistries(MongoClientSettings.getDefaultCodecRegistry(), fromProviders(pojoCodecProvider));
+        MongoDatabase mongoDatabase = mongoClient.getDatabase(servletContext.getInitParameter("MONGODB_DB")).withCodecRegistry(pojoCodecRegistry);
+        MongoCollection<Access> accessColl = mongoDatabase.getCollection("Access", Access.class);
+        HttpServletRequest request = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
+        HttpSession session = request.getSession();
+        Access access = (Access) session.getAttribute("access");
+        Bson filter = Filters.eq("email", access.getEmail());
+        Access accessDb = accessColl.find(filter).first();
+
+        try {
+            InputStream inputStream = profileImage.getInputStream();
+            int imageSize = (int) profileImage.getSize();
+            if (imageSize > (1024 * 1000)) {
+                FacesContext.getCurrentInstance().addMessage("profileImage",
+                        new FacesMessage(FacesMessage.SEVERITY_ERROR, "Profile Image size exceeds 1MB.", "Profile Image size exceeds 1MB."));
+            } else {
+                String fullFileName = profileImage.getSubmittedFileName();
+                String fileType = fullFileName.substring(fullFileName.indexOf('.'));
+                byte[] jpgData = null;
+                if (fileType.equals("png")) {//convert to jpg first. Jelastic' OpenJDK doen not handle png images well and throw exception.
+                    byte[] pngData = new byte[inputStream.available()];
+                    jpgData = ConvertPngToJpg.convertToJpg(pngData);
+                    userDto.setProfileFile(fullFileName);
+                    userDto.setImage(jpgData);
+                    access.setProfileFile(userDto.getProfileFile());
+                    access.setImage(new Binary(userDto.getImage()));
+                    accessDb.setProfileFile(access.getProfileFile());
+                    accessDb.setImage(access.getImage());
+                } else {
+                    byte[] imageData = new byte[inputStream.available()];
+                    inputStream.read(imageData);
+                    userDto.setProfileFile(fullFileName);
+                    userDto.setImage(imageData);
+                    access.setProfileFile(userDto.getProfileFile());
+                    access.setImage(new Binary(userDto.getImage()));
+                    accessDb.setProfileFile(access.getProfileFile());
+                    accessDb.setImage(access.getImage());
+                }
+                MongoCollection<Document> userCollDoc = mongoDatabase.getCollection("Access");
+                Document query = new Document().append("email", access.getEmail());
+                Bson updates = Updates.combine(
+                        Updates.set("_id", accessDb.getId()),
+                        Updates.set("createdOn", accessDb.getCreatedOn()),
+                        Updates.set("email", accessDb.getEmail()),
+                        Updates.set("password", accessDb.getPassword()),
+                        Updates.set("profileFile", accessDb.getProfileFile()),
+                        Updates.set("image", accessDb.getImage()),
+                        Updates.set("updatedOn", LocalDateTime.now())
+                );
+                UpdateOptions options = new UpdateOptions().upsert(true);
+
+                UpdateResult result = userCollDoc.updateOne(query, updates, options);
+                LOGGER.info(String.format(" For Access ID %s the Upserted ID is %s", accessDb.getId(), result.getUpsertedId()));
+                FacesContext.getCurrentInstance().addMessage("profileImage", new FacesMessage(FacesMessage.SEVERITY_INFO, "Profile Image updated successfully", "Profile Image updated successfully"));
+
+            }
+        } catch (IOException ex) {
+            LOGGER.severe(ex.getMessage());
+            throw new RuntimeException(ex.getMessage());
+        }
+
+        return null;
+
+    }
         
         
 
@@ -203,6 +347,14 @@ public class ManageAccountMBean implements Serializable {
 
     public void setUserDto(UserDto userDto) {
         this.userDto = userDto;
+    }
+
+    public Part getProfileImage() {
+        return profileImage;
+    }
+
+    public void setProfileImage(Part profileImage) {
+        this.profileImage = profileImage;
     }
 
     
