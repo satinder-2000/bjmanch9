@@ -12,6 +12,7 @@
                         <div class="w3-container w3-padding">
                             <h4 class="w3-margin-left">Change Personal Details</h4>
                             <h:form>
+                            <h:messages infoStyle="color:blue;" errorStyle="color:red;"/>    
                             <div class="w3-row-padding">
                                 <div class="w3-half">
                                     <h:outputLabel for="fname" value="First Name" styleClass="w3-margin-left w3-margin-bottom"/>
@@ -48,6 +49,15 @@
                                 </div>
                             </div>
                             <br/>
+                            <br/>
+                                <div class="w3-row-padding">
+                                    <div class="w3-half">
+                                        <h:outputText value="&#160;"/>
+                                    </div>
+                                    <div class="w3-half w3-center">
+                                        <h:commandButton action="#{manageAccountMBean.changePersonalDetails()}" value="Submit" styleClass="w3-button w3-theme-d1 w3-margin-bottom"/>
+                                    </div>
+                                </div>
                             </h:form>
                         </div>
                     </div>

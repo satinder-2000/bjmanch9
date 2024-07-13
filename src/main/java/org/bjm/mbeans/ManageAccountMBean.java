@@ -155,7 +155,7 @@ public class ManageAccountMBean implements Serializable {
         while(stateItr.hasNext()){
             userDto.getAllStates().add(stateItr.next());
         }
-        return "/home/changePersonalDetails?faces-redirect=true";        
+        return "/home/changeState?faces-redirect=true";        
     }
     
     public void constituencyListener(AjaxBehaviorEvent event){
@@ -223,7 +223,7 @@ public class ManageAccountMBean implements Serializable {
             return null;
     }
     
-    public String changeAccountDetails(){
+    public String changePersonalDetails(){
         ServletContext servletContext=(ServletContext) FacesContext.getCurrentInstance().getExternalContext().getContext();
         MongoClient mongoClient=(MongoClient) servletContext.getAttribute("mongoClient");
         CodecProvider pojoCodecProvider=PojoCodecProvider.builder().automatic(true).build();
@@ -242,13 +242,13 @@ public class ManageAccountMBean implements Serializable {
                 Updates.set("createdOn", user.getCreatedOn()),
                 Updates.set("dob", user.getDob()),
                 Updates.set("email", user.getEmail()),
-                Updates.set("firstName", user.getFirstName()),
                 Updates.set("gender", user.getGender()),
-                Updates.set("lastName", user.getLastName()),
                 Updates.set("profileFile", access.getProfileFile()),
                 Updates.set("stateCode", user.getStateCode()),
                 Updates.set("lokSabha", user.getLokSabha()),
                 Updates.set("vidhanSabha", user.getVidhanSabha()),
+                Updates.set("firstName", userDto.getFirstName()),
+                Updates.set("lastName", userDto.getLastName()),
                 Updates.set("mobile", userDto.getMobile()),
                 Updates.set("phone", userDto.getPhone()),
                 Updates.set("updatedOn", LocalDateTime.now())
