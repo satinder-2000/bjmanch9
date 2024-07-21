@@ -30,7 +30,7 @@
         <div class="w3-container w3-card w3-white w3-round w3-margin w3-padding"><br/>
             <div class="w3-display-container">
                 <h:form>  
-                    <img src="#{request.contextPath}/jakarta.faces.resource/BJManch#{imageScrollMBean.index}.jpg.xhtml?ln=images"  width="500" height="376"/>
+                    <img src="#{request.contextPath}/jakarta.faces.resource/BJManch#{imageScrollMBean.index}.jpg.xhtml?ln=images"  width="500" height="376" style="margin-left: 5em;"/>
                     <h:commandButton action="#{imageScrollMBean.prev()}" disabled="#{imageScrollMBean.prevDisabled}" styleClass="w3-button w3-black w3-display-left"  value="&#10094;"/>      
                     <h:commandButton action="#{imageScrollMBean.next()}" disabled="#{imageScrollMBean.nextDisabled}" styleClass="w3-button w3-black w3-display-right"  value="&#10095;"/>      
                 </h:form>
