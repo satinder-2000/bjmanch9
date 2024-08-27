@@ -27,12 +27,12 @@ import org.bjm.collections.ActivityType;
 import org.bjm.collections.Forum;
 import org.bjm.collections.ForumCategory;
 import org.bjm.dtos.ForumDto;
-import org.bjm.ejbs.EmailEjbLocal;
 import org.bson.codecs.configuration.CodecProvider;
 import org.bson.codecs.pojo.PojoCodecProvider;
 import static org.bson.codecs.configuration.CodecRegistries.fromProviders;
 import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
 import org.bson.codecs.configuration.CodecRegistry;
+import org.bjm.ejbs.BjManchEmailEjbLocal;
 
 /**
  *
@@ -48,7 +48,7 @@ public class CreateForumMBean implements Serializable {
     @Inject
     private ActivityMBean activityMBean;
     @Inject        
-    private EmailEjbLocal emailEjbLocal;
+    private BjManchEmailEjbLocal emailEjbLocal;
     
     private int forumDescriptionChars;
     

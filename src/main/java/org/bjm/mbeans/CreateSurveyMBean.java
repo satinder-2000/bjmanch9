@@ -27,12 +27,12 @@ import org.bjm.collections.ActivityType;
 import org.bjm.collections.Survey;
 import org.bjm.collections.SurveyCategory;
 import org.bjm.dtos.SurveyDto;
-import org.bjm.ejbs.EmailEjbLocal;
 import org.bson.codecs.configuration.CodecProvider;
 import org.bson.codecs.pojo.PojoCodecProvider;
 import static org.bson.codecs.configuration.CodecRegistries.fromProviders;
 import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
 import org.bson.codecs.configuration.CodecRegistry;
+import org.bjm.ejbs.BjManchEmailEjbLocal;
 
 /**
  *
@@ -50,7 +50,7 @@ public class CreateSurveyMBean implements Serializable {
     private ActivityMBean activityMBean;
     
     @Inject
-    private EmailEjbLocal emailEjbLocal;
+    private BjManchEmailEjbLocal emailEjbLocal;
     
     @PostConstruct
     public void init(){

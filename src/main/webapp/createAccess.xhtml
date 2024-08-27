@@ -5,12 +5,13 @@
                 template="/WEB-INF/template/BjmTemplate.xhtml">
 
     <ui:define name="content">
+        <h:outputScript library="js" name="togglePWandCP.js"/>
         <div class="w3-col m7">
             <div class="w3-row-padding">
                 <div class="w3-col m12">
                     <div class="w3-card w3-round w3-white">
                     <div class="w3-container w3-padding">
-                        <h:form>  
+                        <h:form prependId="false">  
                         <h4 class="w3-margin-left">Create Access</h4>
                         <h:messages infoStyle="color:blue;" errorStyle="color:red;"/>
                         <div class="w3-row-padding" style="margin:0 -16px">
@@ -37,6 +38,15 @@
                             </div>
                             <div class="w3-half">
                                 <h:inputSecret id="confirmPassword" value="#{createAccessMBean.accessDto.confirmPassword}"  styleClass="w3-input"/> 
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="w3-row-padding" style="margin:0 -16px">
+                            <div class="w3-half">
+                                <h:outputLabel for="checkbox" value="Show Passwords" styleClass="w3-margin-left w3-margin-bottom"/>
+                            </div>
+                            <div class="w3-half">
+                                <h:selectBooleanCheckbox id="checkbox" onclick="togglePWandCP()" styleClass="w3-margin-bottom"/>
                             </div>
                         </div>
                         <br/>

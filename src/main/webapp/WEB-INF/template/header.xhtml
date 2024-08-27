@@ -22,22 +22,22 @@
       <button class="w3-button">Create Survey <i class="fa fa-caret-down"></i></button>
       <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
         <h:form prependId="false"><h:commandLink id="createSurveyLink" action="CreateSurvey" value="New Survey" disabled="#{session.getAttribute('access')==null}" styleClass="w3-bar-item w3-button w3-mobile"/></h:form>  
-        <h:outputLink value="#{request.contextPath}/CreateSurveyFromForum/CreateSurveyFromForumIndex.xhtml" disabled="#{session.getAttribute('access')==null}" styleClass="w3-bar-item w3-button">Survey From Forum</h:outputLink>
+        <h:outputLink value="CreateSurveyFromForum/CreateSurveyFromForumIndex.xhtml" disabled="#{session.getAttribute('access')==null}" styleClass="w3-bar-item w3-button">Survey From Forum</h:outputLink>
       </div>
     </div>
-    <h:outputLink value="#{request.contextPath}/nominate/nominationHome.xhtml" styleClass="w3-bar-item w3-button w3-mobile">Nominate Candidate</h:outputLink>
+    <h:outputLink value="nominate/nominationHome.xhtml" styleClass="w3-bar-item w3-button w3-mobile">Nominate Candidate</h:outputLink>
     
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
         <img src="https://www.w3schools.com/w3images/avatar2.png" class="w3-circle" style="height:23px;width:23px" alt="Avatar"/>
     </a>
     <h:form><h:commandButton action="#{searchMBean.processSearch()}" value="GO" styleClass="w3-bar-item w3-right w3-button" /><h:inputText value="#{searchMBean.searchPhrase}" styleClass="w3-bar-item w3-right" pt:placeholder="Search ..."/></h:form>
-    <h:outputLink value="#{request.contextPath}/info/Blog.xhtml" styleClass="w3-bar-item w3-button w3-mobile w3-right">Blogs</h:outputLink>
-    <h:outputLink value="#{request.contextPath}/info/ContactUs.xhtml" styleClass="w3-bar-item w3-button w3-mobile w3-right">Contact Us</h:outputLink>
+    <h:outputLink value="info/blog.xhtml" styleClass="w3-bar-item w3-button w3-mobile w3-right">Blogs</h:outputLink>
+    <h:outputLink value="info/contactUs.xhtml" styleClass="w3-bar-item w3-button w3-mobile w3-right">Contact Us</h:outputLink>
     <div class="w3-dropdown-hover w3-mobile w3-right">
       <button class="w3-button">About <i class="fa fa-caret-down"></i></button>
       <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
-        <h:outputLink value="#{request.contextPath}/info/AboutUs.xhtml" styleClass="w3-bar-item w3-button w3-mobile">About Us</h:outputLink>
-        <h:outputLink value="#{request.contextPath}/info/AboutLogo.xhtml" styleClass="w3-bar-item w3-button">About Logo</h:outputLink>
+        <h:outputLink value="info/aboutUs.xhtml" styleClass="w3-bar-item w3-button w3-mobile">About Us</h:outputLink>
+        <h:outputLink value="info/aboutLogo.xhtml" styleClass="w3-bar-item w3-button">About Logo</h:outputLink>
         
       </div>
     </div>

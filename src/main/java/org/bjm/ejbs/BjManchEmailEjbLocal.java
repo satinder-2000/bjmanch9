@@ -14,7 +14,7 @@ import org.bjm.collections.VidhanSabhaNominate;
  * @author singh
  */
 @Local
-public interface EmailEjbLocal {
+public interface BjManchEmailEjbLocal {
     
     public void sendUserRegisteredEmail(Access access);
     public void sendAccessCreatedEmail(Access access);

@@ -1,7 +1,9 @@
 <ui:composition xmlns="http://www.w3.org/1999/xhtml"
                 xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
                 template="WEB-INF/template/BjmTemplate.xhtml"
-                xmlns:h="http://xmlns.jcp.org/jsf/html">
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:p="http://primefaces.org/ui">
     <h:head>
         <style>
             .mySlides {
@@ -29,11 +31,67 @@
       
         <div class="w3-container w3-card w3-white w3-round w3-margin w3-padding"><br/>
             <div class="w3-display-container">
-                <h:form>  
-                    <img src="#{request.contextPath}/jakarta.faces.resource/BJManch#{imageScrollMBean.index}.jpg.xhtml?ln=images"  width="500" height="376" style="margin-left: 5em;"/>
-                    <h:commandButton action="#{imageScrollMBean.prev()}" disabled="#{imageScrollMBean.prevDisabled}" styleClass="w3-button w3-black w3-display-left"  value="&#10094;"/>      
-                    <h:commandButton action="#{imageScrollMBean.next()}" disabled="#{imageScrollMBean.nextDisabled}" styleClass="w3-button w3-black w3-display-right"  value="&#10095;"/>      
-                </h:form>
+                
+                    <p:carousel circular="true" paginator="false">
+                        <p:tab>
+                            <img src="jakarta.faces.resource/BJManch1.jpg.xhtml?ln=images" width="500" height="376" style="margin-left: 5em;"/>
+                        </p:tab>
+                        <p:tab>
+                            <img src="jakarta.faces.resource/BJManch2.jpg.xhtml?ln=images" width="500" height="376" style="margin-left: 5em;"/>
+                        </p:tab>
+                        <p:tab>
+                            <img src="jakarta.faces.resource/BJManch3.jpg.xhtml?ln=images" width="500" height="376" style="margin-left: 5em;"/>
+                        </p:tab>
+                        <p:tab>
+                            <img src="jakarta.faces.resource/BJManch4.jpg.xhtml?ln=images" width="500" height="376" style="margin-left: 5em;"/>
+                        </p:tab>
+                        <p:tab>
+                            <img src="jakarta.faces.resource/BJManch5.jpg.xhtml?ln=images" width="500" height="376" style="margin-left: 5em;"/>
+                        </p:tab>
+                        <p:tab>
+                            <img src="jakarta.faces.resource/BJManch6.jpg.xhtml?ln=images" width="500" height="376" style="margin-left: 5em;"/>
+                        </p:tab>
+                        <p:tab>
+                            <img src="jakarta.faces.resource/BJManch7.jpg.xhtml?ln=images" width="500" height="376" style="margin-left: 5em;"/>
+                        </p:tab>
+                        <p:tab>
+                            <img src="jakarta.faces.resource/BJManch8.jpg.xhtml?ln=images" width="500" height="376" style="margin-left: 5em;"/>
+                        </p:tab>
+                        <p:tab>
+                            <img src="jakarta.faces.resource/BJManch9.jpg.xhtml?ln=images" width="500" height="376" style="margin-left: 5em;"/>
+                        </p:tab>
+                        <p:tab>
+                            <img src="jakarta.faces.resource/BJManch10.jpg.xhtml?ln=images" width="500" height="376" style="margin-left: 5em;"/>
+                        </p:tab>
+                        <p:tab>
+                            <img src="jakarta.faces.resource/BJManch11.jpg.xhtml?ln=images" width="500" height="376" style="margin-left: 5em;"/>
+                        </p:tab>
+                        <p:tab>
+                            <img src="jakarta.faces.resource/BJManch12.jpg.xhtml?ln=images" width="500" height="376" style="margin-left: 5em;"/>
+                        </p:tab>
+                        <p:tab>
+                            <img src="jakarta.faces.resource/BJManch13.jpg.xhtml?ln=images" width="500" height="376" style="margin-left: 5em;"/>
+                        </p:tab>
+                        <p:tab>
+                            <img src="jakarta.faces.resource/BJManch14.jpg.xhtml?ln=images" width="500" height="376" style="margin-left: 5em;"/>
+                        </p:tab>
+                        <p:tab>
+                            <img src="jakarta.faces.resource/BJManch15.jpg.xhtml?ln=images" width="500" height="376" style="margin-left: 5em;"/>
+                        </p:tab>
+                        <p:tab>
+                            <img src="jakarta.faces.resource/BJManch16.jpg.xhtml?ln=images" width="500" height="376" style="margin-left: 5em;"/>
+                        </p:tab>
+                        
+                    </p:carousel>
+                <!--
+                    <h:form prependId="false">
+                    <f:ajax execute="@form" render="@form">
+                    <img src="jakarta.faces.resource/BJManch# {imageScrollMBean.index}.jpg.xhtml?ln=images" width="500" height="376" style="margin-left: 5em;"/>    
+                    <h:commandButton action="# {imageScrollMBean.prev()}" disabled="# { imageScrollMBean.prevDisabled}" styleClass="w3-button w3-black w3-display-left"  value="&#10094;"/>      
+                    <h:commandButton action="# {imageScrollMBean.next()}" disabled="# {imageScrollMBean.nextDisabled}" styleClass="w3-button w3-black w3-display-right"  value="&#10095;"/>      
+                    </f:ajax>
+                    </h:form>
+                -->
             </div>
         </div>
           

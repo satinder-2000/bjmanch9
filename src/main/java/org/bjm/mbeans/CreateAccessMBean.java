@@ -18,7 +18,6 @@ import java.time.LocalDateTime;
 import java.util.logging.Logger;
 import org.bjm.collections.Access;
 import org.bjm.dtos.AccessDto;
-import org.bjm.ejbs.EmailEjbLocal;
 import org.bjm.utils.PasswordUtil;
 import org.bson.codecs.configuration.CodecProvider;
 import org.bson.codecs.pojo.PojoCodecProvider;
@@ -26,6 +25,7 @@ import static org.bson.codecs.configuration.CodecRegistries.fromProviders;
 import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
 import org.bson.codecs.configuration.CodecRegistry;
 import org.bson.conversions.Bson;
+import org.bjm.ejbs.BjManchEmailEjbLocal;
 
 /**
  *
@@ -41,7 +41,7 @@ public class CreateAccessMBean implements Serializable {
     private Access access;
     
     @Inject
-    private EmailEjbLocal emailEjbLocal;
+    private BjManchEmailEjbLocal emailEjbLocal;
     
     @PostConstruct
     public void init(){

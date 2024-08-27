@@ -8,7 +8,7 @@ import jakarta.inject.Named;
 import jakarta.servlet.ServletContext;
 import java.io.Serializable;
 import java.util.logging.Logger;
-import org.bjm.ejbs.EmailEjbLocal;
+import org.bjm.ejbs.BjManchEmailEjbLocal;
 
 /**
  *
@@ -21,7 +21,7 @@ public class ContactUsMBean implements Serializable {
     private static final Logger LOGGER=Logger.getLogger(ContactUsMBean.class.getName());
     
     @Inject
-    private EmailEjbLocal emailEjbLocal;
+    private BjManchEmailEjbLocal emailEjbLocal;
     
     private String userEmail;
     private String subject;

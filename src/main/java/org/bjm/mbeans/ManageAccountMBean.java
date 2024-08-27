@@ -35,7 +35,6 @@ import org.bjm.collections.User;
 import org.bjm.collections.VidhanSabha;
 import org.bjm.dtos.AccessDto;
 import org.bjm.dtos.UserDto;
-import org.bjm.ejbs.EmailEjbLocal;
 import org.bjm.utils.ConvertPngToJpg;
 import org.bjm.utils.PasswordUtil;
 import org.bson.Document;
@@ -46,6 +45,7 @@ import org.bson.codecs.pojo.PojoCodecProvider;
 import org.bson.codecs.configuration.CodecRegistry;
 import org.bson.conversions.Bson;
 import org.bson.types.Binary;
+import org.bjm.ejbs.BjManchEmailEjbLocal;
 
 /**
  *
@@ -244,7 +244,7 @@ public class ManageAccountMBean implements Serializable {
                 Updates.set("email", user.getEmail()),
                 Updates.set("gender", user.getGender()),
                 Updates.set("profileFile", access.getProfileFile()),
-                Updates.set("stateCode", user.getStateCode()),
+                Updates.set("stateCode", user.getStateName()),
                 Updates.set("lokSabha", user.getLokSabha()),
                 Updates.set("vidhanSabha", user.getVidhanSabha()),
                 Updates.set("firstName", userDto.getFirstName()),

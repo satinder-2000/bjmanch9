@@ -43,6 +43,36 @@
         <param-name>adminEmail</param-name>
         <param-value>admin@bjmanch.in</param-value>
     </context-param>
+    <!-- Email Session params -->
+    <context-param>
+        <param-name>mailSMTPHost</param-name>
+        <param-value>smtp.livemail.co.uk</param-value>
+    </context-param>
+    <context-param>
+        <param-name>mailSMTPPort</param-name>
+        <param-value>587</param-value>
+    </context-param>
+    <context-param>
+        <param-name>mailSMTPAuth</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <context-param>
+        <param-name>smtpStartTlsEnabled</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <context-param>
+        <param-name>mailSMTPUser</param-name>
+        <param-value>admin@bjmanch.org</param-value>
+    </context-param>
+    <context-param>
+        <param-name>password</param-name>
+        <param-value>Wether@lDr69</param-value>
+    </context-param>
+    <context-param>
+        <param-name>createAccessURI</param-name>
+        <param-value>createAccess.xhtml?email=%s</param-value>
+    </context-param>
+    
     <servlet>
         <servlet-name>Faces Servlet</servlet-name>
         <servlet-class>jakarta.faces.webapp.FacesServlet</servlet-class>

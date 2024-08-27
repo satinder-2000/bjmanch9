@@ -18,7 +18,7 @@ public class User {
     private LocalDate dob;
     private String mobile;
     private String phone;
-    private String stateCode;
+    private String stateName;
     private String lokSabha;
     private String vidhanSabha;
     private LocalDateTime createdOn;
@@ -90,12 +90,12 @@ public class User {
     
     
 
-    public String getStateCode() {
-        return stateCode;
+    public String getStateName() {
+        return stateName;
     }
 
-    public void setStateCode(String stateCode) {
-        this.stateCode = stateCode;
+    public void setStateName(String stateName) {
+        this.stateName = stateName;
     }
 
     public String getLokSabha() {

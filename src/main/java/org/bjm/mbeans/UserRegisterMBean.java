@@ -13,6 +13,15 @@ import jakarta.faces.event.AjaxBehaviorEvent;
 import jakarta.faces.flow.FlowScoped;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
+import jakarta.mail.Message;
+import jakarta.mail.MessagingException;
+import jakarta.mail.Multipart;
+import jakarta.mail.Session;
+import jakarta.mail.Transport;
+import jakarta.mail.internet.InternetAddress;
+import jakarta.mail.internet.MimeBodyPart;
+import jakarta.mail.internet.MimeMessage;
+import jakarta.mail.internet.MimeMultipart;
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
@@ -35,7 +44,6 @@ import org.bjm.collections.State;
 import org.bjm.collections.User;
 import org.bjm.collections.VidhanSabha;
 import org.bjm.dtos.UserDto;
-import org.bjm.ejbs.EmailEjbLocal;
 import org.bjm.utils.BjmConstants;
 import org.bjm.utils.ConvertPngToJpg;
 import org.bjm.utils.ImageUtil;
@@ -47,6 +55,7 @@ import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
 import org.bson.codecs.configuration.CodecRegistry;
 import org.bson.conversions.Bson;
 import org.bson.types.Binary;
+import org.bjm.ejbs.BjManchEmailEjbLocal;
 
 /**
  *
@@ -62,7 +71,7 @@ public class UserRegisterMBean implements Serializable{
     private Part profileImage;
     
     @Inject
-    private EmailEjbLocal emailEjbLocal;
+    private BjManchEmailEjbLocal emailEjbLocal;
     
     @PostConstruct
     public void init(){
@@ -235,7 +244,7 @@ public class UserRegisterMBean implements Serializable{
         user.setDob(LocalDate.parse(userDto.getDob(), DateTimeFormatter.ofPattern("dd/MM/yyyy")));
         user.setMobile(userDto.getMobile());
         user.setPhone(userDto.getPhone());
-        user.setStateCode(userDto.getStateCode());
+        user.setStateName(userDto.getState().getName());
         user.setLokSabha(userDto.getLokSabha());
         user.setVidhanSabha(userDto.getVidhanSabha());
         user.setCreatedOn(LocalDateTime.now());
@@ -282,6 +291,39 @@ public class UserRegisterMBean implements Serializable{
 
     public void setProfileImage(Part profileImage) {
         this.profileImage = profileImage;
+    }
+
+    private void sendUserRegisteredEmail(Access access) {
+        ServletContext servletContext= (ServletContext)FacesContext.getCurrentInstance().getExternalContext().getContext();
+        Session mailSession=(Session) servletContext.getAttribute("mailSession");
+        MimeMessage mimeMessage = new MimeMessage(mailSession);
+        Multipart multipart = new MimeMultipart();
+        StringBuilder htmlMsg = new StringBuilder("<html><body>");
+        htmlMsg.append("<h2>Dear, ").append(access.getEmail()).append("</h2>");
+        htmlMsg.append("<p>Congratulations on registering yourself successfully!!").append(".</p>");
+        htmlMsg.append("<p>As a final step, please create your account password by following the link below:</p>");
+        String createAccessURI=FacesContext.getCurrentInstance().getExternalContext().getInitParameter("createAccessURI");
+        String createAccess=String.format(createAccessURI, access.getEmail());
+        String webURI = FacesContext.getCurrentInstance().getExternalContext().getRealPath(("/"));
+        htmlMsg.append("<a href=\"").append(webURI).append(createAccess).append("\">")
+                .append(webURI).append(createAccess)
+                .append("</a>");
+        
+        htmlMsg.append("<p>Best Wishes, <br/>www.bjmanch.in Admin</p>");
+        htmlMsg.append("</body></html>");
+        MimeBodyPart htmlPart=new MimeBodyPart();
+        try{
+            htmlPart.setContent(htmlMsg.toString(), "text/html; charset=utf-8");
+            multipart.addBodyPart(htmlPart);
+            mimeMessage.setRecipient(Message.RecipientType.TO, new InternetAddress(access.getEmail()));
+            mimeMessage.setContent(multipart);
+            mimeMessage.setSubject("User Registration");
+            Transport.send(mimeMessage);
+            LOGGER.info("Email sent successfully....");
+        
+        }catch(MessagingException ex){
+            LOGGER.severe(ex.getMessage());
+        }
     }
     
     

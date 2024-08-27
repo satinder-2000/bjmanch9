@@ -3,6 +3,7 @@ package org.bjm.ejbs;
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.Resource;
 import jakarta.ejb.Stateless;
+import jakarta.mail.Authenticator;
 import jakarta.mail.Message;
 import jakarta.mail.MessagingException;
 import jakarta.mail.Multipart;
@@ -14,6 +15,7 @@ import jakarta.mail.internet.InternetAddress;
 import jakarta.mail.internet.MimeBodyPart;
 import jakarta.mail.internet.MimeMessage;
 import jakarta.mail.internet.MimeMultipart;
+import java.util.Properties;
 import java.util.logging.Logger;
 import org.bjm.collections.Access;
 import org.bjm.collections.Forum;
@@ -28,11 +30,11 @@ import org.bjm.collections.VidhanSabhaNominate;
  * @author singh
  */
 @Stateless
-public class EmailEjb implements EmailEjbLocal {
+public class BjManchEmailEjb implements BjManchEmailEjbLocal {
     
-    private static final Logger LOGGER= Logger.getLogger(EmailEjb.class.getName());
+    private static final Logger LOGGER= Logger.getLogger(BjManchEmailEjb.class.getName());
     
-    @Resource(mappedName = "java:comp/env/mail/bjm")//Tomee
+    //@Resource(mappedName = "java:comp/env/mail/bjm")//Tomee
     //@Resource(lookup = "mail/bjm")//Glassfish
     private Session mailSession;
     
@@ -51,15 +53,52 @@ public class EmailEjb implements EmailEjbLocal {
     @Resource(name = "surveyCreatedFromForumURI")
     private String surveyCreatedFromForumURI;
     
+    @Resource(name="mailSMTPHost")
+    private String mailSMTPHost;
+    
+    @Resource(name="mailSMTPPort")
+    private int mailSMTPPort;
+    
+    @Resource(name="mailTransportProtocol")
+    private String mailTransportProtocol;
+  
+    @Resource(name="mailSMTPAuth")
+    private boolean mailSMTPAuth;
+  
+    @Resource(name="smtpStartTlsEnabled")
+    private boolean smtpStartTlsEnabled;
+    
+    @Resource(name="mailSMTPUser")
+    private String mailSMTPUser;
+  
+    @Resource(name="password")
+    private String password;
+    
     @PostConstruct
     public void init(){
-        String username=mailSession.getProperty("mail.smtp.user");
+        Properties prop = new Properties();
+        prop.put("mail.smtp.auth", mailSMTPAuth);
+        prop.put("mail.smtp.starttls.enable", smtpStartTlsEnabled);
+        prop.put("mail.smtp.host", mailSMTPHost);
+        prop.put("mail.smtp.port", mailSMTPPort);
+        // SSL Factory
+        prop.put("mail.smtp.socketFactory.class","javax.net.ssl.SSLSocketFactory"); 
+        
+        Authenticator auth = new Authenticator(){
+            @Override
+            protected PasswordAuthentication getPasswordAuthentication(){
+                return new PasswordAuthentication(mailSMTPUser,password);
+            }
+        };
+        mailSession=Session.getInstance(prop, auth);
+        
+        /*String username=mailSession.getProperty("mail.smtp.user");
         String password=mailSession.getProperty("mail.smtp.password");
         
         final URLName url= new URLName(mailSession.getProperty("mail.transport.mail"), mailSession.getProperty("mail.smtp.host"),
         -1, null, username, null);
         
-        mailSession.setPasswordAuthentication(url, new PasswordAuthentication(username, password));
+        mailSession.setPasswordAuthentication(url, new PasswordAuthentication(username, password));*/
         LOGGER.info("MailSession set successfully!!");
     }
     

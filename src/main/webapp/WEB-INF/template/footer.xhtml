@@ -1,11 +1,14 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
-    <h:head>
-        <title>Facelet Title</title>
-    </h:head>
-    <h:body>
-        Hello from Facelets
-    </h:body>
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+      >
+<!-- Navbar -->
+<div class="w3-bar w3-black">
+    <h:outputLink value="#{request.contextPath}" styleClass="w3-bar-item w3-button w3-mobile" >Home</h:outputLink>
+    <h:outputLink value="#{request.contextPath}/info/termsAndConditions.xhtml" styleClass="w3-bar-item w3-button w3-mobile">Terms and Conditions</h:outputLink>
+    <h:outputLink value="#{request.contextPath}/info/contactUs.xhtml" styleClass="w3-bar-item w3-button w3-mobile">Contact Us</h:outputLink>
+    <h:outputLink value="#{request.contextPath}/info/careers.xhtml" styleClass="w3-bar-item w3-button w3-mobile">Careers</h:outputLink>
+    <h:outputText value="Copyright &#169; 2025 by www.bjmanch.com" styleClass="w3-bar-item w3-button w3-mobile"/>
+</div>
 </html>

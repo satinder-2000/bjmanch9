@@ -2,3 +2,8 @@ JUST ONE FLOW IN APP - USER REGISTER
 Tried to create second Flow CreateForum but the Flow crashes with some strange errors as if we cannot interrupt a flow once it has started. 
 E.g - is from UserRegister Flow, the User decides to jump on CreateForum flow, it does not work and system generates an error. 
 Solution> Made CreateForumMBean as SessionScoped
+
+JAVA_HOME Debian 12 
+/usr/lib/jvm/java-17-openjdk-amd64
+
+up: #240824-000184.

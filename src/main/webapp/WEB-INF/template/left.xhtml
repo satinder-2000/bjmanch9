@@ -11,6 +11,7 @@
                         <h4 class="w3-center">My Profile</h4>
                         <p class="w3-center">
                             <h:graphicImage value="/UserImageServlet" styleClass="w3-circle" style="height:106px;width:106px"/>
+                            
                         </p>
                         <hr/>
                         <p class="w3-margin-left">Email: #{session.getAttribute('access').email}</p>
@@ -18,7 +19,7 @@
                     </c:when>
                     <c:otherwise>
                         <p class="w3-center">
-                            <h:graphicImage library="images" name="Logo120.jpg" />
+                            <img src="jakarta.faces.resource/Logo120.jpg.xhtml?ln=images" alt="Logo"/>
 
                         </p>
                         <p class="w3-margin-left">

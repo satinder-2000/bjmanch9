@@ -6,13 +6,38 @@
     
     <enterprise-beans>
         <session>
-            <display-name>EmailEjb</display-name>
-            <ejb-name>EmailEjb</ejb-name>
-            <ejb-class>org.bjm.ejbs.EmailEjb</ejb-class>
+            <display-name>BjManchEmailEjb</display-name>
+            <ejb-name>BjManchEmailEjb</ejb-name>
+            <ejb-class>org.bjm.ejbs.BjManchEmailEjb</ejb-class>
             <env-entry>
-                <env-entry-name>sender</env-entry-name>
+                <env-entry-name>mailSMTPHost</env-entry-name>
                 <env-entry-type>java.lang.String</env-entry-type>
-                <env-entry-value>admin@bjmanch.in</env-entry-value>
+                <env-entry-value>smtp.livemail.co.uk</env-entry-value>
+            </env-entry>
+            <env-entry>
+                <env-entry-name>mailSMTPPort</env-entry-name>
+                <env-entry-type>java.lang.Integer</env-entry-type>
+                <env-entry-value>587</env-entry-value>
+            </env-entry>
+            <env-entry>
+                <env-entry-name>mailSMTPAuth</env-entry-name>
+                <env-entry-type>java.lang.Boolean</env-entry-type>
+                <env-entry-value>true</env-entry-value>
+            </env-entry>
+            <env-entry>
+                <env-entry-name>smtpStartTlsEnabled</env-entry-name>
+                <env-entry-type>java.lang.Boolean</env-entry-type>
+                <env-entry-value>true</env-entry-value>
+            </env-entry>
+            <env-entry>
+                <env-entry-name>mailSMTPUser</env-entry-name>
+                <env-entry-type>java.lang.String</env-entry-type>
+                <env-entry-value>admin@bjmanch.org</env-entry-value>
+            </env-entry>
+            <env-entry>
+                <env-entry-name>password</env-entry-name>
+                <env-entry-type>java.lang.String</env-entry-type>
+                <env-entry-value>Wether@lDr69</env-entry-value>
             </env-entry>
             <env-entry>
                 <env-entry-name>webURI</env-entry-name>

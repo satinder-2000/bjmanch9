@@ -29,13 +29,13 @@ import org.bjm.collections.Access;
 import org.bjm.collections.State;
 import org.bjm.collections.User;
 import org.bjm.collections.VidhanSabhaNominate;
-import org.bjm.ejbs.EmailEjbLocal;
 import org.bson.codecs.configuration.CodecProvider;
 import static org.bson.codecs.configuration.CodecRegistries.fromProviders;
 import org.bson.codecs.pojo.PojoCodecProvider;
 import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
 import org.bson.codecs.configuration.CodecRegistry;
 import org.bson.conversions.Bson;
+import org.bjm.ejbs.BjManchEmailEjbLocal;
 
 /**
  *
@@ -61,7 +61,7 @@ public class VidhanSabhaNominationMBean implements Serializable{
     private boolean forceNomination;
     
     @Inject
-    private EmailEjbLocal emailEjbLocal;
+    private BjManchEmailEjbLocal emailEjbLocal;
     
     @PostConstruct
     public void init(){
@@ -76,12 +76,12 @@ public class VidhanSabhaNominationMBean implements Serializable{
         Bson filerEmail=Filters.eq("email", access.getEmail());
         MongoCollection<User> userColl=mongoDatabase.getCollection("User", User.class);
         user=userColl.find(filerEmail).first();
-        Bson filterState=Filters.eq("code", user.getStateCode());
+        Bson filterState=Filters.eq("code", user.getStateName());
         MongoCollection<State> stateColl=mongoDatabase.getCollection("State", State.class);
         state=stateColl.find(filterState).first();
         nominatedCandidates=new ArrayList<>();
         if(!user.getVidhanSabha().isEmpty()){//For UT's like CH there is no VidhanSabha
-            Bson filterVsNom=Filters.and(Filters.eq("stateCode", user.getStateCode()),Filters.eq("constituency", user.getVidhanSabha()));
+            Bson filterVsNom=Filters.and(Filters.eq("stateCode", user.getStateName()),Filters.eq("constituency", user.getVidhanSabha()));
             MongoCollection<VidhanSabhaNominate> vidhanSabhaNomColl=mongoDatabase.getCollection("VidhanSabhaNominate", VidhanSabhaNominate.class);
             Iterable<VidhanSabhaNominate> vidhanSabhaNomItrble=vidhanSabhaNomColl.find(filterVsNom);
             Iterator<VidhanSabhaNominate> vidhanSabhaItr=vidhanSabhaNomItrble.iterator();
@@ -89,9 +89,9 @@ public class VidhanSabhaNominationMBean implements Serializable{
             while(vidhanSabhaItr.hasNext()){
                 nominatedCandidates.add(vidhanSabhaItr.next().getCandidateName());
             }
-            LOGGER.info(String.format("Number of Vidhan Sabha Nominated candidates for User's Constitueny  %s in StateCode %s id %d", user.getVidhanSabha(),user.getStateCode(),nominatedCandidates.size()));
+            LOGGER.info(String.format("Number of Vidhan Sabha Nominated candidates for User's Constitueny  %s in StateCode %s id %d", user.getVidhanSabha(),user.getStateName(),nominatedCandidates.size()));
         }else{
-            nominatedCandidates.add("No Vidhan Sabha for "+user.getStateCode());
+            nominatedCandidates.add("No Vidhan Sabha for "+user.getStateName());
         }
         fuzzyCandidates=new ArrayList<>();
     }
@@ -183,7 +183,7 @@ public class VidhanSabhaNominationMBean implements Serializable{
     
     private void preSubmitNomination(){
         vidhanSabhaNominate = new VidhanSabhaNominate();
-        vidhanSabhaNominate.setStateCode(user.getStateCode());
+        vidhanSabhaNominate.setStateCode(user.getStateName());
         vidhanSabhaNominate.setConstituency(user.getVidhanSabha());
         vidhanSabhaNominate.setCandidateName(candidateNew);
         HttpServletRequest request=(HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
@@ -203,7 +203,7 @@ public class VidhanSabhaNominationMBean implements Serializable{
         CodecRegistry pojoCodecRegistry= fromRegistries(MongoClientSettings.getDefaultCodecRegistry(),fromProviders(pojoCodecProvider));
         MongoDatabase mongoDatabase=mongoClient.getDatabase(servletContext.getInitParameter("MONGODB_DB")).withCodecRegistry(pojoCodecRegistry);
         MongoCollection<VidhanSabhaNominate> vidhanSabhaNomiColl=mongoDatabase.getCollection("VidhanSabhaNominate", VidhanSabhaNominate.class);
-        Bson filter=Filters.and(Filters.eq("stateCode", user.getStateCode()),Filters.eq("constituency", user.getVidhanSabha()),
+        Bson filter=Filters.and(Filters.eq("stateCode", user.getStateName()),Filters.eq("constituency", user.getVidhanSabha()),
                 Filters.eq("candidateName", candidateSelected));
         vidhanSabhaNominate= vidhanSabhaNomiColl.find(filter).first();
         vidhanSabhaNominate.setNominationCount(vidhanSabhaNominate.getNominationCount()+1);
@@ -219,7 +219,7 @@ public class VidhanSabhaNominationMBean implements Serializable{
             
         if(newNomination){//flag set in preSubmitNomination
             InsertOneResult insertOneResult= vidhanSabhaNomiColl.insertOne(vidhanSabhaNominate);
-            LOGGER.info(String.format("StateCode %s - VidhanSabha %s - new Nominated created with ID: %s", user.getStateCode(),user.getVidhanSabha(),
+            LOGGER.info(String.format("StateCode %s - VidhanSabha %s - new Nominated created with ID: %s", user.getStateName(),user.getVidhanSabha(),
                     insertOneResult.getInsertedId()));
             emailEjbLocal.sendNewVidhanSabhaNominationEmail(user, vidhanSabhaNominate);
         }else{

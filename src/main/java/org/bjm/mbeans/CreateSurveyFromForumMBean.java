@@ -22,7 +22,6 @@ import org.bjm.collections.Activity;
 import org.bjm.collections.ActivityType;
 import org.bjm.collections.Forum;
 import org.bjm.collections.SurveyFromForum;
-import org.bjm.ejbs.EmailEjbLocal;
 import org.bson.codecs.configuration.CodecProvider;
 import org.bson.codecs.pojo.PojoCodecProvider;
 import static org.bson.codecs.configuration.CodecRegistries.fromProviders;
@@ -30,6 +29,7 @@ import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
 import org.bson.codecs.configuration.CodecRegistry;
 import org.bson.conversions.Bson;
 import org.bson.types.ObjectId;
+import org.bjm.ejbs.BjManchEmailEjbLocal;
 
 /**
  *
@@ -46,7 +46,7 @@ public class CreateSurveyFromForumMBean implements Serializable {
     @Inject
     private ActivityMBean activityMBean;
     @Inject
-    private EmailEjbLocal emailEjbLocal;
+    private BjManchEmailEjbLocal emailEjbLocal;
     
     @PostConstruct
     public void init(){

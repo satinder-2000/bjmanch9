@@ -30,13 +30,13 @@ import org.bjm.collections.LokSabha;
 import org.bjm.collections.LokSabhaNominate;
 import org.bjm.collections.State;
 import org.bjm.collections.User;
-import org.bjm.ejbs.EmailEjbLocal;
 import org.bson.codecs.configuration.CodecProvider;
 import org.bson.codecs.pojo.PojoCodecProvider;
 import static org.bson.codecs.configuration.CodecRegistries.fromProviders;
 import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
 import org.bson.codecs.configuration.CodecRegistry;
 import org.bson.conversions.Bson;
+import org.bjm.ejbs.BjManchEmailEjbLocal;
 
 /**
  *
@@ -64,7 +64,7 @@ public class LokSabhaNominationMBean implements Serializable {
     
     
     @Inject
-    private EmailEjbLocal emailEjbLocal;
+    private BjManchEmailEjbLocal emailEjbLocal;
     
     @PostConstruct
     public void init(){
@@ -79,11 +79,11 @@ public class LokSabhaNominationMBean implements Serializable {
         Bson filterEmail=Filters.eq("email", access.getEmail());
         MongoCollection<User> userColl=mongoDatabase.getCollection("User", User.class);
         user=userColl.find(filterEmail).first();
-        Bson filterState=Filters.eq("code", user.getStateCode());
+        Bson filterState=Filters.eq("code", user.getStateName());
         MongoCollection<State> stateColl=mongoDatabase.getCollection("State", State.class);
         state=stateColl.find(filterState).first();
         //Bson filterStateCode=Filters.and(Filters.eq("stateCode", user.getStateCode(),Filters.eq("constituency", user.getLokSabha()));
-        Bson filterLsNom=Filters.and(Filters.eq("stateCode", user.getStateCode()), Filters.eq("constituency", user.getLokSabha()));
+        Bson filterLsNom=Filters.and(Filters.eq("stateCode", user.getStateName()), Filters.eq("constituency", user.getLokSabha()));
         MongoCollection<LokSabhaNominate> lokSabhaNomiColl=mongoDatabase.getCollection("LokSabhaNominate", LokSabhaNominate.class);
         Iterable<LokSabhaNominate> lokSabhaNomiItrble=lokSabhaNomiColl.find(filterLsNom);
         Iterator<LokSabhaNominate> lokSabhaNomiItr=lokSabhaNomiItrble.iterator();
@@ -97,7 +97,7 @@ public class LokSabhaNominationMBean implements Serializable {
             nominatedCandidates.add("--None Found--");
         }
         fuzzyCandidates=new ArrayList<>();
-        LOGGER.info(String.format("Number of Lok Sabha Nominated candidates for User's Constitueny  %s in StateCode %s id %d", user.getLokSabha(),user.getStateCode(),nominatedCandidates.size()));
+        LOGGER.info(String.format("Number of Lok Sabha Nominated candidates for User's Constitueny  %s in StateCode %s id %d", user.getLokSabha(),user.getStateName(),nominatedCandidates.size()));
     }
     
     /**
@@ -186,7 +186,7 @@ public class LokSabhaNominationMBean implements Serializable {
     
     private void preSubmitNomination(){
         lokSabhaNominate = new LokSabhaNominate();
-        lokSabhaNominate.setStateCode(user.getStateCode());
+        lokSabhaNominate.setStateCode(user.getStateName());
         lokSabhaNominate.setConstituency(user.getLokSabha());
         lokSabhaNominate.setCandidateName(candidateNew);
         HttpServletRequest request=(HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
@@ -206,7 +206,7 @@ public class LokSabhaNominationMBean implements Serializable {
         CodecRegistry pojoCodecRegistry= fromRegistries(MongoClientSettings.getDefaultCodecRegistry(),fromProviders(pojoCodecProvider));
         MongoDatabase mongoDatabase=mongoClient.getDatabase(servletContext.getInitParameter("MONGODB_DB")).withCodecRegistry(pojoCodecRegistry);
         MongoCollection<LokSabhaNominate> lokSabhaNomiColl=mongoDatabase.getCollection("LokSabhaNominate", LokSabhaNominate.class);
-        Bson filter=Filters.and(Filters.eq("stateCode", user.getStateCode()),Filters.eq("constituency", user.getLokSabha()),
+        Bson filter=Filters.and(Filters.eq("stateCode", user.getStateName()),Filters.eq("constituency", user.getLokSabha()),
                 Filters.eq("candidateName", candidateSelected));
         lokSabhaNominate= lokSabhaNomiColl.find(filter).first();
         lokSabhaNominate.setNominationCount(lokSabhaNominate.getNominationCount()+1);
@@ -222,7 +222,7 @@ public class LokSabhaNominationMBean implements Serializable {
             
         if(newNomination){//flag set in preSubmitNomination
             InsertOneResult insertOneResult= lokSabhaNomiColl.insertOne(lokSabhaNominate);
-            LOGGER.info(String.format("StateCode %s - LokSabha %s - new Nominated created with ID: %s", user.getStateCode(),user.getLokSabha(),
+            LOGGER.info(String.format("StateCode %s - LokSabha %s - new Nominated created with ID: %s", user.getStateName(),user.getLokSabha(),
                     insertOneResult.getInsertedId()));
             emailEjbLocal.sendNewLokSabhaNominationEmail(user, lokSabhaNominate);
         }else{
