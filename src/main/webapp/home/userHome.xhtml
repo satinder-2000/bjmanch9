@@ -98,6 +98,35 @@
                                             <p class="w3-margin-left">No Surveys Found</p>
                                         </c:otherwise>
                                     </c:choose>
+                                    <br/>
+                                    <h5 class="w3-margin-left">My Blogs</h5>
+                                    <c:choose>
+                                        <c:when test="#{homeMBean.userBlogs.size()>0}">
+                                            <table class="w3-table w3-striped">
+                                                <tr>
+                                                    <th>Blog Title</th>
+                                                    <th>Date Created</th>
+                                                    <th>Details</th>
+                                                </tr>
+                                                <c:forEach items="#{homeMBean.userBlogs}" var="blog">
+                                                    <tr>
+                                                        <td><h:outputText value="#{blog.title}" /></td>
+                                                        <td><h:outputText value="#{blog.createdOn}" /></td>
+                                                        <td>
+                                                            <h:outputLink value="#{request.contextPath}/userBlog/UserBlogDetails.xhtml" styleClass="w3-margin-left">
+                                                                <h:outputText value="View Details" />
+                                                                <f:param name="userBlogId" value="#{blog.id}" />
+                                                            </h:outputLink>
+                                                        </td>
+                                                    </tr>
+                                                </c:forEach>
+                                            </table>
+                                        </c:when>
+                                        <c:otherwise>
+                                            <p class="w3-margin-left">No Surveys Found</p>
+                                        </c:otherwise>
+                                    </c:choose>
+
 
                                 </c:when>
                                 <c:otherwise>

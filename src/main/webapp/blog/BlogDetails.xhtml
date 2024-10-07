@@ -1,0 +1,89 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                template="/WEB-INF/template/BjmTemplate.xhtml"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+                xmlns:p="http://primefaces.org/ui">
+
+    <ui:define name="content">
+        <div class="w3-col m7">
+            <div class="w3-row-padding">
+                <div class="w3-col m12">
+                    <div class="w3-card w3-round w3-white">
+                        <div class="w3-container w3-padding">
+                            <h:form prependId="false">
+                                <h4 class="w3-margin-left">Blog - Details</h4>
+                                <div class="w3-row-padding" style="margin:0 -16px">
+                                    <div class="w3-half">
+                                        <h:outputLabel for="title" value="Title" styleClass="w3-margin-left w3-margin-bottom"/>
+                                    </div>
+                                    <div class="w3-half">
+                                        <h:outputText id="title" value="#{blogDetailsMBean.blog.title}" styleClass="w3-input" pt:passthrough="5-125 chars"/> 
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="w3-row-padding" style="margin:0 -16px">
+                                    <div class="w3-half">
+                                        <h:outputLabel for="publishedBy" value="Published By" styleClass="w3-margin-left w3-margin-bottom"/>
+                                    </div>
+                                    <div class="w3-half">
+                                        <h:outputText id="publishedBy" value="#{blogDetailsMBean.blog.publishedByEmail}" styleClass="w3-input" pt:passthrough="5-125 chars"/> 
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="w3-row-padding" style="margin:0 -16px">
+                                    <div class="w3-half">
+                                        <h:outputLabel for="createdOn" value="Created On" styleClass="w3-margin-left w3-margin-bottom"/>
+                                    </div>
+                                    <div class="w3-half">
+                                        <h:outputText id="createdOn" value="#{blogDetailsMBean.publishedOn}" styleClass="w3-input" pt:passthrough="5-125 chars"/> 
+                                    </div>
+                                </div>
+                                <br/>
+                        <div class="w3-row-padding" style="margin:0 -16px">
+                            <p:textEditor id="desc" value="#{userBlogDetailsMBean.userBlog.text}" readonly="true" height="300px" styleClass="w3-input">
+                                <f:facet name="toolbar">
+                                    <span class="ql-formats">
+                                        <select class="ql-font" />
+                                        <select class="ql-size" />
+                                    </span>
+                                    <span class="ql-formats">
+                                        <button class="ql-bold" />
+                                        <button class="ql-italic" />
+                                        <button class="ql-underline" />
+                                    </span>
+                                    <span class="ql-formats">
+                                        <select class="ql-color" />
+                                        <select class="ql-background" />
+                                    </span>
+                                    <span class="ql-formats">
+                                        <button class="ql-list" value="ordered" />
+                                        <button class="ql-list" value="bullet" />
+                                        <button class="ql-indent" value="-1" />
+                                        <button class="ql-indent" value="+1" />
+                                    </span>
+                                    <span class="ql-formats">
+                                        <select class="ql-align" />
+                                    </span>
+                                    <span class="ql-formats">
+                                        <button class="ql-link" />
+                                        <button class="ql-image" />
+                                    </span>
+                                    
+                                </f:facet>
+                            </p:textEditor>    
+                        </div>
+                                <br/>
+                        <br/>
+                        
+                                
+                            </h:form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ui:define>
+
+</ui:composition>

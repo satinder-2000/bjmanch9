@@ -21,6 +21,7 @@ import org.bjm.collections.Access;
 import org.bjm.collections.Forum;
 import org.bjm.collections.Survey;
 import org.bjm.collections.SurveyFromForum;
+import org.bjm.collections.UserBlog;
 import org.bson.codecs.configuration.CodecProvider;
 import org.bson.codecs.pojo.PojoCodecProvider;
 import static org.bson.codecs.configuration.CodecRegistries.fromProviders;
@@ -41,6 +42,7 @@ public class HomeMBean implements Serializable {
     private List<Forum> userForums;
     private List<Survey> userSurveys;
     private List<SurveyFromForum> userSurveysFromForums;
+    private List<UserBlog> userBlogs;
     
     @PostConstruct
     public void init(){
@@ -87,6 +89,17 @@ public class HomeMBean implements Serializable {
         }
         LOGGER.info(String.format("Count of SurveysFromForums by User %s is %d", access.getEmail(), userSurveys.size()));
         
+        //User Blogs
+        Bson filterUserBlog=Filters.eq("blogPublishedByEmail", access.getEmail());
+        MongoCollection<UserBlog> userBlogColl=mongoDatabase.getCollection("UserBlog", UserBlog.class);
+        Iterable<UserBlog> userBlogItrble=userBlogColl.find(filterUserBlog);
+        Iterator<UserBlog> userBlogItr=userBlogItrble.iterator();
+        userBlogs = new ArrayList<>();
+        while(userBlogItr.hasNext()){
+            userBlogs.add(userBlogItr.next());
+        }
+        LOGGER.info(String.format("Count of UserBlogs by User %s is %d", access.getEmail(), userBlogs.size()));
+        
     }
     
     
@@ -117,6 +130,14 @@ public class HomeMBean implements Serializable {
 
     public void setUserSurveysFromForums(List<SurveyFromForum> userSurveysFromForums) {
         this.userSurveysFromForums = userSurveysFromForums;
+    }
+
+    public List<UserBlog> getUserBlogs() {
+        return userBlogs;
+    }
+
+    public void setUserBlogs(List<UserBlog> userBlogs) {
+        this.userBlogs = userBlogs;
     }
     
     

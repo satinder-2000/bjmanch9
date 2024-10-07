@@ -8,6 +8,7 @@ public enum ActivityType {
     
     FORUM_CREATED,
     SURVEY_CREATED,
-    SURVEY_FROM_FORUM_CREATED
+    SURVEY_FROM_FORUM_CREATED,
+    BLOG_CREATED;
     
 }

@@ -32,7 +32,7 @@
             <env-entry>
                 <env-entry-name>mailSMTPUser</env-entry-name>
                 <env-entry-type>java.lang.String</env-entry-type>
-                <env-entry-value>admin@bjmanch.org</env-entry-value>
+                <env-entry-value>contact@bjmanch.org</env-entry-value>
             </env-entry>
             <env-entry>
                 <env-entry-name>password</env-entry-name>
@@ -42,7 +42,7 @@
             <env-entry>
                 <env-entry-name>webURI</env-entry-name>
                 <env-entry-type>java.lang.String</env-entry-type>
-                <env-entry-value>http://localhost:8080/bjmanch9/</env-entry-value>
+                <env-entry-value>http://localhost:8080/bjmanch/</env-entry-value>
             </env-entry>
            <env-entry>
                 <env-entry-name>createAccessURI</env-entry-name>

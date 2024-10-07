@@ -10,12 +10,12 @@ import org.bson.types.ObjectId;
 public class Blog {
     
     private ObjectId _id;
-    private LocalDateTime createdOn;
+    private LocalDateTime publishedOn;
     private String title;
     private String summary;
-    private String fileName;
-    private String createdByAccessId;
-    private String createdByEmail;
+    private String text;
+    private String publishedByAccessId;
+    private String publishedByEmail;
 
     public ObjectId getId() {
         return _id;
@@ -25,12 +25,12 @@ public class Blog {
         this._id = _id;
     }
 
-    public LocalDateTime getCreatedOn() {
-        return createdOn;
+    public LocalDateTime getPublishedOn() {
+        return publishedOn;
     }
 
-    public void setCreatedOn(LocalDateTime createdOn) {
-        this.createdOn = createdOn;
+    public void setPublishedOn(LocalDateTime publishedOn) {
+        this.publishedOn = publishedOn;
     }
 
     public String getTitle() {
@@ -49,30 +49,28 @@ public class Blog {
         this.summary = summary;
     }
 
-    public String getFileName() {
-        return fileName;
+    public String getText() {
+        return text;
     }
 
-    public void setFileName(String fileName) {
-        this.fileName = fileName;
+    public void setText(String text) {
+        this.text = text;
     }
 
-    public String getCreatedByAccessId() {
-        return createdByAccessId;
+    public String getPublishedByAccessId() {
+        return publishedByAccessId;
     }
 
-    public void setCreatedByAccessId(String createdByAccessId) {
-        this.createdByAccessId = createdByAccessId;
+    public void setPublishedByAccessId(String publishedByAccessId) {
+        this.publishedByAccessId = publishedByAccessId;
     }
 
-    
-
-    public String getCreatedByEmail() {
-        return createdByEmail;
+    public String getPublishedByEmail() {
+        return publishedByEmail;
     }
 
-    public void setCreatedByEmail(String createdByEmail) {
-        this.createdByEmail = createdByEmail;
+    public void setPublishedByEmail(String publishedByEmail) {
+        this.publishedByEmail = publishedByEmail;
     }
     
     

@@ -17,6 +17,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -46,11 +47,11 @@ public class BlogDetailsMBean implements Serializable {
     
     private static final Logger LOGGER=Logger.getLogger(BlogDetailsMBean.class.getName());
     
-    private String blogPathPrefix="/blog/";
-    private String blogPath;
     private Blog blog;
+    private String blogCreatedOn;
     private BlogComment blogComment;
     private List<BlogComment> otherBlogComments;
+    
     
     
     @PostConstruct
@@ -66,13 +67,10 @@ public class BlogDetailsMBean implements Serializable {
         MongoDatabase mongoDatabase=mongoClient.getDatabase(servletContext.getInitParameter("MONGODB_DB")).withCodecRegistry(pojoCodecRegistry);
         MongoCollection<Blog> blogColl=mongoDatabase.getCollection("Blog", Blog.class);
         blog=blogColl.find(filter).first();
-        blogPath=blogPathPrefix+blog.getFileName();
+        DateTimeFormatter dateTimeFormatter=DateTimeFormatter.ofPattern("dd-MMM-yyyy");
+        blogCreatedOn = dateTimeFormatter.format(blog.getPublishedOn());
         blogComment=new BlogComment();
     }
-    
-    public String loadBlog(){
-        return blogPath;
-    } 
     
     public String postComment(){
         HttpServletRequest request=(HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
@@ -122,6 +120,16 @@ public class BlogDetailsMBean implements Serializable {
         LOGGER.info(String.format("Count of other Blog Comments for Blog ID: %s is : %d", blog.getId(), otherBlogComments.size()));
     }    
 
+    public String getBlogCreatedOn() {
+        return blogCreatedOn;
+    }
+
+    public void setBlogCreatedOn(String blogCreatedOn) {
+        this.blogCreatedOn = blogCreatedOn;
+    }
+
+    
+    
     public BlogComment getBlogComment() {
         return blogComment;
     }

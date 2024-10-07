@@ -18,11 +18,13 @@ import jakarta.mail.internet.MimeMultipart;
 import java.util.Properties;
 import java.util.logging.Logger;
 import org.bjm.collections.Access;
+import org.bjm.collections.Blog;
 import org.bjm.collections.Forum;
 import org.bjm.collections.LokSabhaNominate;
 import org.bjm.collections.Survey;
 import org.bjm.collections.SurveyFromForum;
 import org.bjm.collections.User;
+import org.bjm.collections.UserBlog;
 import org.bjm.collections.VidhanSabhaNominate;
 
 /**
@@ -34,7 +36,7 @@ public class BjManchEmailEjb implements BjManchEmailEjbLocal {
     
     private static final Logger LOGGER= Logger.getLogger(BjManchEmailEjb.class.getName());
     
-    //@Resource(mappedName = "java:comp/env/mail/bjm")//Tomee
+    @Resource(mappedName = "java:comp/env/mail/bjm")//Tomee
     //@Resource(lookup = "mail/bjm")//Glassfish
     private Session mailSession;
     
@@ -71,12 +73,12 @@ public class BjManchEmailEjb implements BjManchEmailEjbLocal {
     @Resource(name="mailSMTPUser")
     private String mailSMTPUser;
   
-    @Resource(name="password")
-    private String password;
+    //@Resource(name="password")
+    //private String password;
     
     @PostConstruct
     public void init(){
-        Properties prop = new Properties();
+        /*Properties prop = new Properties();
         prop.put("mail.smtp.auth", mailSMTPAuth);
         prop.put("mail.smtp.starttls.enable", smtpStartTlsEnabled);
         prop.put("mail.smtp.host", mailSMTPHost);
@@ -90,21 +92,29 @@ public class BjManchEmailEjb implements BjManchEmailEjbLocal {
                 return new PasswordAuthentication(mailSMTPUser,password);
             }
         };
-        mailSession=Session.getInstance(prop, auth);
+        mailSession=Session.getInstance(prop, auth);*/
         
-        /*String username=mailSession.getProperty("mail.smtp.user");
-        String password=mailSession.getProperty("mail.smtp.password");
+        String username=mailSession.getProperty("mail.smtp.user");
+        String password=mailSession.getProperty("password");
         
         final URLName url= new URLName(mailSession.getProperty("mail.transport.mail"), mailSession.getProperty("mail.smtp.host"),
         -1, null, username, null);
         
-        mailSession.setPasswordAuthentication(url, new PasswordAuthentication(username, password));*/
+        mailSession.setPasswordAuthentication(url, new PasswordAuthentication(username, password));
         LOGGER.info("MailSession set successfully!!");
     }
     
 
     @Override
     public void sendUserRegisteredEmail(Access access) {
+        String username=mailSession.getProperty("mail.smtp.user");
+        String password=mailSession.getProperty("password");
+        
+        final URLName url= new URLName(mailSession.getProperty("mail.transport.mail"), mailSession.getProperty("mail.smtp.host"),
+        -1, null, username, null);
+        
+        mailSession.setPasswordAuthentication(url, new PasswordAuthentication(username, password));
+        LOGGER.info("MailSession set successfully!!");
         MimeMessage mimeMessage = new MimeMessage(mailSession);
         Multipart multipart = new MimeMultipart();
         StringBuilder htmlMsg = new StringBuilder("<html><body>");
@@ -122,6 +132,7 @@ public class BjManchEmailEjb implements BjManchEmailEjbLocal {
         try{
             htmlPart.setContent(htmlMsg.toString(), "text/html; charset=utf-8");
             multipart.addBodyPart(htmlPart);
+            mimeMessage.setSender(new InternetAddress(username));
             mimeMessage.setRecipient(Message.RecipientType.TO, new InternetAddress(access.getEmail()));
             mimeMessage.setContent(multipart);
             mimeMessage.setSubject("User Registration");
@@ -360,6 +371,29 @@ public class BjManchEmailEjb implements BjManchEmailEjbLocal {
             mimeMessage.setRecipient(Message.RecipientType.CC, new InternetAddress(userEmail));
             mimeMessage.setContent(multipart);
             mimeMessage.setSubject(subject);
+            Transport.send(mimeMessage);
+            LOGGER.info("Sent message successfully....");
+        } catch (MessagingException ex) {
+            LOGGER.severe(ex.getMessage());
+        }
+    }
+
+    @Override
+    public void sendBlogCreatedEmail(Access access, Blog  blog) {
+        MimeMessage mimeMessage = new MimeMessage(mailSession);
+        Multipart multipart = new MimeMultipart();
+        StringBuilder htmlMsg = new StringBuilder("<html><body>");
+        htmlMsg.append("<h2>Dear, ").append(access.getEmail()).append("</h2>");
+        htmlMsg.append("<p>You have successfully published a new Blog ").append(blog.getTitle());
+        htmlMsg.append("<p>Best Wishes, <br/>www.bjmanch.in Admin</p>");
+        htmlMsg.append("</body></html>");
+        MimeBodyPart htmlPart = new MimeBodyPart();
+        try {
+            htmlPart.setContent(htmlMsg.toString(), "text/html; charset=utf-8");
+            multipart.addBodyPart(htmlPart);
+            mimeMessage.setRecipient(Message.RecipientType.TO, new InternetAddress(access.getEmail()));
+            mimeMessage.setContent(multipart);
+            mimeMessage.setSubject("Your Blog has been published");
             Transport.send(mimeMessage);
             LOGGER.info("Sent message successfully....");
         } catch (MessagingException ex) {
