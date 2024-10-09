@@ -18,6 +18,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.logging.Logger;
 import org.bjm.collections.Access;
+import org.bjm.collections.Blog;
 import org.bjm.collections.Forum;
 import org.bjm.collections.Survey;
 import org.bjm.collections.SurveyFromForum;
@@ -42,7 +43,7 @@ public class HomeMBean implements Serializable {
     private List<Forum> userForums;
     private List<Survey> userSurveys;
     private List<SurveyFromForum> userSurveysFromForums;
-    private List<UserBlog> userBlogs;
+    private List<Blog> blogs;
     
     @PostConstruct
     public void init(){
@@ -90,15 +91,15 @@ public class HomeMBean implements Serializable {
         LOGGER.info(String.format("Count of SurveysFromForums by User %s is %d", access.getEmail(), userSurveys.size()));
         
         //User Blogs
-        Bson filterUserBlog=Filters.eq("blogPublishedByEmail", access.getEmail());
-        MongoCollection<UserBlog> userBlogColl=mongoDatabase.getCollection("UserBlog", UserBlog.class);
-        Iterable<UserBlog> userBlogItrble=userBlogColl.find(filterUserBlog);
-        Iterator<UserBlog> userBlogItr=userBlogItrble.iterator();
-        userBlogs = new ArrayList<>();
-        while(userBlogItr.hasNext()){
-            userBlogs.add(userBlogItr.next());
+        Bson filterBlog=Filters.eq("publishedByEmail", access.getEmail());
+        MongoCollection<Blog> blogColl=mongoDatabase.getCollection("Blog", Blog.class);
+        Iterable<Blog> blogItrble=blogColl.find(filterBlog);
+        Iterator<Blog> blogItr=blogItrble.iterator();
+        blogs = new ArrayList<>();
+        while(blogItr.hasNext()){
+            blogs.add(blogItr.next());
         }
-        LOGGER.info(String.format("Count of UserBlogs by User %s is %d", access.getEmail(), userBlogs.size()));
+        LOGGER.info(String.format("Count of Blogs by User %s is %d", access.getEmail(), blogs.size()));
         
     }
     
@@ -132,12 +133,12 @@ public class HomeMBean implements Serializable {
         this.userSurveysFromForums = userSurveysFromForums;
     }
 
-    public List<UserBlog> getUserBlogs() {
-        return userBlogs;
+    public List<Blog> getBlogs() {
+        return blogs;
     }
 
-    public void setUserBlogs(List<UserBlog> userBlogs) {
-        this.userBlogs = userBlogs;
+    public void setBlogs(List<Blog> blogs) {
+        this.blogs = blogs;
     }
     
     

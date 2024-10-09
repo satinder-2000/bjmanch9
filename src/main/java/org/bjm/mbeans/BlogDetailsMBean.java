@@ -48,7 +48,7 @@ public class BlogDetailsMBean implements Serializable {
     private static final Logger LOGGER=Logger.getLogger(BlogDetailsMBean.class.getName());
     
     private Blog blog;
-    private String blogCreatedOn;
+    private String blogPublishedOn;
     private BlogComment blogComment;
     private List<BlogComment> otherBlogComments;
     
@@ -68,7 +68,7 @@ public class BlogDetailsMBean implements Serializable {
         MongoCollection<Blog> blogColl=mongoDatabase.getCollection("Blog", Blog.class);
         blog=blogColl.find(filter).first();
         DateTimeFormatter dateTimeFormatter=DateTimeFormatter.ofPattern("dd-MMM-yyyy");
-        blogCreatedOn = dateTimeFormatter.format(blog.getPublishedOn());
+        blogPublishedOn = dateTimeFormatter.format(blog.getPublishedOn());
         blogComment=new BlogComment();
     }
     
@@ -118,14 +118,24 @@ public class BlogDetailsMBean implements Serializable {
         HttpSession session=request.getSession();
         session.setAttribute(BjmConstants.BLOG_COMMENTER_IMAGE_MAP, blogCommenterImageMap);
         LOGGER.info(String.format("Count of other Blog Comments for Blog ID: %s is : %d", blog.getId(), otherBlogComments.size()));
-    }    
-
-    public String getBlogCreatedOn() {
-        return blogCreatedOn;
     }
 
-    public void setBlogCreatedOn(String blogCreatedOn) {
-        this.blogCreatedOn = blogCreatedOn;
+    public Blog getBlog() {
+        return blog;
+    }
+
+    public void setBlog(Blog blog) {
+        this.blog = blog;
+    }
+    
+    
+
+    public String getBlogPublishedOn() {
+        return blogPublishedOn;
+    }
+
+    public void setBlogPublishedOn(String blogPublishedOn) {
+        this.blogPublishedOn = blogPublishedOn;
     }
 
     

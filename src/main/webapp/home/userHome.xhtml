@@ -101,21 +101,21 @@
                                     <br/>
                                     <h5 class="w3-margin-left">My Blogs</h5>
                                     <c:choose>
-                                        <c:when test="#{homeMBean.userBlogs.size()>0}">
+                                        <c:when test="#{homeMBean.blogs.size()>0}">
                                             <table class="w3-table w3-striped">
                                                 <tr>
                                                     <th>Blog Title</th>
                                                     <th>Date Created</th>
                                                     <th>Details</th>
                                                 </tr>
-                                                <c:forEach items="#{homeMBean.userBlogs}" var="blog">
+                                                <c:forEach items="#{homeMBean.blogs}" var="blog">
                                                     <tr>
                                                         <td><h:outputText value="#{blog.title}" /></td>
-                                                        <td><h:outputText value="#{blog.createdOn}" /></td>
+                                                        <td><h:outputText value="#{blog.publishedOn}" /></td>
                                                         <td>
-                                                            <h:outputLink value="#{request.contextPath}/userBlog/UserBlogDetails.xhtml" styleClass="w3-margin-left">
+                                                            <h:outputLink value="#{request.contextPath}/blog/BlogDetails.xhtml" styleClass="w3-margin-left">
                                                                 <h:outputText value="View Details" />
-                                                                <f:param name="userBlogId" value="#{blog.id}" />
+                                                                <f:param name="blogId" value="#{blog.id}" />
                                                             </h:outputLink>
                                                         </td>
                                                     </tr>

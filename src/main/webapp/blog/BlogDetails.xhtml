@@ -19,8 +19,21 @@
                                         <h:outputLabel for="title" value="Title" styleClass="w3-margin-left w3-margin-bottom"/>
                                     </div>
                                     <div class="w3-half">
-                                        <h:outputText id="title" value="#{blogDetailsMBean.blog.title}" styleClass="w3-input" pt:passthrough="5-125 chars"/> 
+                                        <h:outputText id="title" value="#{blogDetailsMBean.blog.title}" styleClass="w3-input"/> 
                                     </div>
+                                </div>
+                                <br/>
+                                <div class="w3-row-padding" style="margin:0 -16px">
+                                    <div class="w3-half">
+                                        <h:outputLabel for="summary" value="Summary" styleClass="w3-margin-left w3-margin-bottom"/>
+                                    </div>
+                                    <div class="w3-half">
+                                        <h:outputText value="&#160;" styleClass="w3-input"/> 
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="w3-row-padding" style="margin:0 -16px">
+                                    <h:outputText id="summary" value="#{blogDetailsMBean.blog.summary}" styleClass="w3-input"/>
                                 </div>
                                 <br/>
                                 <div class="w3-row-padding" style="margin:0 -16px">
@@ -37,47 +50,48 @@
                                         <h:outputLabel for="createdOn" value="Created On" styleClass="w3-margin-left w3-margin-bottom"/>
                                     </div>
                                     <div class="w3-half">
-                                        <h:outputText id="createdOn" value="#{blogDetailsMBean.publishedOn}" styleClass="w3-input" pt:passthrough="5-125 chars"/> 
+                                        <h:outputText id="createdOn" value="#{blogDetailsMBean.blogPublishedOn}" styleClass="w3-input" pt:passthrough="5-125 chars"/> 
                                     </div>
                                 </div>
                                 <br/>
-                        <div class="w3-row-padding" style="margin:0 -16px">
-                            <p:textEditor id="desc" value="#{userBlogDetailsMBean.userBlog.text}" readonly="true" height="300px" styleClass="w3-input">
-                                <f:facet name="toolbar">
-                                    <span class="ql-formats">
-                                        <select class="ql-font" />
-                                        <select class="ql-size" />
-                                    </span>
-                                    <span class="ql-formats">
-                                        <button class="ql-bold" />
-                                        <button class="ql-italic" />
-                                        <button class="ql-underline" />
-                                    </span>
-                                    <span class="ql-formats">
-                                        <select class="ql-color" />
-                                        <select class="ql-background" />
-                                    </span>
-                                    <span class="ql-formats">
-                                        <button class="ql-list" value="ordered" />
-                                        <button class="ql-list" value="bullet" />
-                                        <button class="ql-indent" value="-1" />
-                                        <button class="ql-indent" value="+1" />
-                                    </span>
-                                    <span class="ql-formats">
-                                        <select class="ql-align" />
-                                    </span>
-                                    <span class="ql-formats">
-                                        <button class="ql-link" />
-                                        <button class="ql-image" />
-                                    </span>
-                                    
-                                </f:facet>
-                            </p:textEditor>    
-                        </div>
+                                <div class="w3-row-padding" style="margin:0 -16px">
+                                    <p:textEditor id="desc" value="#{blogDetailsMBean.blog.text}" readonly="true" height="300px" styleClass="w3-input">
+                                        <f:facet name="toolbar">
+                                            <span class="ql-formats">
+                                                <select class="ql-font" />
+                                                <select class="ql-size" />
+                                            </span>
+                                            <span class="ql-formats">
+                                                <button class="ql-bold" />
+                                                <button class="ql-italic" />
+                                                <button class="ql-underline" />
+                                            </span>
+                                            <span class="ql-formats">
+                                                <select class="ql-color" />
+                                                <select class="ql-background" />
+                                            </span>
+                                            <span class="ql-formats">
+                                                <button class="ql-list" value="ordered" />
+                                                <button class="ql-list" value="bullet" />
+                                                <button class="ql-indent" value="-1" />
+                                                <button class="ql-indent" value="+1" />
+                                            </span>
+                                            <span class="ql-formats">
+                                                <select class="ql-align" />
+                                            </span>
+                                            <span class="ql-formats">
+                                                <button class="ql-link" />
+                                                <button class="ql-image" />
+                                            </span>
+
+                                        </f:facet>
+                                    </p:textEditor>
+
+                                </div>
                                 <br/>
-                        <br/>
-                        
-                                
+                                <br/>
+
+
                             </h:form>
                         </div>
                     </div>

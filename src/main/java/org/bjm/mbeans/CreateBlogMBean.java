@@ -73,8 +73,7 @@ public class CreateBlogMBean implements Serializable {
         blog.setPublishedByEmail(access.getEmail());
         blog.setPublishedByAccessId(access.getId().toString());
         blog.setPublishedOn(LocalDateTime.now());
-        String blogSummary=blogDto.getText().length()>300?blogDto.getText().substring(0, 300):blogDto.getText();
-        blog.setSummary(blogSummary);
+        blog.setSummary(blogDto.getSummary());
         
         ServletContext servletContext=(ServletContext) FacesContext.getCurrentInstance().getExternalContext().getContext();
         MongoClient mongoClient= (MongoClient) servletContext.getAttribute("mongoClient");

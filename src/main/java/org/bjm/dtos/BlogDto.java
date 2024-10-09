@@ -11,6 +11,8 @@ public class BlogDto {
     
     @Size(min = 5, max=125)
     private String title;
+    @Size(min = 5, max=250)
+    private String summary;
     @NotEmpty
     private String text;
 
@@ -21,6 +23,16 @@ public class BlogDto {
     public void setTitle(String title) {
         this.title = title;
     }
+
+    public String getSummary() {
+        return summary;
+    }
+
+    public void setSummary(String summary) {
+        this.summary = summary;
+    }
+    
+    
 
     public String getText() {
         return text;
