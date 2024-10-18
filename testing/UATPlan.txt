@@ -1,0 +1,5 @@
+Register 3 Users outlook, hotmail and gmail
+For each user register 2 of each Forum, Survey, SurveyFromForum
+For each user publish one blog
+For each user leave comments on Forum, Survey, SurveyFromForum and Blog
+For each user Report Abuse on comments on Forum, Survey, SurveyFromForum and Blog

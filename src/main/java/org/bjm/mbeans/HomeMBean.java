@@ -22,7 +22,6 @@ import org.bjm.collections.Blog;
 import org.bjm.collections.Forum;
 import org.bjm.collections.Survey;
 import org.bjm.collections.SurveyFromForum;
-import org.bjm.collections.UserBlog;
 import org.bson.codecs.configuration.CodecProvider;
 import org.bson.codecs.pojo.PojoCodecProvider;
 import static org.bson.codecs.configuration.CodecRegistries.fromProviders;

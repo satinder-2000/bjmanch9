@@ -202,8 +202,12 @@ public class UserRegisterMBean implements Serializable{
                             new FacesMessage(FacesMessage.SEVERITY_ERROR, "Profile Image size exceeds 1MB.", "Profile Image size exceeds 1MB."));
                 }else{
                     String fullFileName=profileImage.getSubmittedFileName();
-                    String fileType=fullFileName.substring(fullFileName.indexOf('.'));
-                    byte[] jpgData=null;
+                    //String fileType=fullFileName.substring(fullFileName.indexOf('.'));
+                    byte[] imageData=new byte[inputStream.available()];
+                    inputStream.read(imageData);
+                    userDto.setProfileFile(fullFileName);
+                    userDto.setImage(imageData);
+                    /*byte[] jpgData=null;
                     if(fileType.equals("png")){//convert to jpg first. Jelastic' OpenJDK doen not handle png images well and throw exception.
                         byte[] pngData=new byte[inputStream.available()];
                         jpgData = ConvertPngToJpg.convertToJpg(pngData);
@@ -214,7 +218,7 @@ public class UserRegisterMBean implements Serializable{
                         inputStream.read(imageData);
                         userDto.setProfileFile(fullFileName);
                         userDto.setImage(imageData);
-                    }
+                    }*/
                 
                 }
             }catch(IOException ex){

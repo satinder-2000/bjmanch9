@@ -26,11 +26,15 @@
                                     <div class="w3-half">
                                         <span></span>
                                     </div>
+                                    <br/>
                                     <div class="w3-half">
                                         <h:form>
-                                            <h:commandLink action="#{blogDetailsMBean.loadBlog()}" value="View Blog" styleClass="w3-button w3-theme-d1 w3-margin-left w3-margin-bottom">
+                                            <h:outputLink value="#{request.contextPath}/blog/BlogDetails.xhtml" styleClass="w3-button w3-theme-d1 w3-margin-left w3-margin-bottom">View Blog
                                                 <f:param name="blogId" value="#{blog.id}"/>
-                                            </h:commandLink>
+                                            </h:outputLink>
+                                            <!-- h:link value="View Blog" outcome="#{request.contextPath}/blog/BlogDetails." styleClass="w3-button w3-theme-d1 w3-margin-left w3-margin-bottom">
+                                                <f:param name="blogId" value="#{blog.id}"/>
+                                            </h:link-->
                                         </h:form>
                                     </div>
                                 </div>

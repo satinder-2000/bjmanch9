@@ -153,8 +153,6 @@
                                             <div class="w3-row-padding" style="margin:0 -16px">
                                                 <div class="w3-quarter">
                                                     <h:graphicImage value="/ForumCommenterImageServlet?forumCommenterId=#{fc.forumCommenterAccessId}" width="60" height="60" style="border-radius: 50%;"/>
-                                                    <br/>
-                                                    <small><h:outputText value="#{fc.forumCommenterEmail} on #{fc.dated} " /></small>
                                                 </div>
                                                 <div class="w3-half" style="word-wrap: break-word">
                                                     <h:outputText value="#{fc.comment}" />
@@ -164,6 +162,9 @@
                                                         <f:param name="commentId" value="#{fc.id}"/>
                                                     </h:link>
                                                 </div>
+                                            </div>
+                                            <div class="w3-row-padding" style="margin-bottom: 50px">
+                                               <small><h:outputText value="#{fc.forumCommenterEmail} on #{fc.dated} " /></small> 
                                             </div>
                                         </c:forEach>
                                     </h:form>

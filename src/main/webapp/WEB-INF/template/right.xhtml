@@ -30,6 +30,13 @@
                                     <f:param name="surveyId" value="#{activity.activityId}" />
                                 </h:outputLink>   
                             </c:when>
+                            <c:when test = "#{type == 'BLOG_CREATED'}">
+                                <h:outputLink value="#{request.contextPath}/blog/BlogDetails.xhtml?faces-redirect=true" class="bjm-a">
+                                    <h:outputText value="#{activity.description}" />
+                                    <f:param name="blogId" value="#{activity.activityId}" />
+                                </h:outputLink>   
+                            </c:when>
+                            
                         </c:choose>    
                     </p> 
                 </c:forEach>

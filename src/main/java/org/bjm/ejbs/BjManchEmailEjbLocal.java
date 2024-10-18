@@ -8,7 +8,6 @@ import org.bjm.collections.LokSabhaNominate;
 import org.bjm.collections.Survey;
 import org.bjm.collections.SurveyFromForum;
 import org.bjm.collections.User;
-import org.bjm.collections.UserBlog;
 import org.bjm.collections.VidhanSabhaNominate;
 
 /**

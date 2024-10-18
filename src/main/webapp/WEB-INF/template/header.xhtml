@@ -22,7 +22,7 @@
       <button class="w3-button">Create Survey <i class="fa fa-caret-down"></i></button>
       <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
         <h:form prependId="false"><h:commandLink id="createSurveyLink" action="CreateSurvey" value="New Survey" disabled="#{session.getAttribute('access')==null}" styleClass="w3-bar-item w3-button w3-mobile"/></h:form>  
-        <h:outputLink value="CreateSurveyFromForum/CreateSurveyFromForumIndex.xhtml" disabled="#{session.getAttribute('access')==null}" styleClass="w3-bar-item w3-button">Survey From Forum</h:outputLink>
+        <h:outputLink value="#{request.contextPath}/CreateSurveyFromForum/CreateSurveyFromForumIndex.xhtml" disabled="#{session.getAttribute('access')==null}" styleClass="w3-bar-item w3-button">Survey From Forum</h:outputLink>
       </div>
     </div>
     <h:outputLink value="nominate/nominationHome.xhtml" styleClass="w3-bar-item w3-button w3-mobile">Nominate Candidate</h:outputLink>
@@ -32,9 +32,9 @@
     </a>
     <h:form><h:commandButton action="#{searchMBean.processSearch()}" value="GO" styleClass="w3-bar-item w3-right w3-button" /><h:inputText value="#{searchMBean.searchPhrase}" styleClass="w3-bar-item w3-right" pt:placeholder="Search ..."/></h:form>
     <div class="w3-dropdown-hover w3-mobile">
-      <button class="w3-button">Blogs<i class="fa fa-caret-down"></i></button>
+      <button class="w3-button">Blogs <i class="fa fa-caret-down"></i></button>
       <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
-        <h:outputLink value="info/blog.xhtml" styleClass="w3-bar-item w3-button w3-mobile w3-right">View Admin Blogs</h:outputLink>  
+        <h:outputLink value="#{request.contextPath}/info/blog.xhtml" styleClass="w3-bar-item w3-button w3-mobile w3-right">View Blogs</h:outputLink>  
         <h:form prependId="false"><h:commandLink id="createBlogLink" action="CreateBlog" value="Publish Blog" disabled="#{session.getAttribute('access')==null}" styleClass="w3-bar-item w3-button w3-mobile"/></h:form>  
     </div>
     </div>

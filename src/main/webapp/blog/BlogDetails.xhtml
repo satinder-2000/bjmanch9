@@ -3,6 +3,7 @@
                 xmlns:h="http://xmlns.jcp.org/jsf/html"
                 template="/WEB-INF/template/BjmTemplate.xhtml"
                 xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
                 xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
                 xmlns:p="http://primefaces.org/ui">
 
@@ -95,9 +96,97 @@
                             </h:form>
                         </div>
                     </div>
+                    
+                    <br/>
+                    <c:choose>
+                        <c:when test="#{session.getAttribute('access')!=null}">
+                            <div class="w3-card w3-round w3-white">
+                                <div class="w3-container w3-padding">
+                                    <h:form>
+                                        <h:messages infoStyle="color:blue;" errorStyle="color:red;" />
+                                        <div class="w3-row-padding" style="margin:0 -16px">
+                                            <div class="w3-quarter">
+                                                <h:outputText value="&#160;"/> 
+                                            </div>
+                                            <div class="w3-half">
+                                                <h4>Post your Comment</h4>
+                                            </div>
+                                            <div class="w3-quarter">
+                                                <h:outputText value="&#160;"/> 
+                                            </div>
+                                        </div>
+                                        <br/>
+                                        <div class="w3-row-padding" style="margin:0 -16px">
+                                            <div class="w3-col" style="width: 10%">
+                                                <h:graphicImage value="/UserImageServlet" width="60" height="60" style="border-radius: 50%;"/>
+                                            </div>
+                                            <div class="w3-col" style="width: 70%">
+                                                <h:inputTextarea id="usercomment" value="#{blogDetailsMBean.blogComment.comment}" cols="50" rows="3" pt:placeholder="Max chars : ${initParam.get('commentLimit')}" onkeypress="limitTextArea(this, ${initParam.get('commentLimit')})" onkeyup="limitTextArea(this, ${initParam.get('commentLimit')})" styleClass="w3-input"  />
+                                                <span id="counter"></span>
+                                            </div>
+                                            <div class="w3-col" style="width: 20%">
+                                                <h:commandButton class="w3-button w3-theme-d1 w3-margin-left w3-margin-bottom" action="#{blogDetailsMBean.postComment()}" value="Submit">
+                                                    <f:ajax execute="@form" render="@form"/>
+                                                </h:commandButton>
+                                            </div>
+                                        </div>
+                                    </h:form>
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="w3-card w3-round w3-white">
+                                <div class="w3-container w3-padding">                
+                                    <h:form>
+                                        <div class="w3-row-padding" style="margin:0 -16px">
+                                            <div class="w3-third">
+                                                <h:outputText value="&#160;"/> 
+                                            </div>
+                                            <div class="w3-half">
+                                                <h5>Other Comments</h5>
+                                            </div>
+                                            <div class="w3-third">
+                                                <h:outputText value="&#160;"/>
+                                            </div>
+                                        </div>
+                                        <br/>
+                                        <c:forEach items="#{blogDetailsMBean.otherBlogComments}" var="bc">
+                                            <div class="w3-row-padding" >
+                                                <div class="w3-quarter">
+                                                    <h:graphicImage value="/BlogCommenterImageServlet?blogCommenterId=#{bc.blogCommenterAccessId}" width="60" height="60" style="border-radius: 50%;"/>
+                                                </div>
+                                                <div class="w3-half" style="word-wrap: break-word">
+                                                    <h:outputText value="#{bc.comment}" />
+                                                </div>
+                                                <div class="w3-quarter">
+                                                    <h:link value="Report Abuse" outcome="BlogReportAbuse">
+                                                        <f:param name="commentId" value="#{bc.id}"/>
+                                                    </h:link>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="w3-row-padding" style="margin-bottom: 50px">
+                                                <small><h:outputText value="#{bc.blogCommenterEmail} on #{bc.dated} " /></small>
+                                            </div>
+                                            <br/>
+                                        </c:forEach>
+                                    </h:form>
+                                </div>
+                            </div>
+                        </c:when>
+                        <c:otherwise>
+                            <div class="w3-card w3-round w3-white">
+                                <div class="w3-container w3-padding">
+                                    <div class="w3-row-padding" style="margin:0 -16px">
+                                        <p class="w3-margin-left">Kindly register or login to view the Blog Details.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </c:otherwise>
+                    </c:choose>
+                </div>
+                    
                 </div>
             </div>
-        </div>
-    </ui:define>
+        </ui:define>
 
 </ui:composition>

@@ -35,6 +35,11 @@
                 <env-entry-value>contact@bjmanch.org</env-entry-value>
             </env-entry>
             <env-entry>
+                <env-entry-name>sender</env-entry-name>
+                <env-entry-type>java.lang.String</env-entry-type>
+                <env-entry-value>contact@bjmanch.org</env-entry-value>
+            </env-entry>
+            <env-entry>
                 <env-entry-name>password</env-entry-name>
                 <env-entry-type>java.lang.String</env-entry-type>
                 <env-entry-value>Wether@lDr69</env-entry-value>

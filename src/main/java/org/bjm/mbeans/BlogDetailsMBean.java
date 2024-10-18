@@ -69,7 +69,27 @@ public class BlogDetailsMBean implements Serializable {
         blog=blogColl.find(filter).first();
         DateTimeFormatter dateTimeFormatter=DateTimeFormatter.ofPattern("dd-MMM-yyyy");
         blogPublishedOn = dateTimeFormatter.format(blog.getPublishedOn());
+        //Load other Blog Comments
         blogComment=new BlogComment();
+    }
+    
+    public String loadBlog(){
+        HttpServletRequest request=(HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
+        String blogIdStr=request.getParameter("blogId");
+        ObjectId blogId=new ObjectId(blogIdStr);
+        Bson filter=Filters.eq("_id", blogId);
+        ServletContext servletContext=(ServletContext) FacesContext.getCurrentInstance().getExternalContext().getContext();
+        MongoClient mongoClient=(MongoClient) servletContext.getAttribute("mongoClient");
+        CodecProvider pojoCodecProvider=PojoCodecProvider.builder().automatic(true).build();
+        CodecRegistry pojoCodecRegistry=fromRegistries(MongoClientSettings.getDefaultCodecRegistry(),fromProviders(pojoCodecProvider));
+        MongoDatabase mongoDatabase=mongoClient.getDatabase(servletContext.getInitParameter("MONGODB_DB")).withCodecRegistry(pojoCodecRegistry);
+        MongoCollection<Blog> blogColl=mongoDatabase.getCollection("Blog", Blog.class);
+        blog=blogColl.find(filter).first();
+        DateTimeFormatter dateTimeFormatter=DateTimeFormatter.ofPattern("dd-MMM-yyyy");
+        blogPublishedOn = dateTimeFormatter.format(blog.getPublishedOn());
+        //Load other Blog Comments
+        blogComment=new BlogComment();
+        return null;
     }
     
     public String postComment(){

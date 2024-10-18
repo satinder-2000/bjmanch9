@@ -64,18 +64,28 @@ public class CreateSurveyMBean implements Serializable {
         Iterable<SurveyCategory> surveyCatItrble=surveyCatColl.find();
         Iterator<SurveyCategory> surveyCatItr=surveyCatItrble.iterator();
         surveyDto.setSurveyCategoryMap(new HashMap<>());
+        Set<String> initValueSet=new HashSet();
+        initValueSet.add("-- First select above --");
+        surveyDto.getSurveyCategoryMap().put("--Select One--", initValueSet);
         while(surveyCatItr.hasNext()){
             SurveyCategory sc=surveyCatItr.next();
             Set<String> mapKeys=surveyDto.getSurveyCategoryMap().keySet();
-            if(!mapKeys.contains(sc.getType())){
-                Set<String> valueSet=new HashSet<>();
-                valueSet.add("--Select One--");
-                valueSet.add(sc.getSubType());
-                surveyDto.getSurveyCategoryMap().put(sc.getType(), valueSet);
+            if(mapKeys.contains(sc.getType())){
+                    Set<String> valueSet=surveyDto.getSurveyCategoryMap().get(sc.getType());
+                    if (valueSet==null){
+                        valueSet=new HashSet();
+                    }
+                    valueSet.add(sc.getSubType());
+                    surveyDto.getSurveyCategoryMap().put(sc.getType(),valueSet);
             }else{
                 Set<String> valueSet=surveyDto.getSurveyCategoryMap().get(sc.getType());
+                if (valueSet==null){
+                        valueSet=new HashSet();
+                }
                 valueSet.add(sc.getSubType());
+                surveyDto.getSurveyCategoryMap().put(sc.getType(),valueSet);
             }
+            
         }
         surveyDto.setCategoryTypes(surveyDto.getSurveyCategoryMap().keySet());
         LOGGER.info(String.format("SurveyDto surveyCatgoryMap populated with %d records", surveyDto.getSurveyCategoryMap().size()));

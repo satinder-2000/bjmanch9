@@ -284,7 +284,15 @@ public class ManageAccountMBean implements Serializable {
             } else {
                 String fullFileName = profileImage.getSubmittedFileName();
                 String fileType = fullFileName.substring(fullFileName.indexOf('.'));
-                byte[] jpgData = null;
+                byte[] imageData = new byte[inputStream.available()];
+                inputStream.read(imageData);
+                //userDto.setProfileFile(fullFileName);
+                //userDto.setImage(imageData);
+                access.setProfileFile(fullFileName);
+                access.setImage(new Binary(imageData));
+                accessDb.setProfileFile(access.getProfileFile());
+                accessDb.setImage(access.getImage());
+                /*byte[] jpgData = null;
                 if (fileType.equals("png")) {//convert to jpg first. Jelastic' OpenJDK doen not handle png images well and throw exception.
                     byte[] pngData = new byte[inputStream.available()];
                     jpgData = ConvertPngToJpg.convertToJpg(pngData);
@@ -303,8 +311,8 @@ public class ManageAccountMBean implements Serializable {
                     access.setImage(new Binary(userDto.getImage()));
                     accessDb.setProfileFile(access.getProfileFile());
                     accessDb.setImage(access.getImage());
-                }
-                MongoCollection<Document> userCollDoc = mongoDatabase.getCollection("Access");
+                }*/
+                MongoCollection<Document> accessCollDoc = mongoDatabase.getCollection("Access");
                 Document query = new Document().append("email", access.getEmail());
                 Bson updates = Updates.combine(
                         Updates.set("_id", accessDb.getId()),
@@ -317,7 +325,7 @@ public class ManageAccountMBean implements Serializable {
                 );
                 UpdateOptions options = new UpdateOptions().upsert(true);
 
-                UpdateResult result = userCollDoc.updateOne(query, updates, options);
+                UpdateResult result = accessCollDoc.updateOne(query, updates, options);
                 LOGGER.info(String.format(" For Access ID %s the Upserted ID is %s", accessDb.getId(), result.getUpsertedId()));
                 FacesContext.getCurrentInstance().addMessage("profileImage", new FacesMessage(FacesMessage.SEVERITY_INFO, "Profile Image updated successfully", "Profile Image updated successfully"));
 
