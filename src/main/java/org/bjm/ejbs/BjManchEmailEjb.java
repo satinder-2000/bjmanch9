@@ -165,7 +165,7 @@ public class BjManchEmailEjb implements BjManchEmailEjbLocal {
         htmlMsg.append("<a href=\"").append(webURI).append("\">")
                 .append(webURI)
                 .append("</a>");
-        htmlMsg.append("<p>Best Wishes, <br/>www.bjmanch.in Admin</p>");
+        htmlMsg.append("<p>Best Wishes, <br/>www.bjmanch.org Admin</p>");
         htmlMsg.append("</body></html>");
         MimeBodyPart htmlPart = new MimeBodyPart();
         try{

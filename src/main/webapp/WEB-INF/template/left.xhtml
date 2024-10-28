@@ -42,7 +42,7 @@
         <br/>
         <!-- Alert Box -->
         <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
-            <p><strong>Manage Account!</strong></p>
+            <p><strong>Manage Account</strong></p>
             <h:form><h:commandLink action="#{manageAccountMBean.changePasswordReq()}" value="Change Password" disabled="#{session.getAttribute('access')==null}" styleClass="w3-button w3-block w3-theme-l1 w3-left-align"/></h:form>
             <h:form><h:commandLink action="#{manageAccountMBean.changePersonalDetailsReq()}" value="Change Personal Details" disabled="#{session.getAttribute('access')==null}" styleClass="w3-button w3-block w3-theme-l1 w3-left-align"/></h:form>
             <h:form><h:commandLink action="#{manageAccountMBean.changeProfileImageReq()}" value="Change Profile Image" disabled="#{session.getAttribute('access')==null}" styleClass="w3-button w3-block w3-theme-l1 w3-left-align"/></h:form>
