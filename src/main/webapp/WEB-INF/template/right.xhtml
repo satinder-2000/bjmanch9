@@ -4,10 +4,37 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
     
     <!-- Right Column -->
-    <div class="w3-col s2">
-        <div class="w3-card">
-            Recent Activities here
+    <div class="w3-col m2">
+        <div class="w3-card w3-round w3-white w3-center">
+            <div class="w3-container">
+                <p>Recent Activities:</p>
+                <c:forEach items="#{activityMBean.activityList}" var="activity">
+                    <p>
+                        <c:set var="type" value="#{activity.activityType}"/>
+                        <c:choose>
+                            <c:when test = "#{type == 'FORUM_CREATED'}">
+                                <h:outputLink value="#{request.contextPath}/forum/ForumDetails.xhtml" class="bjm-a">
+                                    <h:outputText value="#{activity.description}" />
+                                    <f:param name="forumId" value="#{activity.activityId}" />
+                                </h:outputLink>      
+                            </c:when>
+                            <c:when test = "#{type == 'SURVEY_CREATED'}">
+                                <h:outputLink value="#{request.contextPath}/survey/SurveyDetails.xhtml?faces-redirect=true" class="bjm-a">
+                                    <h:outputText value="#{activity.description}" />
+                                    <f:param name="surveyId" value="#{activity.activityId}" />
+                                </h:outputLink>   
+                            </c:when>
+                            <c:when test = "#{type == 'SURVEY_FROM_FORUM_CREATED'}">
+                                <h:outputLink value="#{request.contextPath}/surveyFromForum/SurveyFromForumDetails.xhtml?faces-redirect=true" class="bjm-a">
+                                    <h:outputText value="#{activity.description}" />
+                                    <f:param name="surveyId" value="#{activity.activityId}" />
+                                </h:outputLink>   
+                            </c:when>
+                        </c:choose>    
+                    </p> 
+                </c:forEach>
         </div>
     </div>
+    </div>    
     <!-- End Right Column -->
 </html>

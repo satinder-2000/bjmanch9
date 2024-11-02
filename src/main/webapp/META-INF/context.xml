@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context path="/bjmanch"/>
+<Context path="/">
+    <Resource id="mail/bjm" type="jakarta.mail.Session">
+  mail.smtp.host=mail.privateemail.com
+  mail.smtp.port=587
+  mail.transport.protocol=smtp
+  mail.smtp.auth=true
+  mail.smtp.starttls.enable=true
+  mail.smtp.user=admin@indusbc.org
+  password=Wether@lDr69
+</Resource>
+</Context>
