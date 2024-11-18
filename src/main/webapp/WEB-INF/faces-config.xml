@@ -23,9 +23,9 @@
               xmlns="https://jakarta.ee/xml/ns/jakartaee"
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
               xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-facesconfig_3_0.xsd">
-    <application>
+    <!--application>
         <view-handler>org.bjm.utils.CustomViewHandler</view-handler>
-    </application>
+    </application -->
     <navigation-rule>
         <from-view-id>/index.xhtml</from-view-id>
         <navigation-case>
@@ -36,7 +36,7 @@
     <navigation-rule>
         <from-view-id>/UserRegister/UserRegisterConfirm.xhtml</from-view-id>
         <navigation-case>
-            <from-action>returnFromUserRegister</from-action>
+            <from-action>#{userRegisterMBean.returnFromUserRegister}</from-action>
             <from-outcome>returnFromUserRegister</from-outcome>
             <to-view-id>/flowreturns/UserRegister-return.xhtml</to-view-id>
         </navigation-case>
@@ -44,7 +44,7 @@
     <navigation-rule>
         <from-view-id>/CreateForum/CreateForumConfirm.xhtml</from-view-id>
         <navigation-case>
-            <from-action>returnFromCreateForum</from-action>
+            <from-action>#{createForumMBean.returnFromCreateForum}</from-action>
             <from-outcome>returnFromCreateForum</from-outcome>
             <to-view-id>/flowreturns/CreateForum-return.xhtml</to-view-id>
         </navigation-case>
@@ -52,7 +52,7 @@
     <navigation-rule>
         <from-view-id>/CreateSurvey/CreateSurveyConfirm.xhtml</from-view-id>
         <navigation-case>
-            <from-action>returnFromCreateSurvey</from-action>
+            <from-action>#{createSurveyMBean.returnFromCreateSurvey}</from-action>
             <from-outcome>returnFromCreateSurvey</from-outcome>
             <to-view-id>/flowreturns/CreateSurvey-return.xhtml</to-view-id>
         </navigation-case>
@@ -60,7 +60,7 @@
     <navigation-rule>
         <from-view-id>/CreateSurveyFromForum/CreateSurveyFromForumConfirm.xhtml</from-view-id>
         <navigation-case>
-            <from-action>returnFromCreateSurveyFromForum</from-action>
+            <from-action>#{createSurveyFromForumMBean.returnFromCreateSurveyFromForum}</from-action>
             <from-outcome>returnFromCreateSurveyFromForum</from-outcome>
             <to-view-id>/flowreturns/CreateSurveyFromForum-return.xhtml</to-view-id>
         </navigation-case>
@@ -68,7 +68,7 @@
     <navigation-rule>
         <from-view-id>/LokSabhaNominate/LokSabhaNominateConfirm.xhtml</from-view-id>
         <navigation-case>
-            <from-action>returnFromLokSabhaNominate</from-action>
+            <from-action>#{lokSabhaNominateMBean.returnFromLokSabhaNominate}</from-action>
             <from-outcome>returnFromLokSabhaNominate</from-outcome>
             <to-view-id>/flowreturns/LokSabhaNominate-return.xhtml</to-view-id>
         </navigation-case>
@@ -76,7 +76,7 @@
     <navigation-rule>
         <from-view-id>/VidhanSabhaNominate/VidhanSabhaNominateConfirm.xhtml</from-view-id>
         <navigation-case>
-            <from-action>returnFromVidhanSabhaNominate</from-action>
+            <from-action>#{vidhanSabhaNominateMBean.returnFromVidhanSabhaNominate}</from-action>
             <from-outcome>returnFromVidhanSabhaNominate</from-outcome>
             <to-view-id>/flowreturns/VidhanSabhaNominate-return.xhtml</to-view-id>
         </navigation-case>
@@ -84,7 +84,7 @@
     <navigation-rule>
         <from-view-id>/CreateBlog/CreateBlogConfirm.xhtml</from-view-id>
         <navigation-case>
-            <from-action>returnFromCreateBlog</from-action>
+            <from-action>#{createBlogMBean.returnFromCreateBlog}</from-action>
             <from-outcome>returnFromCreateBlog</from-outcome>
             <to-view-id>/flowreturns/CreateBlog-return.xhtml</to-view-id>
         </navigation-case>
