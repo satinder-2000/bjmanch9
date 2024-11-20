@@ -18,9 +18,9 @@ import org.bjm.ejbs.BjManchEmailEjbLocal;
 @ViewScoped
 public class ContactUsMBean implements Serializable {
     
-    private static final Logger LOGGER=Logger.getLogger(ContactUsMBean.class.getName());
-    
-    @Inject
+    private static final long serialVersionUID = 1L;
+
+	@Inject
     private BjManchEmailEjbLocal emailEjbLocal;
     
     private String userEmail;
@@ -29,8 +29,8 @@ public class ContactUsMBean implements Serializable {
     
     public String sendRequest(){
         ServletContext servletContext=(ServletContext) FacesContext.getCurrentInstance().getExternalContext().getContext();
-        String adminEmail=servletContext.getInitParameter("adminEmail");
-        emailEjbLocal.sendContactUsEmail(adminEmail, userEmail, subject, message);
+        String contactEmail=servletContext.getInitParameter("contactmail");
+        emailEjbLocal.sendContactUsEmail(contactEmail, userEmail, subject, message);
         FacesContext.getCurrentInstance().addMessage("", new FacesMessage(FacesMessage.SEVERITY_INFO,
                                                             "Message sent successfully","Message sent successfully"));
         return null;

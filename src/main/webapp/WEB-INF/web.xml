@@ -44,6 +44,10 @@
         <param-name>adminEmail</param-name>
         <param-value>admin@bjmanch.in</param-value>
     </context-param>
+    <context-param>
+        <param-name>contactEmail</param-name>
+        <param-value>contact@bjmanch.in</param-value>
+    </context-param>
     <!-- Email Session params -->
     <context-param>
         <param-name>mailSMTPHost</param-name>
@@ -63,7 +67,7 @@
     </context-param>
     <context-param>
         <param-name>mailSMTPUser</param-name>
-        <param-value>admin@bjmanch.org</param-value>
+        <param-value>contact@bjmanch.org</param-value>
     </context-param>
     <context-param>
         <param-name>password</param-name>
