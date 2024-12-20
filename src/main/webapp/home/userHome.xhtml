@@ -111,7 +111,10 @@
                                                 <c:forEach items="#{homeMBean.blogs}" var="blog">
                                                     <tr>
                                                         <td><h:outputText value="#{blog.title}" /></td>
-                                                        <td><h:outputText value="#{blog.publishedOn}" /></td>
+                                                        <td><h:outputText value="#{blog.publishedOn.dayOfMonth}" />
+                                                            <h:outputText value="/#{blog.publishedOn.monthValue}" />
+                                                            <h:outputText value="/#{blog.publishedOn.year}" />
+                                                        </td>
                                                         <td>
                                                             <h:outputLink value="#{request.contextPath}/blog/BlogDetails.xhtml" styleClass="w3-margin-left">
                                                                 <h:outputText value="View Details" />
