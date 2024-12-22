@@ -32,7 +32,7 @@ public class NameCheapEmailTest {
         };
         Session session=Session.getInstance(prop, auth);
         
-        sendEmail(session, "satinder_2000@outlook.com", "Howdy", "Jakarta Mail Demo");
+        sendEmail(session, "admin@bjmanch.org", "Howdy", "Jakarta Mail Demo");
         
     }
     

@@ -12,7 +12,13 @@
                     <div class="w3-card w3-round w3-white">
                         <div class="w3-container w3-padding">
                             <h4 class="w3-margin-left">Blogs</h4>
-                            <div class="w3-row-padding" style="margin:0 -16px">
+                            <br/>
+                            <c:choose>
+                                <c:when test="#{session.getAttribute('access')!=null}">
+                                    <h5 class="w3-margin-left">Admin Blogs</h5>
+                                
+                                </c:when>
+                                <div class="w3-row-padding" style="margin:0 -16px">
                                 <p class="w3-margin-left">
                                     At time to time, the Admin Team will publish the Blogs on the some key topics that are relevant to the overall working principles of BJManch.in. 
                                     Should you wish to read the full Blog or wish to comment on it, please Register and LogIn. 

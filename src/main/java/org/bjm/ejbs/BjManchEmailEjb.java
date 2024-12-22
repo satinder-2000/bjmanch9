@@ -35,8 +35,8 @@ public class BjManchEmailEjb implements BjManchEmailEjbLocal {
     
     private static final Logger LOGGER= Logger.getLogger(BjManchEmailEjb.class.getName());
     
-    //@Resource(mappedName = "java:comp/env/mail/bjm")//Tomee
-    @Resource(lookup = "mail/bjm")//Glassfish
+    @Resource(mappedName = "java:comp/env/mail/bjm")//Tomee
+    //@Resource(lookup = "mail/bjm")//Glassfish
     private Session mailSession;
     
     @Resource(name = "webURI")
