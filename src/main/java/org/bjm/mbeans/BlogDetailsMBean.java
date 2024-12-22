@@ -67,7 +67,7 @@ public class BlogDetailsMBean implements Serializable {
         MongoDatabase mongoDatabase=mongoClient.getDatabase(servletContext.getInitParameter("MONGODB_DB")).withCodecRegistry(pojoCodecRegistry);
         MongoCollection<Blog> blogColl=mongoDatabase.getCollection("Blog", Blog.class);
         blog=blogColl.find(filter).first();
-        DateTimeFormatter dateTimeFormatter=DateTimeFormatter.ofPattern("dd-MMM-yyyy");
+        DateTimeFormatter dateTimeFormatter=DateTimeFormatter.ofPattern("dd/MM/yyyy");
         blogPublishedOn = dateTimeFormatter.format(blog.getPublishedOn());
         //Load other Blog Comments
         blogComment=new BlogComment();
