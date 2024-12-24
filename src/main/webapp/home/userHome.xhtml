@@ -27,7 +27,10 @@
                                                 <c:forEach items="#{homeMBean.userForums}" var="forum">
                                                     <tr>
                                                         <td><h:outputText value="#{forum.title}" /></td>
-                                                        <td><h:outputText value="#{forum.createdOn}" /></td>
+                                                        <td><h:outputText value="#{forum.createdOn.dayOfMonth}" />
+                                                            <h:outputText value="/#{forum.createdOn.monthValue}" />
+                                                            <h:outputText value="/#{forum.createdOn.year}" />
+                                                        </td>
                                                         <td>
                                                             <h:outputLink value="#{request.contextPath}/forum/ForumDetails.xhtml" styleClass="w3-margin-left">
                                                                 <h:outputText value="View Details" />
@@ -55,7 +58,10 @@
                                                 <c:forEach items="#{homeMBean.userSurveys}" var="survey">
                                                     <tr>
                                                         <td><h:outputText value="#{survey.title}" /></td>
-                                                        <td><h:outputText value="#{survey.createdOn}" /></td>
+                                                        <td><h:outputText value="#{survey.createdOn.dayOfMonth}" />
+                                                            <h:outputText value="/#{survey.createdOn.monthValue}" />
+                                                            <h:outputText value="/#{survey.createdOn.year}" />
+                                                        </td>    
                                                         <td>
                                                             <h:outputLink value="#{request.contextPath}/survey/SurveyDetails.xhtml" styleClass="w3-margin-left">
                                                                 <h:outputText value="View Details" />
@@ -83,7 +89,10 @@
                                                 <c:forEach items="#{homeMBean.userSurveysFromForums}" var="sff">
                                                     <tr>
                                                         <td><h:outputText value="#{sff.title}" /></td>
-                                                        <td><h:outputText value="#{sff.createdOn}" /></td>
+                                                        <td><h:outputText value="#{sff.createdOn.dayOfMonth}" />
+                                                            <h:outputText value="/#{sff.createdOn.monthValue}" />
+                                                            <h:outputText value="/#{sff.createdOn.year}" />
+                                                        </td> 
                                                         <td>
                                                             <h:outputLink value="#{request.contextPath}/surveyFromForum/SurveyFromForumDetails.xhtml" styleClass="w3-margin-left">
                                                                 <h:outputText value="View Details" />
