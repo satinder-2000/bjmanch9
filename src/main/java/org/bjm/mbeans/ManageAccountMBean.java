@@ -199,8 +199,15 @@ public class ManageAccountMBean implements Serializable {
         User user= userColl.find(filter).first();
         MongoCollection<Document> userCollDoc=mongoDatabase.getCollection("User");
         Document query = new Document().append("email",  access.getEmail());
+        List<State> allStates= userDto.getAllStates();
+        for(State state: allStates){
+            if(state.getCode().equals(userDto.getStateCode())){ 
+                userDto.setStateName(state.getName());
+                break;
+            }
+        }
         Bson updates=Updates.combine(
-                    Updates.set("_id", user.getId()),
+                Updates.set("_id", user.getId()),
                 Updates.set("createdOn", user.getCreatedOn()),
                 Updates.set("dob", user.getDob()),
                 Updates.set("email", user.getEmail()),
@@ -208,7 +215,7 @@ public class ManageAccountMBean implements Serializable {
                 Updates.set("gender", user.getGender()),
                 Updates.set("lastName", user.getLastName()),
                 Updates.set("profileFile", access.getProfileFile()),
-                Updates.set("stateCode", userDto.getStateCode()),
+                Updates.set("stateName", userDto.getStateName()),
                 Updates.set("lokSabha", userDto.getLokSabha()),
                 Updates.set("vidhanSabha", userDto.getVidhanSabha()),
                 Updates.set("mobile", user.getMobile()),

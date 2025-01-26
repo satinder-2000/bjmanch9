@@ -28,6 +28,7 @@ public class UserDto {
     //@Pattern(regexp = "^[6-9]\\d{9}$", message = "Incorrect Mobile number")
     private String mobile;
     private String stateCode;
+    private String stateName;
     private List<State> allStates;
     private State state;
     private String lokSabha;
@@ -100,6 +101,16 @@ public class UserDto {
     public void setStateCode(String stateCode) {
         this.stateCode = stateCode;
     }
+
+    public String getStateName() {
+        return stateName;
+    }
+
+    public void setStateName(String stateName) {
+        this.stateName = stateName;
+    }
+    
+    
 
     public List<State> getAllStates() {
         return allStates;

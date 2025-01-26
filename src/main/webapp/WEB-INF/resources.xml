@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Resource id="mail/bjm" type="jakarta.mail.Session">
+<Resource id="mail/bjm2" type="jakarta.mail.Session">
   mail.smtp.host=mail.privateemail.com
   mail.smtp.port=587
   mail.transport.protocol=smtp
