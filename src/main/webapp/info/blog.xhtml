@@ -13,22 +13,21 @@
                         <div class="w3-container w3-padding">
                             <h4 class="w3-margin-left">Blogs</h4>
                             <br/>
-                            <c:choose>
-                                <c:when test="#{session.getAttribute('access')!=null}">
-                                    <h5 class="w3-margin-left">Admin Blogs</h5>
-                                
-                                </c:when>
-                                <div class="w3-row-padding" style="margin:0 -16px">
+                            <div class="w3-row-padding" style="margin:0 -16px">
                                 <p class="w3-margin-left">
-                                    At time to time, the Admin Team will publish the Blogs on the some key topics that are relevant to the overall working principles of BJManch.in. 
+                                    At time to time, the Admin Team will publish the Blogs on the some key topics that are relevant to the overall working principles of BJManch.org. 
                                     Should you wish to read the full Blog or wish to comment on it, please Register and LogIn. 
                                 </p>
                             </div>
                             <br/>
                             <c:forEach var="blog" items="#{blogSummaryMBean.allBlogs}">
                                 <div class="w3-row-padding" style="margin:0 -16px">
-                                    <h:outputText value="#{blog.title}"/><br/>
-                                    <h:outputText value="#{blog.summary}"/><br/>
+                                    <p class="w3-margin-left">
+                                    <h:outputText value="#{blog.title}"/>
+                                    </p>
+                                    <p class="w3-margin-left">
+                                    <h:outputText value="#{blog.summary}"/>
+                                    </p>
                                     <div class="w3-half">
                                         <span></span>
                                     </div>

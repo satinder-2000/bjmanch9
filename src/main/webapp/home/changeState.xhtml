@@ -14,6 +14,17 @@
                             <h:form>
                                 <h:messages infoStyle="color:blue;" errorStyle="color:red;"/>
                                 <div class="w3-row-padding" style="margin:0 -16px">
+                                    <h5 class="w3-margin-left">Current values</h5>
+                                    <p class="w3-margin-left">
+                                    <h:outputLabel value="State: "/>&#160;<h:outputText value="#{manageAccountMBean.userDto.stateName}"/>
+                                    <br/>
+                                    <h:outputLabel value="Lok Sabha"/>&#160;<h:outputText value="#{manageAccountMBean.userDto.lokSabha}"/>
+                                    <br/>
+                                    <h:outputLabel value="Vidhan Sabha"/>&#160;<h:outputText value="#{manageAccountMBean.userDto.vidhanSabha}"/>
+                                    <br/>
+                                    </p>
+                                </div>
+                                <div class="w3-row-padding" style="margin:0 -16px">
                                     <div class="w3-half">
                                         <h:outputLabel for="state" value="State"   styleClass="w3-margin-left w3-margin-bottom"/>
                                     </div>

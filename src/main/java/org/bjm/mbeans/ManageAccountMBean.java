@@ -59,28 +59,17 @@ public class ManageAccountMBean implements Serializable {
     
     private AccessDto accessDto;
     private UserDto userDto;
+    private User user;
     
     private Part profileImage;
     
     @PostConstruct 
     public void init(){
-       
-    
-    }
-    
-    public String changePasswordReq(){
         HttpServletRequest request=(HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
         HttpSession session=request.getSession();
         Access access=(Access)session.getAttribute("access");
         accessDto=new AccessDto();
         accessDto.setEmail(access.getEmail());
-        return "/home/changePassword?faces-redirect=true";
-    }
-    
-    public String changePersonalDetailsReq(){
-        HttpServletRequest request=(HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
-        HttpSession session=request.getSession();
-        Access access=(Access)session.getAttribute("access");
         ServletContext servletContext=(ServletContext) FacesContext.getCurrentInstance().getExternalContext().getContext();
         MongoClient mongoClient=(MongoClient) servletContext.getAttribute("mongoClient");
         CodecProvider pojoCodecProvider=PojoCodecProvider.builder().automatic(true).build();
@@ -88,21 +77,26 @@ public class ManageAccountMBean implements Serializable {
         MongoDatabase mongoDatabase=mongoClient.getDatabase(servletContext.getInitParameter("MONGODB_DB")).withCodecRegistry(pojoCodecRegistry);
         MongoCollection<User> userColl=mongoDatabase.getCollection("User", User.class);
         Bson filter=Filters.eq("email", access.getEmail());
-        User user=userColl.find(filter).first();
+        user=userColl.find(filter).first();
         userDto=new UserDto();
         userDto.setFirstName(user.getFirstName());
         userDto.setLastName(user.getLastName());
         userDto.setMobile(user.getMobile());
         userDto.setPhone(user.getPhone());
+        userDto.setStateName(user.getStateName());
+        userDto.setLokSabha(user.getLokSabha());
+        userDto.setVidhanSabha(user.getVidhanSabha());
+    }
+    
+    public String changePasswordReq(){
+        return "/home/changePassword?faces-redirect=true";
+    }
+    
+    public String changePersonalDetailsReq(){
         return "/home/changePersonalDetails?faces-redirect=true";
     }
     
     public String changeProfileImageReq(){
-        HttpServletRequest request=(HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
-        HttpSession session=request.getSession();
-        Access access=(Access)session.getAttribute("access");
-        accessDto=new AccessDto();
-        accessDto.setEmail(access.getEmail());
         return "/home/changeProfileImage?faces-redirect=true";
     }
     
@@ -144,7 +138,6 @@ public class ManageAccountMBean implements Serializable {
         CodecRegistry pojoCodecRegistry=fromRegistries(MongoClientSettings.getDefaultCodecRegistry(), fromProviders(pojoCodecProvider));
         MongoDatabase mongoDatabase=mongoClient.getDatabase(servletContext.getInitParameter("MONGODB_DB")).withCodecRegistry(pojoCodecRegistry);
         MongoCollection<State> stateColl=mongoDatabase.getCollection("State", State.class);
-        userDto= new UserDto();
         userDto.setAllStates(new ArrayList<>());
         State dummy=new State();
         dummy.setCode("--");
@@ -166,12 +159,20 @@ public class ManageAccountMBean implements Serializable {
         MongoDatabase mongoDatabase=mongoClient.getDatabase(servletContext.getInitParameter("MONGODB_DB")).withCodecRegistry(pojoCodecRegistry);
         MongoCollection<LokSabha> lokSabhaColl=mongoDatabase.getCollection("LokSabha", LokSabha.class);
         Bson filter=Filters.eq("stateCode", userDto.getStateCode());
+        //While we are here let's set the stateName in UserDto
+        for(State state:userDto.getAllStates()){
+            if(userDto.getStateCode().equals(state.getCode())){
+                userDto.setStateName(state.getName());
+                break;
+            }
+           
+        }    
         Iterable<LokSabha> lokSabhaItrble=lokSabhaColl.find(filter);
         Iterator<LokSabha> lokSabhaItr=lokSabhaItrble.iterator();
         userDto.setLokSabhas(new ArrayList());
         while(lokSabhaItr.hasNext()){
             userDto.getLokSabhas().add(lokSabhaItr.next());
-        }
+            }           
         LOGGER.info(String.format("UserDto initialided with LokSabha count %d for StateCode : %s", userDto.getLokSabhas().size(),userDto.getStateCode()));
         
         MongoCollection<VidhanSabha> vidhanSabhaColl=mongoDatabase.getCollection("VidhanSabha", VidhanSabha.class);
@@ -180,7 +181,7 @@ public class ManageAccountMBean implements Serializable {
         userDto.setVidhanSabhas(new ArrayList());
         while(vidhanSabhaItr.hasNext()){
             userDto.getVidhanSabhas().add(vidhanSabhaItr.next());
-        }
+            }           
         LOGGER.info(String.format("UserDto initialided with VidhanSabha count %d for StateCode : %s", userDto.getVidhanSabhas().size(),userDto.getStateCode()));
         
     }
@@ -191,17 +192,14 @@ public class ManageAccountMBean implements Serializable {
         CodecProvider pojoCodecProvider=PojoCodecProvider.builder().automatic(true).build();
         CodecRegistry pojoCodecRegistry=fromRegistries(MongoClientSettings.getDefaultCodecRegistry(), fromProviders(pojoCodecProvider));
         MongoDatabase mongoDatabase=mongoClient.getDatabase(servletContext.getInitParameter("MONGODB_DB")).withCodecRegistry(pojoCodecRegistry);
-        MongoCollection<User> userColl = mongoDatabase.getCollection("User",User.class);
         HttpServletRequest request=(HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
         HttpSession session=request.getSession();
         Access access=(Access)session.getAttribute("access");
-        Bson filter=Filters.eq("email", access.getEmail());
-        User user= userColl.find(filter).first();
         MongoCollection<Document> userCollDoc=mongoDatabase.getCollection("User");
         Document query = new Document().append("email",  access.getEmail());
         List<State> allStates= userDto.getAllStates();
         for(State state: allStates){
-            if(state.getCode().equals(userDto.getStateCode())){ 
+            if (state.getCode().equals(userDto.getStateCode())){
                 userDto.setStateName(state.getName());
                 break;
             }
@@ -236,12 +234,9 @@ public class ManageAccountMBean implements Serializable {
         CodecProvider pojoCodecProvider=PojoCodecProvider.builder().automatic(true).build();
         CodecRegistry pojoCodecRegistry=fromRegistries(MongoClientSettings.getDefaultCodecRegistry(), fromProviders(pojoCodecProvider));
         MongoDatabase mongoDatabase=mongoClient.getDatabase(servletContext.getInitParameter("MONGODB_DB")).withCodecRegistry(pojoCodecRegistry);
-        MongoCollection<User> userColl = mongoDatabase.getCollection("User",User.class);
         HttpServletRequest request=(HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
         HttpSession session=request.getSession();
         Access access=(Access)session.getAttribute("access");
-        Bson filter=Filters.eq("email", access.getEmail());
-        User user= userColl.find(filter).first();
         MongoCollection<Document> userCollDoc=mongoDatabase.getCollection("User");
         Document query = new Document().append("email",  access.getEmail());
         Bson updates=Updates.combine(
