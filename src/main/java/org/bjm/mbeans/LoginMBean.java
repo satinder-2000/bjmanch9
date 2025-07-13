@@ -48,17 +48,23 @@ public class LoginMBean implements Serializable {
         MongoDatabase mongoDatabase=mongoClient.getDatabase(servletContext.getInitParameter("MONGODB_DB")).withCodecRegistry(pojoCodecRegistry);
         Bson fiter=Filters.eq("email", accessDto.getEmail());
         MongoCollection<Access> accessColl=mongoDatabase.getCollection("Access", Access.class);
-        Access access=accessColl.find(fiter).first();
-        String encodedPW=PasswordUtil.generateSecurePassword(accessDto.getPassword(), accessDto.getEmail());
-        if(!access.getPassword().equals(encodedPW)){
-            FacesContext.getCurrentInstance().addMessage("password",
-                    new FacesMessage(FacesMessage.SEVERITY_ERROR, "Incorrect Login details", "Incorrect Login details"));
+        if(accessColl.countDocuments()==0){
+            FacesContext.getCurrentInstance().addMessage("email",
+                new FacesMessage(FacesMessage.SEVERITY_ERROR, "Email not registered", "Email not registered"));
             return null;
         }else{
-            HttpServletRequest request = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
-            HttpSession session=request.getSession();
-            session.setAttribute("access", access);
-            return "/home/userHome?faces-redirect=true";
+            Access access = accessColl.find(fiter).first();
+            String encodedPW = PasswordUtil.generateSecurePassword(accessDto.getPassword(), accessDto.getEmail());
+            if (!access.getPassword().equals(encodedPW)) {
+                FacesContext.getCurrentInstance().addMessage("password",
+                        new FacesMessage(FacesMessage.SEVERITY_ERROR, "Incorrect Login details", "Incorrect Login details"));
+                return null;
+            } else {
+                HttpServletRequest request = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
+                HttpSession session = request.getSession();
+                session.setAttribute("access", access);
+                return "/home/userHome?faces-redirect=true";
+            }
         }
     }
 

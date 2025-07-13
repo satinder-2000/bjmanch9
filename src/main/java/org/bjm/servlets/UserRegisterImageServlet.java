@@ -34,7 +34,9 @@ public class UserRegisterImageServlet extends HttpServlet {
         HttpSession session=request.getSession();
         ImageVO userImageVO=(ImageVO)session.getAttribute(BjmConstants.USER_IMAGE);
         response.setContentType("image/"+userImageVO.getImgType());
+        System.out.println(" userImageVO.getImgType() "+userImageVO.getImgType());
         response.getOutputStream().write(userImageVO.getImage());
+        System.out.println("userImageVO.getImage() bytes: "+userImageVO.getImage().length);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

@@ -141,9 +141,9 @@ public class UserRegisterMBean implements Serializable{
         //Profile File next
         processProfileFile();
         
-        HttpServletRequest request= (HttpServletRequest)FacesContext.getCurrentInstance().getExternalContext().getRequest();
-        HttpSession session=request.getSession();
-        session.setAttribute("userDto", userDto);//Why do we need to put the Dto in Session??
+        //HttpServletRequest request= (HttpServletRequest)FacesContext.getCurrentInstance().getExternalContext().getRequest();
+        //HttpSession session=request.getSession();
+        //session.setAttribute("userDto", userDto);//Why do we need to put the Dto in Session??
         return "UserRegisterConfirm?faces-redirect=true";
     }
     
@@ -189,6 +189,8 @@ public class UserRegisterMBean implements Serializable{
                 baos.close();
                 userDto.setProfileFile(text+"."+imageFormat);
                 userDto.setImage(jpgData);
+                System.out.println("Ininials Logo text in userDto: "+userDto.getProfileFile());
+                System.out.println("Ininials Logo byte{} size in userDto: "+userDto.getImage().length);
             }catch(IOException ex){
                 LOGGER.severe(ex.getMessage());
             }
@@ -207,19 +209,8 @@ public class UserRegisterMBean implements Serializable{
                     inputStream.read(imageData);
                     userDto.setProfileFile(fullFileName);
                     userDto.setImage(imageData);
-                    /*byte[] jpgData=null;
-                    if(fileType.equals("png")){//convert to jpg first. Jelastic' OpenJDK doen not handle png images well and throw exception.
-                        byte[] pngData=new byte[inputStream.available()];
-                        jpgData = ConvertPngToJpg.convertToJpg(pngData);
-                        userDto.setProfileFile(fullFileName);
-                        userDto.setImage(jpgData);
-                    }else{
-                        byte[] imageData=new byte[inputStream.available()];
-                        inputStream.read(imageData);
-                        userDto.setProfileFile(fullFileName);
-                        userDto.setImage(imageData);
-                    }*/
-                
+                    System.out.println("User profile file name in userDto: "+userDto.getProfileFile());
+                    System.out.println("User profile file byte{} size in userDto: "+userDto.getImage().length);
                 }
             }catch(IOException ex){
                 LOGGER.severe(ex.getMessage());
@@ -229,6 +220,8 @@ public class UserRegisterMBean implements Serializable{
         }
         //Set ImageVO in the Session
         String imgType=userDto.getProfileFile().substring(userDto.getProfileFile().indexOf('.')+1);
+        System.out.println("UserRegBean imgType() "+imgType);
+        System.out.println("UserRegBean image data"+userDto.getImage().length);
         ImageVO userImageVO=new ImageVO(imgType, userDto.getImage());
         HttpServletRequest request=(HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
         HttpSession session=request.getSession(true);
