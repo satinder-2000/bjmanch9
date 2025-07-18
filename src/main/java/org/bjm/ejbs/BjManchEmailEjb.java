@@ -15,7 +15,6 @@ import jakarta.mail.internet.InternetAddress;
 import jakarta.mail.internet.MimeBodyPart;
 import jakarta.mail.internet.MimeMessage;
 import jakarta.mail.internet.MimeMultipart;
-import java.util.Properties;
 import java.util.logging.Logger;
 import org.bjm.collections.Access;
 import org.bjm.collections.Blog;
@@ -35,8 +34,8 @@ public class BjManchEmailEjb implements BjManchEmailEjbLocal {
     
     private static final Logger LOGGER= Logger.getLogger(BjManchEmailEjb.class.getName());
     
-    @Resource(mappedName = "java:comp/env/mail/bjm")//Tomee
-    //@Resource(lookup = "mail/bjm")//Glassfish
+    //@Resource(mappedName = "java:comp/env/mail/bjm")//Tomee
+    @Resource(lookup = "mail/bjm")//Glassfish and Payara
     private Session mailSession;
     
     @Resource(name = "webURI")
